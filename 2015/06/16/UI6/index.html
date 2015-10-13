@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="C++," />
+  <meta name="keywords" content="UI," />
 
 
 
@@ -37,31 +37,17 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
 
 
-<meta name="description" content="C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。
-#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;alloc.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt;
-class QUEUE;
-class">
+<meta name="description" content="临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++实现两个栈模拟一个队列">
-<meta property="og:url" content="http://yoursite.com/2015/10/13/c++/index.html">
+<meta property="og:title" content="Santa Postage by Sketch UI临摹">
+<meta property="og:url" content="http://yoursite.com/2015/06/16/UI6/index.html">
 <meta property="og:site_name" content="万世奇的博客">
-<meta property="og:description" content="C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。
-#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;alloc.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt;
-class QUEUE;
-class">
-<meta property="og:updated_time" content="2015-10-13T09:23:57.000Z">
+<meta property="og:description" content="临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。">
+<meta property="og:image" content="http://fmn.rrfmn.com/fmn070/20151013/1955/xlarge_Jgeh_74510003de021e80.jpg">
+<meta property="og:updated_time" content="2015-10-13T12:34:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C++实现两个栈模拟一个队列">
-<meta name="twitter:description" content="C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。
-#include &amp;lt;stdio.h&amp;gt;
-#include &amp;lt;alloc.h&amp;gt;
-#include &amp;lt;stdlib.h&amp;gt;
-class QUEUE;
-class">
+<meta name="twitter:title" content="Santa Postage by Sketch UI临摹">
+<meta name="twitter:description" content="临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -71,7 +57,7 @@ class">
   };
 </script>
 
-  <title> C++实现两个栈模拟一个队列 | 万世奇的博客 </title>
+  <title> Santa Postage by Sketch UI临摹 | 万世奇的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -186,7 +172,7 @@ class">
           
           
             
-              C++实现两个栈模拟一个队列
+              Santa Postage by Sketch UI临摹
             
           
         </h1>
@@ -195,8 +181,8 @@ class">
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-10-13T17:23:57+08:00" content="2015-10-13">
-            2015-10-13
+          <time itemprop="dateCreated" datetime="2015-06-16T00:00:00+08:00" content="2015-06-16">
+            2015-06-16
           </time>
         </span>
 
@@ -205,8 +191,8 @@ class">
             &nbsp; | &nbsp; 分类于
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/Coding/" itemprop="url" rel="index">
-                  <span itemprop="name">Coding</span>
+                <a href="/categories/UI/" itemprop="url" rel="index">
+                  <span itemprop="name">UI</span>
                 </a>
               </span>
 
@@ -229,156 +215,8 @@ class">
       
 
       
-        <span itemprop="articleBody"><p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。</p>
-<pre><code>#include &lt;stdio.h&gt;
-#include &lt;alloc.h&gt;
-#include &lt;stdlib.h&gt;
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>;
-<span class="title">class</span> <span class="title">STACK</span></span>{
-    <span class="built_in">int</span>  *<span class="keyword">const</span>  elems;    <span class="comment">//申请内存用于存放栈的元素</span>
-    <span class="keyword">const</span>  <span class="built_in">int</span>   max;    <span class="comment">//栈能存放的最大元素个数</span>
-    <span class="built_in">int</span>   pos;            <span class="comment">//栈实际已有元素个数，栈空时    pos=0;</span>
-public:
-STACK(<span class="built_in">int</span> m);        <span class="comment">//初始化栈：最多m个元素</span>
-STACK(<span class="keyword">const</span> STACK&amp;s);             <span class="comment">//用栈s拷贝初始化栈</span>
-virtual <span class="built_in">int</span>  size ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的最大元素    个数max</span>
-virtual <span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的实际元素个数pos</span>
-virtual <span class="built_in">int</span> <span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>;<span class="comment">//取下标x处的栈元素</span>
-virtual STACK&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);     <span class="comment">//将e入栈,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出栈到e,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s); <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-virtual <span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印栈</span>
-virtual ~STACK( );                <span class="comment">//销毁栈</span>
-
-};
-
-STACK::STACK(<span class="built_in">int</span> m):elems(<span class="keyword">new</span> <span class="built_in">int</span>[m]),max(m){}
-
-STACK::STACK(<span class="keyword">const</span> STACK&amp;s):elems(<span class="keyword">new</span>     <span class="built_in">int</span>[s.max]),max(s.max){}       <span class="comment">//用栈s拷贝初始化栈</span>
-
-<span class="built_in">int</span>  STACK::size ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;max;
-}    <span class="comment">//返回栈的最大元素个数max</span>
-
-STACK::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;pos;
-}    <span class="comment">//返回栈的实际元素个数pos</span>
-
-<span class="built_in">int</span> STACK::<span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>{
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">return</span> a[x];
-
-}    <span class="comment">//取下标x处的栈元素</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-        a++;
-    }
-    *a=e;
-    <span class="keyword">this</span>-&gt;pos++;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}    <span class="comment">//将e入栈,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-    a++;
-}
-a--;
-e=*a;
-*a=<span class="number">0</span>;
-<span class="keyword">this</span>-&gt;pos--;
-<span class="keyword">return</span> *<span class="keyword">this</span>;
-}     <span class="comment">//出栈到e,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s){
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;s.max;i++){
-        <span class="keyword">this</span>-&gt;elems[i]=s.elems[i];
-    }
-    *(<span class="built_in">int</span>*)&amp;<span class="keyword">this</span>-&gt;max=s.max;
-    <span class="keyword">this</span>-&gt;pos=s.pos;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}       <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-
-<span class="keyword">void</span> STACK::<span class="built_in">print</span>( ) <span class="keyword">const</span>{
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">this</span>-&gt;max;i++){
-        printf(<span class="string">"%d"</span>,<span class="keyword">this</span>-&gt;elems[i]);
-}
-}    <span class="comment">//打印栈</span>
-
-STACK::~STACK( ){
-    free(<span class="keyword">this</span>-&gt;elems);
-}
-
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>:<span class="title">public</span> <span class="title">STACK</span></span>{
-    STACK  s2;
-public:
-QUEUE(<span class="built_in">int</span> m);        <span class="comment">//初始化队列：每个栈最多m个元素</span>
-QUEUE(<span class="keyword">const</span> QUEUE&amp;s);         <span class="comment">//用队列s拷贝初始化队列</span>
-<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回队列的实际元素个数</span>
-QUEUE&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);         <span class="comment">//将e入队列,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出队列到e,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s); <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-<span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印队列</span>
-~QUEUE( );                    <span class="comment">//销毁队列</span>
-};
-
-
-QUEUE::QUEUE(<span class="built_in">int</span> m):s2(m),STACK(m){}             <span class="comment">//初始化队列：每个栈最多m个元素</span>
-
-QUEUE::QUEUE(<span class="keyword">const</span> QUEUE&amp;s):STACK(s.s2),s2(s.s2){}     <span class="comment">//用队列s拷贝初始化队列</span>
-
-QUEUE::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{                       <span class="comment">//返回队列的实际元素个数</span>
-       <span class="built_in">int</span> x=s2;
-       <span class="keyword">return</span> x;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){                     <span class="comment">//将e入队列,并返回队列</span>
-       s2&lt;&lt;e;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){                     <span class="comment">//出队列到e,并返回队列</span>
-       <span class="built_in">int</span> k=s2;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        s2&gt;&gt;e;
-        STACK::<span class="literal">operator</span>&lt;&lt;(e);
-       }
-       (*<span class="keyword">this</span>)&gt;&gt;e;
-       k--;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        STACK::<span class="literal">operator</span>&gt;&gt;(e);
-        (*<span class="keyword">this</span>)&lt;&lt;(e);
-       }
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s){               <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-       s2=s.s2;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-<span class="keyword">void</span> QUEUE::<span class="built_in">print</span>( ) <span class="keyword">const</span>{                           <span class="comment">//打印队列</span>
-      s2.<span class="built_in">print</span>();
-}
-
-QUEUE::~QUEUE( ){                                   <span class="comment">//销毁队列</span>
-
-}
-
-<span class="built_in">int</span> main (<span class="built_in">int</span> argc,char* argv[])
-{     QUEUE s(<span class="number">10</span>),r(<span class="number">10</span>);
-      QUEUE *t=&amp;s,*u=&amp;r;
-      <span class="built_in">int</span>  x;
-      x=s;
-      s&lt;&lt;<span class="number">1</span>;
-      s&gt;&gt;<span class="number">2</span>;
-      t-&gt;<span class="built_in">print</span>();
-      r=s;
-      <span class="keyword">return</span> <span class="number">0</span>;
-}
-</code></pre><p>这种两个栈模拟的队列的方式是用一个栈存储元素，另一个栈来辅助进出队列的方式来达到队列的模拟，是种比较有意思的代码思想。</p>
+        <span itemprop="articleBody"><p>临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。<br><a id="more"></a></p>
+<p><img src="http://fmn.rrfmn.com/fmn070/20151013/1955/xlarge_Jgeh_74510003de021e80.jpg" alt="Santa Postage" title="title"></p>
 </span>
       
     </div>
@@ -387,7 +225,7 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
       
         <div class="post-tags">
           
-            <a href="/tags/C/" rel="tag">#C++</a>
+            <a href="/tags/UI/" rel="tag">#UI</a>
           
         </div>
       
@@ -396,11 +234,13 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2015/06/18/UI7/" rel="prev">Mactonish by Sketch UI临摹</a>
+            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/10/13/piano/" rel="next">钢琴曲作品集</a>
+              <a href="/2015/06/12/UI5/" rel="next">Festival by Sketch UI临摹</a>
             
           </div>
         </div>
@@ -462,21 +302,21 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

@@ -1,0 +1,1444 @@
+<!doctype html>
+<html class="theme-next use-motion ">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+
+
+  <meta name="keywords" content="Java," />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="这学期有门软件工程的双学位的课，老师说结课的大作业要3000行代码，同班的同学好多在网上下源码，还有找计算机学院的同学代写的，我不太喜欢让别人代写，自己花6个小时写了800行，大概实现了一个考试系统，虽说中间还靠写题目凑了100多行，但好歹是自己写的，感觉比他们找代写的强得多。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java实现一个软件工程考试系统">
+<meta property="og:url" content="http://yoursite.com/2015/10/10/java2/index.html">
+<meta property="og:site_name" content="万世奇的博客">
+<meta property="og:description" content="这学期有门软件工程的双学位的课，老师说结课的大作业要3000行代码，同班的同学好多在网上下源码，还有找计算机学院的同学代写的，我不太喜欢让别人代写，自己花6个小时写了800行，大概实现了一个考试系统，虽说中间还靠写题目凑了100多行，但好歹是自己写的，感觉比他们找代写的强得多。">
+<meta property="og:image" content="http://fmn.rrimg.com/fmn073/20151013/2050/large_yTdb_75690003a0b21e80.jpg">
+<meta property="og:updated_time" content="2015-10-13T13:25:25.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java实现一个软件工程考试系统">
+<meta name="twitter:description" content="这学期有门软件工程的双学位的课，老师说结课的大作业要3000行代码，同班的同学好多在网上下源码，还有找计算机学院的同学代写的，我不太喜欢让别人代写，自己花6个小时写了800行，大概实现了一个考试系统，虽说中间还靠写题目凑了100多行，但好歹是自己写的，感觉比他们找代写的强得多。">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: '',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> Java实现一个软件工程考试系统 | 万世奇的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">万世奇的博客</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-next-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              Java实现一个软件工程考试系统
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-10-10T00:00:00+08:00" content="2015-10-10">
+            2015-10-10
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/Java/" itemprop="url" rel="index">
+                  <span itemprop="name">Java</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>这学期有门软件工程的双学位的课，老师说结课的大作业要3000行代码，同班的同学好多在网上下源码，还有找计算机学院的同学代写的，我不太喜欢让别人代写，自己花6个小时写了800行，大概实现了一个考试系统，虽说中间还靠写题目凑了100多行，但好歹是自己写的，感觉比他们找代写的强得多。<br><a id="more"></a></p>
+<p><img src="http://fmn.rrimg.com/fmn073/20151013/2050/large_yTdb_75690003a0b21e80.jpg" alt="软件工程考试系统" title="title"></p>
+<pre><code>import java.awt.*;
+import java.util.Date;
+import java.applet.*;
+import java.applet.Applet;
+import java.awt.event.*;
+import javax.swing.*;
+<span class="keyword">class</span> Student{
+    <span class="keyword">public</span> <span class="keyword">static</span> String a=<span class="string">"U201317382"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String a1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score1=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String b=<span class="string">"U201317381"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String b1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score2=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String c=<span class="string">"U201317380"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String c1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score3=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String d=<span class="string">"U201317342"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String d1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score4=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String e=<span class="string">"U201317389"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String e1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score5=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String f=<span class="string">"U201317332"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String f1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score6=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String g=<span class="string">"U201317312"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String g1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score7=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String h=<span class="string">"U201317362"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String h1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score8=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String i=<span class="string">"U201317392"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String i1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score9=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String j=<span class="string">"U201317312"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String j1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score10=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String k=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String k1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score11=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String l=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String l1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score12=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String m=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String m1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score13=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String n=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String n1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score14=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String o=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String o1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score15=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String p=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String p1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score16=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String q=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String q1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score17=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String r=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String r1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score18=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String s=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String s1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score19=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String t=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String t1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score20=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String u=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String u1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score21=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String v=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String v1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score22=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String w=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String w1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score23=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String x=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String x1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score24=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String y=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String y1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score25=<span class="number">0</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String z=<span class="string">"U201317322"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String z1=<span class="string">"******"</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score26=<span class="number">0</span>;
+}
+
+<span class="keyword">class</span> Answer1{
+    <span class="keyword">public</span> String[] ans={
+    <span class="string">"顶部宽度小"</span>,
+    <span class="string">"用户"</span>,
+    <span class="string">"经济可行性"</span>,
+    <span class="string">"接口说明"</span>,
+    <span class="string">"平衡"</span>,
+    <span class="string">"任务管理"</span>,
+    <span class="string">"数据流"</span>,
+    <span class="string">"单继承"</span>,
+    <span class="string">"对象"</span>,
+    <span class="string">"数据结构"</span>,
+    <span class="string">"算法"</span>,
+    <span class="string">"公共耦合"</span>,
+    <span class="string">"文档"</span>,
+    <span class="string">"自顶向下逐步求精"</span>,
+    <span class="string">"耦合性与内聚性"</span>
+    };
+    Answer1(){
+    }
+    <span class="function"><span class="keyword">public</span> String <span class="title">getAnswer</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> ans[i];
+    } 
+}
+
+<span class="keyword">class</span> Question1{
+    <span class="keyword">public</span> String[] q={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    Question1(){
+        q[<span class="number">0</span>]=<span class="string">"1.软件结构的准则有：________，中部宽度最大，底部宽度次之；在结构顶部有较高的扇出数，在底部有较高的扇入数"</span>;
+        q[<span class="number">1</span>]=<span class="string">"2.软件工程管理的具体内容包括对开发人员、组织机构、______、文档资料  等方面的管理"</span>;
+        q[<span class="number">2</span>]=<span class="string">"3.可行性研究的三个方面是 技术可行性 、社会可行性 和_______"</span>;
+        q[<span class="number">3</span>]=<span class="string">"4.在软件概要设计阶段，建立软件结构后，还应为每个模块写一份 处理说明 和_______"</span>;
+        q[<span class="number">4</span>]=<span class="string">"5.在画分层的DFD时，父图与子图的输入输出数据流要____"</span>;
+        q[<span class="number">5</span>]=<span class="string">"6.开发过程管理包括项目计划、控制和_____等"</span>;
+        q[<span class="number">6</span>]=<span class="string">"7.数据字典中有四类条目，分别是___ 、数据项、 数据存储 、基本加工"</span>;
+        q[<span class="number">7</span>]=<span class="string">"8.子类只继承一个父类的属性和操作,这称为____"</span>;
+        q[<span class="number">8</span>]=<span class="string">"9.喷泉模型是一种以用户需求为动力，以____为驱动的模型。"</span>;
+        q[<span class="number">9</span>]=<span class="string">"10.Jackson图不仅可表示程序结构，还可表示_____"</span>;
+        q[<span class="number">10</span>]=<span class="string">"11.详细设计的任务是确定每个模块的内部特性，即模块的 _____ 和 数据结构   "</span>;
+        q[<span class="number">11</span>]=<span class="string">"12.两个模块都使用同一张表，模块的这种耦合称为____"</span>;
+        q[<span class="number">12</span>]=<span class="string">"13.瀑布模型将软件生命期划分为若干阶段，各个阶段之间是通过 _____ 实现过渡的"</span>;
+        q[<span class="number">13</span>]=<span class="string">"14.结构化分析方法的分析策略是_________。"</span>;
+        q[<span class="number">14</span>]=<span class="string">"15.衡量模块独立性的两个定性标准是_______"</span>;
+
+    }
+    <span class="function"><span class="keyword">public</span> String <span class="title">getQuestion</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> q[i];
+    } 
+}
+
+<span class="keyword">class</span> Answer{
+    <span class="keyword">public</span> String[] ans={<span class="string">"C"</span>,<span class="string">"A"</span>,<span class="string">"C"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"D"</span>,<span class="string">"A"</span>,<span class="string">"C"</span>,<span class="string">"B"</span>,<span class="string">"C"</span>,<span class="string">"B"</span>,<span class="string">"D"</span>,<span class="string">"A"</span>,<span class="string">"C"</span>,<span class="string">"D"</span>,<span class="string">"D"</span>,<span class="string">"B"</span>,<span class="string">"A"</span>,<span class="string">"A"</span>,<span class="string">"C"</span>};
+    Answer(){
+    }
+    <span class="function"><span class="keyword">public</span> String <span class="title">getAnswer</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> ans[i];
+    } 
+}
+
+<span class="keyword">class</span> Question{
+    <span class="keyword">public</span> String[] q={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    <span class="keyword">public</span> String[] a1={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    <span class="keyword">public</span> String[] b1={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    <span class="keyword">public</span> String[] c1={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    <span class="keyword">public</span> String[] d1={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    <span class="keyword">public</span> String[] c={<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"11"</span>,<span class="string">"12"</span>,<span class="string">"13"</span>,<span class="string">"14"</span>,<span class="string">"15"</span>,<span class="string">"16"</span>,<span class="string">"17"</span>,<span class="string">"18"</span>,<span class="string">"19"</span>,<span class="string">"20"</span>,<span class="string">"21"</span>,<span class="string">"22"</span>,<span class="string">"23"</span>,<span class="string">"24"</span>,<span class="string">"25"</span>};
+    Question(){
+    q[<span class="number">0</span>]=<span class="string">"1.软件设计中划分模块的一个准则是？"</span>;
+    a1[<span class="number">0</span>]=<span class="string">"低内聚低耦合"</span>;
+    b1[<span class="number">0</span>]=<span class="string">"低内聚高耦合"</span>;
+    c1[<span class="number">0</span>]=<span class="string">"高内聚低耦合"</span>;
+    d1[<span class="number">0</span>]=<span class="string">"高内聚高耦合"</span>;        
+
+    q[<span class="number">1</span>]=<span class="string">"2.用户和设计交换最频繁的方法是什么？"</span>;
+    a1[<span class="number">1</span>]=<span class="string">"原型化方法"</span>;
+    b1[<span class="number">1</span>]=<span class="string">"瀑布模型法"</span>;
+    c1[<span class="number">1</span>]=<span class="string">"螺旋模型方法"</span>;
+    d1[<span class="number">1</span>]=<span class="string">"构件组装模型"</span>;        
+
+    q[<span class="number">2</span>]=<span class="string">"3.结构化程序设计主要强调的是"</span>;
+    a1[<span class="number">2</span>]=<span class="string">"程序的规模"</span>;
+    b1[<span class="number">2</span>]=<span class="string">"程序的效率"</span>;
+    c1[<span class="number">2</span>]=<span class="string">"易读性"</span>;
+    d1[<span class="number">2</span>]=<span class="string">"程序语言的先进性"</span>;        
+
+    q[<span class="number">3</span>]=<span class="string">"4.软件工程方法得以实施的主要保证是"</span>;
+    a1[<span class="number">3</span>]=<span class="string">"硬件环境"</span>;
+    b1[<span class="number">3</span>]=<span class="string">"软件开发的环境"</span>;
+    c1[<span class="number">3</span>]=<span class="string">"开发工具和开发环境"</span>;
+    d1[<span class="number">3</span>]=<span class="string">"开发人员的素质"</span>;        
+
+    q[<span class="number">4</span>]=<span class="string">"5.下列语言中哪个语言是低级语言"</span>;
+    a1[<span class="number">4</span>]=<span class="string">"PASCAL"</span>;
+    b1[<span class="number">4</span>]=<span class="string">"VISUAL BASIC"</span>;
+    c1[<span class="number">4</span>]=<span class="string">"C++"</span>;
+    d1[<span class="number">4</span>]=<span class="string">"汇编语言"</span>;    
+
+    q[<span class="number">5</span>]=<span class="string">"6.模块的内聚性最高的是？"</span>;
+    a1[<span class="number">5</span>]=<span class="string">"逻辑内聚 "</span>;
+    b1[<span class="number">5</span>]=<span class="string">"偶然内聚"</span>;
+    c1[<span class="number">5</span>]=<span class="string">"时间内聚"</span>;
+    d1[<span class="number">5</span>]=<span class="string">"功能内聚"</span>;    
+
+    q[<span class="number">6</span>]=<span class="string">"7.使用白盒测试方法时，确定测试数据应根据什么？"</span>;
+    a1[<span class="number">6</span>]=<span class="string">"程序的内部逻辑"</span>;
+    b1[<span class="number">6</span>]=<span class="string">"程序的复杂程度"</span>;
+    c1[<span class="number">6</span>]=<span class="string">"该软件的编辑人员"</span>;
+    d1[<span class="number">6</span>]=<span class="string">"程序的功能"</span>;    
+
+    q[<span class="number">7</span>]=<span class="string">"8.软件维护工作的最主要部分是？"</span>;
+    a1[<span class="number">7</span>]=<span class="string">"纠正性维护"</span>;
+    b1[<span class="number">7</span>]=<span class="string">"适应性维护"</span>;
+    c1[<span class="number">7</span>]=<span class="string">"完善性维护"</span>;
+    d1[<span class="number">7</span>]=<span class="string">"预防性维护"</span>;    
+
+    q[<span class="number">8</span>]=<span class="string">"9.PDL是什么语言"</span>;
+    a1[<span class="number">8</span>]=<span class="string">"高级程序设计语言"</span>;
+    b1[<span class="number">8</span>]=<span class="string">"伪码式"</span>;
+    c1[<span class="number">8</span>]=<span class="string">"中级程序设计语言"</span>;
+    d1[<span class="number">8</span>]=<span class="string">"低级程序设计语言"</span>;    
+
+    q[<span class="number">9</span>]=<span class="string">"10.软件的结构化设计方法分为概要设计和详细设计，详细设计主要是建立?"</span>;
+    a1[<span class="number">9</span>]=<span class="string">"软件结构"</span>;
+    b1[<span class="number">9</span>]=<span class="string">"软件过程"</span>;
+    c1[<span class="number">9</span>]=<span class="string">"软件模型"</span>;
+    d1[<span class="number">9</span>]=<span class="string">"软件模块"</span>;    
+
+    q[<span class="number">10</span>]=<span class="string">"11.在数据流图中，○（椭圆）代表？"</span>;
+    a1[<span class="number">10</span>]=<span class="string">"数据流"</span>;
+    b1[<span class="number">10</span>]=<span class="string">"转换"</span>;
+    c1[<span class="number">10</span>]=<span class="string">"数据源"</span>;
+    d1[<span class="number">10</span>]=<span class="string">"外部实体"</span>;
+
+    q[<span class="number">11</span>]=<span class="string">"12.总体设计目的是确定整个系统的？"</span>;
+    a1[<span class="number">11</span>]=<span class="string">"规模"</span>;
+    b1[<span class="number">11</span>]=<span class="string">"测试方案"</span>;
+    c1[<span class="number">11</span>]=<span class="string">"费用"</span>;
+    d1[<span class="number">11</span>]=<span class="string">"功能及模块结构"</span>;    
+
+    q[<span class="number">12</span>]=<span class="string">"13.检查软件产品是否符合需求定义的过程称为?"</span>;
+    a1[<span class="number">12</span>]=<span class="string">"确认测试"</span>;
+    b1[<span class="number">12</span>]=<span class="string">"集成测试"</span>;
+    c1[<span class="number">12</span>]=<span class="string">"验收测试"</span>;
+    d1[<span class="number">12</span>]=<span class="string">"验证测试"</span>;    
+
+    q[<span class="number">13</span>]=<span class="string">"14.在七种偶合中，最低偶合是?"</span>;
+    a1[<span class="number">13</span>]=<span class="string">"内容偶合"</span>;
+    b1[<span class="number">13</span>]=<span class="string">"公共偶合"</span>;
+    c1[<span class="number">13</span>]=<span class="string">"数据偶合"</span>;
+    d1[<span class="number">13</span>]=<span class="string">"非直接偶合"</span>;    
+
+    q[<span class="number">14</span>]=<span class="string">"15.以下不属于白盒测试技术的是?"</span>;
+    a1[<span class="number">14</span>]=<span class="string">"逻辑覆盖"</span>;
+    b1[<span class="number">14</span>]=<span class="string">"基本路径测试"</span>;
+    c1[<span class="number">14</span>]=<span class="string">"循环覆盖测试 "</span>;
+    d1[<span class="number">14</span>]=<span class="string">"等价类划分"</span>;    
+
+    q[<span class="number">15</span>]=<span class="string">"16.软件的发展经历了几个发展阶段?"</span>;
+    a1[<span class="number">15</span>]=<span class="string">"1"</span>;
+    b1[<span class="number">15</span>]=<span class="string">"2"</span>;
+    c1[<span class="number">15</span>]=<span class="string">"3"</span>;
+    d1[<span class="number">15</span>]=<span class="string">"4"</span>;    
+
+    q[<span class="number">16</span>]=<span class="string">"17.需求分析的任务不包括?"</span>;
+    a1[<span class="number">16</span>]=<span class="string">"问题分析"</span>;
+    b1[<span class="number">16</span>]=<span class="string">"系统设计"</span>;
+    c1[<span class="number">16</span>]=<span class="string">"需求描述"</span>;
+    d1[<span class="number">16</span>]=<span class="string">"需求评审"</span>;    
+
+    q[<span class="number">17</span>]=<span class="string">"18.从事物的组成部件及每个部件的属性、功能来认识事物的方法被称为?"</span>;
+    a1[<span class="number">17</span>]=<span class="string">"面向对象"</span>;
+    b1[<span class="number">17</span>]=<span class="string">"面向数据"</span>;
+    c1[<span class="number">17</span>]=<span class="string">"面向过程"</span>;
+    d1[<span class="number">17</span>]=<span class="string">"面向属性"</span>;    
+
+    q[<span class="number">18</span>]=<span class="string">"19.将软件组装成系统的一种测试技术叫？"</span>;
+    a1[<span class="number">18</span>]=<span class="string">"集成测试"</span>;
+    b1[<span class="number">18</span>]=<span class="string">"单元测试"</span>;
+    c1[<span class="number">18</span>]=<span class="string">"集合测试"</span>;
+    d1[<span class="number">18</span>]=<span class="string">"系统测试"</span>;    
+
+    q[<span class="number">19</span>]=<span class="string">"20.技术可行性是可行性研究的关键，其主要内容一般不包括？"</span>;
+    a1[<span class="number">19</span>]=<span class="string">"风险分析"</span>;
+    b1[<span class="number">19</span>]=<span class="string">"资源分析"</span>;
+    c1[<span class="number">19</span>]=<span class="string">"人员分析"</span>;
+    d1[<span class="number">19</span>]=<span class="string">"技术分析"</span>;    
+    }
+    <span class="function"><span class="keyword">public</span> String <span class="title">getQuestion</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> q[i];
+    } 
+    <span class="function"><span class="keyword">public</span> String <span class="title">geta1</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> a1[i];
+    } 
+    <span class="function"><span class="keyword">public</span> String <span class="title">getb1</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> b1[i];
+    } 
+    <span class="function"><span class="keyword">public</span> String <span class="title">getc1</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> c1[i];
+    } 
+    <span class="function"><span class="keyword">public</span> String <span class="title">getd1</span><span class="params">(<span class="keyword">int</span> i)</span></span>{
+        <span class="keyword">return</span> d1[i];
+    } 
+}
+
+<span class="keyword">class</span> Window8 extends JFrame implements ActionListener{
+    JTextField a = <span class="keyword">new</span> JTextField(<span class="string">"请用Java代码实现两个栈模拟一个队列"</span>);
+    JTextField a1 = <span class="keyword">new</span> JTextField(<span class="string">"请用Java代码实现两个队列模拟一个栈"</span>);
+    JTextField b = <span class="keyword">new</span> JTextField(<span class="string">""</span>);
+    JTextField b1 = <span class="keyword">new</span> JTextField(<span class="string">""</span>);
+    JTextField c = <span class="keyword">new</span> JTextField(<span class="string">""</span>);
+    JTextField c1 = <span class="keyword">new</span> JTextField(<span class="string">""</span>);
+    JPanel up = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">5</span>));
+    JPanel middle = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">5</span>));
+    JPanel down = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">5</span>));
+    JButton ok = <span class="keyword">new</span> JButton(<span class="string">"提交"</span>);
+    Window8(){
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">4</span>, <span class="number">1</span>, <span class="number">5</span>, <span class="number">5</span>));
+        getContentPane().add(up);
+        getContentPane().add(middle);
+        getContentPane().add(down);
+        getContentPane().add(ok);
+        up.add(a);
+        up.add(a1);
+        middle.add(b);
+        middle.add(b1);
+        down.add(c);
+        down.add(c1);
+        ok.addActionListener(<span class="keyword">this</span>);
+        setSize(<span class="number">440</span>,<span class="number">340</span>);
+        setVisible(<span class="literal">true</span>);
+        b.setText(Window1.code1);
+        b1.setText(Window1.code2);    
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);    
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        <span class="keyword">if</span> (c.getText().equals(<span class="string">"   "</span>)) {
+            JOptionPane.showMessageDialog(null, <span class="string">"请对学生写出的代码进行评分"</span>, <span class="string">"提示"</span>,JOptionPane.PLAIN_MESSAGE);
+        }
+
+
+        <span class="keyword">else</span> <span class="keyword">if</span> (c1.getText().equals(<span class="string">"   "</span>)) {
+            JOptionPane.showMessageDialog(null, <span class="string">"请对学生写出的代码进行评分"</span>, <span class="string">"提示"</span>,JOptionPane.PLAIN_MESSAGE);
+
+        }
+        <span class="keyword">else</span> {
+            <span class="keyword">int</span> i =Integer.parseInt(c1.getText());
+            <span class="keyword">int</span> j =Integer.parseInt(c.getText());
+            Window1.score+=i;
+            Window1.score+=j;
+            Student.score1 = Window1.score;
+            JOptionPane.showMessageDialog(null, <span class="string">"这位同学的最终得分为"</span>+Window1.score+<span class="string">"分，请点击确定退出程序。"</span>, <span class="string">"提示"</span>,JOptionPane.PLAIN_MESSAGE);
+            System.<span class="built_in">exit</span>(<span class="number">0</span>);
+
+        }
+    }
+
+}
+
+<span class="keyword">class</span> Window7 extends JFrame implements ActionListener{
+    JPanel Account = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>));
+    JPanel Code = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>));
+    JButton account = <span class="keyword">new</span> JButton(<span class="string">"阅卷老师"</span>);
+    JButton code = <span class="keyword">new</span> JButton(<span class="string">"教务密码"</span>);
+    JButton atext = <span class="keyword">new</span> JButton(<span class="string">"路松峰老师"</span>);
+    JPasswordField ctext = <span class="keyword">new</span> JPasswordField(<span class="string">""</span>);
+    Window7(){
+        JButton Login = <span class="keyword">new</span> JButton(<span class="string">"点我进入"</span>);
+        Account.add(account);
+        Account.add(atext);        
+        Code.add(code);
+        Code.add(ctext);
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">3</span>, <span class="number">1</span>));
+        getContentPane().add(Account);
+        getContentPane().add(Code);
+        getContentPane().add(Login);    
+        Login.addActionListener(<span class="keyword">this</span>);    
+        setSize(<span class="number">240</span>,<span class="number">140</span>);
+        setVisible(<span class="literal">true</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        <span class="keyword">if</span> (ctext.getText().equals(<span class="string">"******"</span>)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window8();
+
+         }
+
+    }
+
+}
+
+<span class="keyword">class</span> Window6 extends JFrame implements ActionListener{
+    <span class="keyword">int</span> time = <span class="number">0</span>;
+    Question1 x = <span class="keyword">new</span> Question1();
+    Answer1 y = <span class="keyword">new</span> Answer1();
+    JPanel down = <span class="keyword">new</span> JPanel();
+    JTextArea question = <span class="keyword">new</span> JTextArea(<span class="string">"请用Java代码实现两个队列模拟一个栈"</span>);
+    JTextArea respond = <span class="keyword">new</span> JTextArea(<span class="string">"请在此处填写代码进行作答"</span>);
+    JButton preview = <span class="keyword">new</span> JButton(<span class="string">"上一题"</span>);
+    JButton finish = <span class="keyword">new</span> JButton(<span class="string">"交卷"</span>);
+    Window6(){
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">3</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">10</span>));
+        getContentPane().add(question);
+        getContentPane().add(respond);
+        getContentPane().add(down);
+        down.add(preview);
+        down.add(finish);
+        preview.addActionListener(<span class="keyword">this</span>);
+        finish.addActionListener(<span class="keyword">this</span>);
+        setSize(<span class="number">500</span>,<span class="number">250</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+        setVisible(<span class="literal">true</span>);    
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        Object temp = e.getSource();
+        <span class="keyword">if</span> (temp == preview) {
+            <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+            <span class="keyword">new</span> Window5();
+        }
+        <span class="keyword">if</span> (temp == finish) {
+            Student.score1 = Window1.score;
+            Window1.code2 = respond.getText();
+            JOptionPane.showMessageDialog(null, <span class="string">"您目前客观题的得分是"</span>+Window1.score+<span class="string">"，编程题将由老师阅卷后统一给分，考试成绩将3天后由老师进行公布，请您现在带好准考证和随身用品迅速离开考场"</span>, <span class="string">"提示"</span>,JOptionPane.PLAIN_MESSAGE);
+            <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+            <span class="keyword">new</span> Window7();
+        }
+    }
+}    
+
+<span class="keyword">class</span> Window5 extends JFrame implements ActionListener{
+    <span class="keyword">int</span> time = <span class="number">0</span>;
+    Question1 x = <span class="keyword">new</span> Question1();
+    Answer1 y = <span class="keyword">new</span> Answer1();
+    JPanel down = <span class="keyword">new</span> JPanel();
+    JTextArea question = <span class="keyword">new</span> JTextArea(<span class="string">"请用Java代码实现两个栈模拟一个队列"</span>);
+    JTextArea respond = <span class="keyword">new</span> JTextArea(<span class="string">"请在此处填写代码进行作答"</span>);
+    JButton next = <span class="keyword">new</span> JButton(<span class="string">"下一题"</span>);
+    Window5(){
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">3</span>,<span class="number">1</span>,<span class="number">10</span>,<span class="number">10</span>));
+        getContentPane().add(question);
+        getContentPane().add(respond);
+        getContentPane().add(next);
+        next.addActionListener(<span class="keyword">this</span>);
+        setSize(<span class="number">500</span>,<span class="number">250</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+        setVisible(<span class="literal">true</span>);    
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        Window1.code1 = respond.getText();
+        <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+        <span class="keyword">new</span> Window6();
+    }
+}    
+
+
+<span class="keyword">class</span> Window4 extends JFrame implements ActionListener{
+    <span class="keyword">int</span> time = <span class="number">0</span>;
+    Question1 x = <span class="keyword">new</span> Question1();
+    Answer1 y = <span class="keyword">new</span> Answer1();
+    JPanel down = <span class="keyword">new</span> JPanel();
+    JTextArea question = <span class="keyword">new</span> JTextArea(<span class="string">"  "</span>);
+    JButton next = <span class="keyword">new</span> JButton(<span class="string">"下一题"</span>);
+    JButton previews = <span class="keyword">new</span> JButton(<span class="string">"上一题"</span>);
+    JTextArea answer = <span class="keyword">new</span> JTextArea(<span class="string">"     "</span>);
+    Window4(){
+        String ques = x.getQuestion(time);
+        question.setText(ques);
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">2</span>,<span class="number">1</span>));
+        getContentPane().add(question);
+        getContentPane().add(down);
+        down.add(previews);
+        down.add(answer);
+        down.add(next);
+        next.addActionListener(<span class="keyword">this</span>);
+        previews.addActionListener(<span class="keyword">this</span>);
+        setSize(<span class="number">500</span>,<span class="number">250</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+        setVisible(<span class="literal">true</span>);    
+    }
+
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        Object temp = e.getSource();
+        <span class="keyword">if</span> (temp == next) {
+            <span class="keyword">if</span> (answer.getText().equals(y.getAnswer(time))) {
+                Window1.score+=<span class="number">2</span>;
+            }
+            <span class="keyword">if</span> (time==<span class="number">14</span>) {
+                Object[] options ={ <span class="string">"进入编程题部分"</span>, <span class="string">"再检查一会"</span> };
+                <span class="keyword">int</span> m = JOptionPane.showOptionDialog(null, <span class="string">"已经是最后一题了，您可以选择检查一会，或者直接进入编程题部分，注意：进入编程题部分后则无法返回填空题部分！"</span>, <span class="string">"提示"</span>,JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[<span class="number">0</span>]);
+                <span class="keyword">if</span>(m==<span class="number">1</span>){
+
+                }
+                <span class="keyword">if</span>(m==<span class="number">0</span>){
+                    <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window5();
+                }
+
+            }
+            <span class="keyword">else</span> {
+                time++;
+                String ques = x.getQuestion(time);
+                question.setText(ques);
+                answer.setText(<span class="string">"   "</span>);
+            }
+        }    
+        <span class="keyword">if</span> (temp == previews) {
+            <span class="keyword">if</span> (time == <span class="number">0</span>) {
+                JOptionPane.showMessageDialog(null, <span class="string">"已经是填空题第一题了，您不能返回选择题部分"</span>, <span class="string">"提示"</span>,JOptionPane.ERROR_MESSAGE);
+
+            }
+            <span class="keyword">else</span> {
+                time--;
+                String ques = x.getQuestion(time);
+                question.setText(ques);
+                answer.setText(<span class="string">"   "</span>);
+            }
+        }    
+    }    
+
+}
+
+<span class="keyword">class</span> Window3 extends JFrame implements ActionListener{
+    <span class="keyword">int</span> time = <span class="number">0</span>;
+    Question x = <span class="keyword">new</span> Question();
+    Answer y = <span class="keyword">new</span> Answer();
+    JPanel up = <span class="keyword">new</span> JPanel();
+    JPanel middle1 = <span class="keyword">new</span> JPanel();
+    JPanel middle2 = <span class="keyword">new</span> JPanel();
+    JPanel down = <span class="keyword">new</span> JPanel();
+    JTextArea question = <span class="keyword">new</span> JTextArea(<span class="string">" "</span>);
+    JButton A = <span class="keyword">new</span> JButton(<span class="string">"A"</span>);
+    JButton B = <span class="keyword">new</span> JButton(<span class="string">"B"</span>);
+    JButton C = <span class="keyword">new</span> JButton(<span class="string">"C"</span>);
+    JButton D = <span class="keyword">new</span> JButton(<span class="string">"D"</span>);
+    JButton skip = <span class="keyword">new</span> JButton(<span class="string">"跳过"</span>);
+    JTextArea A1 = <span class="keyword">new</span> JTextArea(<span class="string">"        "</span>);
+    JTextArea B1 = <span class="keyword">new</span> JTextArea(<span class="string">"        "</span>);
+    JTextArea C1 = <span class="keyword">new</span> JTextArea(<span class="string">"        "</span>);
+    JTextArea D1 = <span class="keyword">new</span> JTextArea(<span class="string">"        "</span>);
+    JButton next = <span class="keyword">new</span> JButton(<span class="string">"下一题"</span>);
+    JButton previews = <span class="keyword">new</span> JButton(<span class="string">"上一题"</span>);
+    JTextArea answer = <span class="keyword">new</span> JTextArea(<span class="string">"   "</span>);
+    Window3(){
+        String ques = x.getQuestion(time);
+        String a1 = x.geta1(time);
+        String b1 = x.getb1(time);
+        String c1 = x.getc1(time);
+        String d1 = x.getd1(time);
+        question.setText(ques);
+        A1.setText(a1);
+        B1.setText(b1);
+        C1.setText(c1);
+        D1.setText(d1);
+        A.addActionListener(<span class="keyword">this</span>);    
+        B.addActionListener(<span class="keyword">this</span>);    
+        C.addActionListener(<span class="keyword">this</span>);    
+        D.addActionListener(<span class="keyword">this</span>);    
+        skip.addActionListener(<span class="keyword">this</span>);    
+        next.addActionListener(<span class="keyword">this</span>);    
+        previews.addActionListener(<span class="keyword">this</span>);    
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">4</span>,<span class="number">1</span>));    
+        getContentPane().add(up);
+        up.add(question);
+        getContentPane().add(middle1);
+        middle1.add(A);
+        middle1.add(A1);
+        middle1.add(B);
+        middle1.add(B1);
+        getContentPane().add(middle2);
+        middle2.add(C);
+        middle2.add(C1);
+        middle2.add(D);
+        middle2.add(D1);
+        getContentPane().add(down);
+        down.add(previews);
+        down.add(answer);
+        down.add(next);
+        setSize(<span class="number">500</span>,<span class="number">250</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+        setVisible(<span class="literal">true</span>);        
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        Object temp = e.getSource();
+        <span class="keyword">if</span> (temp == A) {
+            answer.setText(<span class="string">"A"</span>);
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (temp == B) {
+            answer.setText(<span class="string">"B"</span>);
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (temp == C) {
+            answer.setText(<span class="string">"C"</span>);
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (temp == D) {
+            answer.setText(<span class="string">"D"</span>);
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (temp == next) {
+            <span class="keyword">if</span> (answer.getText().equals(<span class="string">"   "</span>)){
+
+            }
+            <span class="keyword">else</span>{
+                <span class="keyword">if</span> (answer.getText().equals(y.getAnswer(time))) {
+                    Window1.score+=<span class="number">2</span>;
+                }
+                <span class="keyword">if</span> (time==<span class="number">19</span>) {
+                    Object[] options ={ <span class="string">"进入填空题部分"</span>, <span class="string">"再检查一会"</span> };
+                    <span class="keyword">int</span> m = JOptionPane.showOptionDialog(null, <span class="string">"已经是最后一题了，您可以选择检查一会，或者直接进入填空题部分，注意：进入填空题部分后就无法返回选择题部分"</span>, <span class="string">"提示"</span>,JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, options, options[<span class="number">0</span>]);
+                    <span class="keyword">if</span>(m==<span class="number">1</span>){
+
+                    }
+                    <span class="keyword">if</span>(m==<span class="number">0</span>){
+                        <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                        <span class="keyword">new</span> Window4();
+                    }
+
+                }
+                <span class="keyword">else</span> {
+                    time++;
+                    String ques = x.getQuestion(time);
+                    String a1 = x.geta1(time);
+                    String b1 = x.getb1(time);
+                    String c1 = x.getc1(time);
+                    String d1 = x.getd1(time);
+                    question.setText(ques);
+                    A1.setText(a1);
+                    B1.setText(b1);
+                    C1.setText(c1);
+                    D1.setText(d1);
+                    answer.setText(<span class="string">"   "</span>);
+                }
+
+            }
+
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (temp == previews) {
+            time--;
+            String ques = x.getQuestion(time);
+            String a1 = x.geta1(time);
+            String b1 = x.getb1(time);
+            String c1 = x.getc1(time);
+            String d1 = x.getd1(time);
+            question.setText(ques);
+            A1.setText(a1);
+            B1.setText(b1);
+            C1.setText(c1);
+            D1.setText(d1);
+        }
+
+    }
+}
+
+<span class="keyword">class</span> Window2 extends JFrame implements ActionListener{
+    TextArea words = <span class="keyword">new</span> TextArea(<span class="string">"您将参加软件工程机考，请您做好准备，关闭一切通讯设备，此电脑摄像头已经开启，如果发现任何作弊行为或者疑似作弊行为，将立即取消考试资格和考试成绩，并交由教务处进行处分，请不要抱任何侥幸心理，做好准备后，您可以点击开始进入考试，祝您考试愉快。"</span>,<span class="number">1</span>,<span class="number">2</span>,TextArea.SCROLLBARS_VERTICAL_ONLY);
+
+    JButton enter = <span class="keyword">new</span> JButton(<span class="string">"点我开始"</span>);
+    Window2(){
+        enter.addActionListener(<span class="keyword">this</span>);        
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">2</span>,<span class="number">1</span>));
+        getContentPane().add(words);
+        getContentPane().add(enter);    
+           setSize(<span class="number">370</span>,<span class="number">190</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+        setVisible(<span class="literal">true</span>);
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+        <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+        <span class="keyword">new</span> Window3();
+    }
+}
+
+
+<span class="keyword">class</span> Window1 extends JFrame implements ActionListener{
+    Student a = <span class="keyword">new</span> Student();
+    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> score=<span class="number">0</span>;    
+    <span class="keyword">public</span> <span class="keyword">static</span> String code1 = <span class="string">""</span>;
+    <span class="keyword">public</span> <span class="keyword">static</span> String code2 = <span class="string">""</span>;
+    JPanel Account = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>));
+    JPanel Code = <span class="keyword">new</span> JPanel(<span class="keyword">new</span> GridLayout(<span class="number">1</span>, <span class="number">2</span>));
+    JButton account = <span class="keyword">new</span> JButton(<span class="string">"学号"</span>);
+    JButton code = <span class="keyword">new</span> JButton(<span class="string">"密码"</span>);
+    JTextField atext = <span class="keyword">new</span> JTextField(<span class="string">""</span>);
+    JPasswordField ctext = <span class="keyword">new</span> JPasswordField(<span class="string">""</span>);
+    Window1(){
+        JButton Login = <span class="keyword">new</span> JButton(<span class="string">"点我进入"</span>);
+        Account.add(account);
+        Account.add(atext);        
+        Code.add(code);
+        Code.add(ctext);
+        getContentPane().setLayout(<span class="keyword">new</span> GridLayout(<span class="number">3</span>, <span class="number">1</span>));
+        getContentPane().add(Account);
+        getContentPane().add(Code);
+        getContentPane().add(Login);    
+        Login.addActionListener(<span class="keyword">this</span>);    
+        setSize(<span class="number">240</span>,<span class="number">140</span>);
+        setVisible(<span class="literal">true</span>);
+        <span class="keyword">int</span> screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;  
+        <span class="keyword">int</span> screenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;  
+        setLocation((screenWidth - <span class="number">200</span>)/<span class="number">2</span>, (screenHeight-<span class="number">200</span>)/<span class="number">2</span>);
+
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{
+        <span class="keyword">new</span> Window1();    
+
+    }
+    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>{
+         <span class="keyword">if</span> (atext.getText().equals(a.a)&amp;&amp;ctext.getText().equals(a.a1)) {
+             <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+            <span class="keyword">new</span> Window2();    
+          }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.b)&amp;&amp;ctext.getText().equals(a.b1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.c)&amp;&amp;ctext.getText().equals(a.c1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.d)&amp;&amp;ctext.getText().equals(a.d1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.e)&amp;&amp;ctext.getText().equals(a.e1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.f)&amp;&amp;ctext.getText().equals(a.f1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.g)&amp;&amp;ctext.getText().equals(a.g1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.h)&amp;&amp;ctext.getText().equals(a.h1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.i)&amp;&amp;ctext.getText().equals(a.i1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.j)&amp;&amp;ctext.getText().equals(a.j1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.k)&amp;&amp;ctext.getText().equals(a.k1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.l)&amp;&amp;ctext.getText().equals(a.l1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.m)&amp;&amp;ctext.getText().equals(a.m1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.n)&amp;&amp;ctext.getText().equals(a.n1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.o)&amp;&amp;ctext.getText().equals(a.o1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.p)&amp;&amp;ctext.getText().equals(a.p1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.q)&amp;&amp;ctext.getText().equals(a.q1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.r)&amp;&amp;ctext.getText().equals(a.r1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.s)&amp;&amp;ctext.getText().equals(a.s1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.t)&amp;&amp;ctext.getText().equals(a.t1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.u)&amp;&amp;ctext.getText().equals(a.u1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.v)&amp;&amp;ctext.getText().equals(a.v1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.w)&amp;&amp;ctext.getText().equals(a.w1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.x)&amp;&amp;ctext.getText().equals(a.x1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.y)&amp;&amp;ctext.getText().equals(a.y1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (atext.getText().equals(a.z)&amp;&amp;ctext.getText().equals(a.z1)) {
+                     <span class="keyword">this</span>.setVisible(<span class="literal">false</span>);
+                    <span class="keyword">new</span> Window2();    
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> (!atext.getText().equals(a.a)) {
+            JOptionPane.showMessageDialog(null, <span class="string">"学号不存在，请重新输入"</span>);
+
+        }
+        <span class="keyword">else</span> <span class="keyword">if</span> ((atext.getText().equals(a.b)||atext.getText().equals(a.c)||atext.getText().equals(a.d)||atext.getText().equals(a.e)||atext.getText().equals(a.f)||atext.getText().equals(a.g)||atext.getText().equals(a.h)||atext.getText().equals(a.i)||atext.getText().equals(a.j)||atext.getText().equals(a.k)||atext.getText().equals(a.l)||atext.getText().equals(a.m)||atext.getText().equals(a.n)||atext.getText().equals(a.o)||atext.getText().equals(a.p)||atext.getText().equals(a.q)||atext.getText().equals(a.r)||atext.getText().equals(a.s)||atext.getText().equals(a.t)||atext.getText().equals(a.u)||atext.getText().equals(a.v)||atext.getText().equals(a.w)||atext.getText().equals(a.x)||atext.getText().equals(a.y)||atext.getText().equals(a.z))) {
+            JOptionPane.showMessageDialog(null, <span class="string">"学号不存在，请重新输入"</span>);
+        }
+        <span class="keyword">else</span> {
+            JOptionPane.showMessageDialog(null, <span class="string">"学号密码错误，请重新输入"</span>);  
+        }
+    }
+} 
+</code></pre></span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag">#Java</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/10/12/passage2/" rel="prev">我的学生生涯就要结束了</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/08/28/passage1/" rel="next">第一次实习的一点小感想</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+
+        
+          <div class="comments" id="comments">
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://himg.bdimg.com/sys/portrait/item/7c2b1c3b.jpg" alt="万世奇" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">万世奇</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">不打扰是我的温柔，偏偏我这人，温柔极了。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/gan-jing-86-70" target="_blank">zhihu</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ursocute" target="_blank">github</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:ursocute@foxmail.com" target="_blank">e-mail</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+    
+
+  
+
+
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+</body>
+</html>
