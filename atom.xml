@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-14T01:39:24.000Z</updated>
+  <updated>2015-10-17T15:15:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[UI.cn iOS 交互设计作品集]]></title>
+    <link href="http://yoursite.com/2015/10/18/Ixd2/"/>
+    <id>http://yoursite.com/2015/10/18/Ixd2/</id>
+    <published>2015-10-17T16:00:00.000Z</published>
+    <updated>2015-10-17T15:15:31.000Z</updated>
+    <content type="html"><![CDATA[<p>一直很喜欢UI.cn这个网站，有次偶然的机会，我用iPhone的Safari打开UI.cn的时候，发现许多页面并未做成响应式，非常不方便阅读，我再一想，连站酷都有iOS版的，UI中国应该也有iOS版的吧，所以我就跑去App Store里搜，结果什么也没有，这个时候我就萌生了设计UI.cn iOS版的交互原型的想法，做好之后还能放进自己的作品集里。<a id="more"></a></p>
+<p>我在深入了解了UI中国之后，发现UI中国是以内容为主、浏览学习为主的一个网站，它同时也提供招聘、 找工作、图书推荐、话题社区等服务，但这类服务多为辅，比如话题社区，整页整页都是0回复，因此考虑了这些因素后，我在做UI.cn iOS版的交互时就着重注意了移动端内容阅读的用户体验，把用户偶尔使用的招聘、私信等等功能都放进了层级稍深的抽屉式导航里。而上传作品、上传经验等功能则全部去掉，因为这些功能一不适合移动端，二对用户来说使用频率也不大，因此去掉反而能使应用更加轻便更加易用。总体来说，我个人还蛮喜欢这样的设计的，大家如果感兴趣的话还可以下载<a href="http://d.pcs.baidu.com/file/56c26d382a25da8f85a71522b24738c1?fid=725562051-250528-204120723782285&amp;time=1445094880&amp;rt=sh&amp;sign=FDTAERVY-DCb740ccc5511e5e8fedcff06b081203-CARLVyTtdMGh5lFquf97Owqyet4%3D&amp;expires=8h&amp;chkv=1&amp;chkbd=0&amp;chkpc=et&amp;dp-logid=6725188700493278506&amp;dp-callid=0&amp;r=967712015&amp;zipname=UI%E4%B8%AD%E5%9B%BD%20iOS%E7%89%88.zip" target="_blank" rel="external">源文件</a>看一看。</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/bw1pZIP37*EQdIlCrAGFbrakRVwB*L5ukslo.QchMSA!/r/dHUBAAAAAAAA" alt="UI.cn iOS" title="title"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一直很喜欢UI.cn这个网站，有次偶然的机会，我用iPhone的Safari打开UI.cn的时候，发现许多页面并未做成响应式，非常不方便阅读，我再一想，连站酷都有iOS版的，UI中国应该也有iOS版的吧，所以我就跑去App Store里搜，结果什么也没有，这个时候我就萌生了设计UI.cn iOS版的交互原型的想法，做好之后还能放进自己的作品集里。]]>
+    
+    </summary>
+    
+      <category term="Ixd" scheme="http://yoursite.com/tags/Ixd/"/>
+    
+      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[漫生活 交互设计作品集]]></title>
+    <link href="http://yoursite.com/2015/10/16/Ixd1/"/>
+    <id>http://yoursite.com/2015/10/16/Ixd1/</id>
+    <published>2015-10-15T16:00:00.000Z</published>
+    <updated>2015-10-17T15:41:49.000Z</updated>
+    <content type="html"><![CDATA[<p>想当交互设计师，最近就准备了一下自己的交互设计作品集，也不是很确定作品集具体是要做成什么样子，参考了知乎里<a href="http://www.zhihu.com/question/19977449/answer/48279051" target="_blank" rel="external">交互设计师的简历和作品集应该怎么做才好</a>这篇的格式，然后按照一般的设计流程完成了角色创建、功能架构、交互设计这几个方面。<a id="more"></a></p>
+<p>这个产品是我自己构想的，是一个以短篇漫画创作为核心的社区型兼工具型的移动应用，App名叫漫生活，用户只需简单几步就可以创作属于自己的短篇漫画，而用户创作出来的作品叫漫书，相同类型相同话题的漫书放在一起形成漫圈。为了降低用户的学习成本，减少用户的创作流程，创作漫书的过程以模板创作为主，自由创作为辅，创作过程还可以随时保存随时预览，非常方便，完成之后会提供多种分享方式，系统还会根据用户选择的模板提供符合的标签，用户勾选后则发布到相应的漫圈中，与漫友形成互动，构成内容-创作的良性循环。因为这款App是社区型兼工具型的应用，而工具型应用变现能力非常有限，因此我着重突显了应用的社区性，在首页的发现、关注里大面积的推广热门的漫圈和漫书，比如及时推出“叶良辰”的模板和“叶良辰”的漫圈，以高质量的漫书内容和新近的热点话题来激发用户的参与欲与创作欲，从而不断的延长产品的生命，增加App的活跃度。我自己认为这是一款挺有意思的构想，大家有兴趣的话可以看一看，如果还想了解具体的角色创建、功能架构和交互设计，可以点击下载<a href="http://pan.baidu.com/s/1c09FFDu" target="_blank" rel="external">源文件</a>。</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/c*F7tO**tB3Ju8KO223C8Mb1U3w1DX35bmoEcj6BSjU!/r/dIoBAAAAAAAA" alt="漫生活" title="title"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>想当交互设计师，最近就准备了一下自己的交互设计作品集，也不是很确定作品集具体是要做成什么样子，参考了知乎里<a href="http://www.zhihu.com/question/19977449/answer/48279051">交互设计师的简历和作品集应该怎么做才好</a>这篇的格式，然后按照一般的设计流程完成了角色创建、功能架构、交互设计这几个方面。]]>
+    
+    </summary>
+    
+      <category term="Ixd" scheme="http://yoursite.com/tags/Ixd/"/>
+    
+      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[我的学生生涯就要结束了]]></title>
@@ -1234,7 +1276,7 @@ class Window1 extends JFrame implements ActionListener{
     <link href="http://yoursite.com/2015/05/25/handpainting/"/>
     <id>http://yoursite.com/2015/05/25/handpainting/</id>
     <published>2015-05-24T16:00:00.000Z</published>
-    <updated>2015-10-13T14:54:19.000Z</updated>
+    <updated>2015-10-17T12:17:33.000Z</updated>
     <content type="html"><![CDATA[<p>这是万世奇的手绘画稿集，一共7张画，除了其中一幅是美术基础考试结业作品外，其他都是闲来无事的即兴作品或临摹画作，这几张手绘纯粹为个人爱好所绘，并未达到专业水平，喜欢的话可以稍作停留随意翻翻浏览一会。<br><a id="more"></a></p>
 <h5 id="桐谷和人-《刀剑神域》">桐谷和人-《刀剑神域》</h5><p><img src="http://fmn.rrimg.com/fmn062/20140922/1820/large_ifTs_330900004b30118c.jpg" alt="桐谷和人" title="title"></p>
 <h5 id="水谷雫-《邻座的怪同学》">水谷雫-《邻座的怪同学》</h5><p><img src="http://fmn.rrfmn.com/fmn060/20140922/1820/large_HWlK_10ef0000ce091190.jpg" alt="水谷雫" title="title"></p>
@@ -1249,9 +1291,9 @@ class Window1 extends JFrame implements ActionListener{
     
     </summary>
     
-      <category term="Paint" scheme="http://yoursite.com/tags/Paint/"/>
+      <category term="手绘" scheme="http://yoursite.com/tags/%E6%89%8B%E7%BB%98/"/>
     
-      <category term="Paint" scheme="http://yoursite.com/categories/Paint/"/>
+      <category term="手绘" scheme="http://yoursite.com/categories/%E6%89%8B%E7%BB%98/"/>
     
   </entry>
   
@@ -1428,7 +1470,7 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
     <link href="http://yoursite.com/2014/12/25/piano/"/>
     <id>http://yoursite.com/2014/12/25/piano/</id>
     <published>2014-12-24T16:00:00.000Z</published>
-    <updated>2015-10-13T14:52:03.000Z</updated>
+    <updated>2015-10-17T12:17:20.000Z</updated>
     <content type="html"><![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击作品封面跳转到相应的钢琴演奏页进行观赏。<br><a id="more"></a></p>
 <h5 id="Nocturnes:_No-_2_In_E_Flat_Op-_9_No-_2">Nocturnes: No. 2 In E Flat Op. 9 No. 2</h5><p><a href="http://www.bilibili.com/video/av2158355/" target="_blank" rel="external"><img src="http://fmn.rrfmn.com/fmn070/20151013/1530/xlarge_w5OL_24bc000344dc1e83.jpg" alt="Nocturnes: No. 2 In E Flat Op. 9 No. 2" title="title"></a></p>
 <h5 id="Variations_on_the_Canon">Variations on the Canon</h5><p><a href="http://www.bilibili.com/video/av2021356/" target="_blank" rel="external"><img src="http://fmn.rrimg.com/fmn074/20151013/1545/xlarge_MX2W_27e60003c54f1e7f.jpg" alt="Variations on the Canon" title="title"></a></p>
@@ -1445,9 +1487,9 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
     
     </summary>
     
-      <category term="Piano" scheme="http://yoursite.com/tags/Piano/"/>
+      <category term="钢琴" scheme="http://yoursite.com/tags/%E9%92%A2%E7%90%B4/"/>
     
-      <category term="Piano" scheme="http://yoursite.com/categories/Piano/"/>
+      <category term="钢琴" scheme="http://yoursite.com/categories/%E9%92%A2%E7%90%B4/"/>
     
   </entry>
   
