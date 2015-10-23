@@ -104,7 +104,7 @@
     <link href="http://yoursite.com/2015/10/12/passage2/"/>
     <id>http://yoursite.com/2015/10/12/passage2/</id>
     <published>2015-10-11T16:00:00.000Z</published>
-    <updated>2015-10-23T14:01:49.000Z</updated>
+    <updated>2015-10-23T14:09:06.000Z</updated>
     <content type="html"><![CDATA[<p>我的学生生涯就要结束了。一转眼就大三了，因为专业的原因，大三下整个新闻学院都要出去实习，再加上家里条件又算不上优越，所以我不会选择去读研或者出国，大四就会提前开始奔波找工作，这样算下来，这学期应该是我学生生涯里最后一个学期了。<br><a id="more"></a></p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/5gimuCUskEjZG5Es2mkmlRC0tWOZ3n3hxyF2dDy5zHE!/r/dHUBAAAAAAAA" alt="Campus" title="title"></p>
 <p>细细想来，大学我虽没宅着打游戏，但也没做什么事。也许参加过几个学生组织，也许和同学旅游过那么几次，也许忙过几个比赛，练过几首曲子，也许因一时兴起尝试过一些领域的知识，也许为了拿奖学金也好好学习过一段时间，但是呢，大学却没有给我留下什么想念，没有遇见喜欢的女孩，没有做出值得怀念的事情。每周我会都回家，不是我念家，而是即使我周末留在学校，仍无事可做。</p>
@@ -973,7 +973,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/08/28/passage1/"/>
     <id>http://yoursite.com/2015/08/28/passage1/</id>
     <published>2015-08-27T16:00:00.000Z</published>
-    <updated>2015-10-23T14:01:29.000Z</updated>
+    <updated>2015-10-23T14:10:35.000Z</updated>
     <content type="html"><![CDATA[<p>今年暑期在Geetest实习了2个月，担任的是产品经理的岗位，感想还蛮多的，因为之前都是在书上和网上自己了解一些互联网产品相关的知识，而真正投身其中之后，才发现自己还有好多需要学习的地方。</p>
 <a id="more"></a>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/5A0*FgwkJpHjG.Yxef9eXEaqYgLFhdvBbjydiULLmts!/r/dHYBAAAAAAAA" alt="geetest" title="title"></p>
@@ -1162,7 +1162,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/06/02/java1/"/>
     <id>http://yoursite.com/2015/06/02/java1/</id>
     <published>2015-06-01T16:00:00.000Z</published>
-    <updated>2015-10-23T13:31:42.000Z</updated>
+    <updated>2015-10-23T14:14:54.000Z</updated>
     <content type="html"><![CDATA[<p>这学期选了Java的公选课，结课作业是要求我们用Java做图形用户界面的ATM柜员机系统，实现能登陆、取款、存款、查询、修改密码的功能，虽然比较简单，但想到是自己的第一个Java程序，所以还是在博客里稍微记录一下。<br><a id="more"></a></p>
 <pre><code><span class="keyword">import</span> java.awt.*;
 <span class="keyword">import</span> java.awt.event.*;
@@ -1300,7 +1300,7 @@ class Window1 extends JFrame implements ActionListener{
         }
     }
 } 
-</code></pre><p>上述代码都是使用的默认UI，界面比较简陋，但大致功能已经实现，用这门大作业本人Java公选课得了95分。</p>
+</code></pre><p>上述代码都是使用的默认UI，界面比较简陋，但大致功能已经实现，用这门大作业Java公选课得了95分。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>这学期选了Java的公选课，结课作业是要求我们用Java做图形用户界面的ATM柜员机系统，实现能登陆、取款、存款、查询、修改密码的功能，虽然比较简单，但想到是自己的第一个Java程序，所以还是在博客里稍微记录一下。<br>]]>
