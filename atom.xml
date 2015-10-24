@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-24T15:29:40.000Z</updated>
+  <updated>2015-10-24T15:37:22.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/10/24/Ixd5/"/>
     <id>http://yoursite.com/2015/10/24/Ixd5/</id>
     <published>2015-10-23T16:00:00.000Z</published>
-    <updated>2015-10-24T15:29:40.000Z</updated>
+    <updated>2015-10-24T15:37:22.000Z</updated>
     <content type="html"><![CDATA[<p>用Hype临摹了iOS9的几个简单动效。基本上用的都是大小、位置、透明度的改变，曲线用的是渐进渐出和弹性，还有时间的调整。就我感觉而言，Hype做动效是很方便快捷的，但是对于一些复杂的动效，比如形变等，还是需要AE来完成比较好，不过这并不妨碍Hype成为一款H5的动效神器。<a id="more"></a></p>
 <h5 id="iOS9_多窗口弹出动效">iOS9 多窗口弹出动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/uqm0v8mCLbxCb9O*Kwqtgkigh80ML7ZXUhc*E6J4F6o!/r/dHMBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
 <h5 id="iOS9_多窗口切换动效">iOS9 多窗口切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/X6wBVGuoXqvEFQJOWi2l*B1O04E2u.31OvaECFM9Ogc!/r/dHQBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
@@ -32,7 +32,7 @@
     
       <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
     
-      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -41,7 +41,7 @@
     <link href="http://yoursite.com/2015/10/22/Ixd4/"/>
     <id>http://yoursite.com/2015/10/22/Ixd4/</id>
     <published>2015-10-21T16:00:00.000Z</published>
-    <updated>2015-10-24T15:04:01.000Z</updated>
+    <updated>2015-10-24T15:37:16.000Z</updated>
     <content type="html"><![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。<a id="more"></a></p>
 <h5 id="UI-cn_iOS_抽屉式动效">UI.cn iOS 抽屉式动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/fd1FQcYvrjYoxGWq4Qra5.roNlv1AsjtRLvodR0fIzU!/r/dGsAAAAAAAAA" alt="UI.cn iOS 抽屉式导航" title="title"></p>
 <h5 id="豆瓣阅读_点击书本动效">豆瓣阅读 点击书本动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/NJgVeYHjjRQ82qRFBPmmL3Rr*O6N1KNJLzIXCZLg0TQ!/r/dG8AAAAAAAAA" alt="豆瓣阅读 点击书本动效" title="title"></p>
@@ -53,7 +53,7 @@
     
       <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
     
-      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -62,7 +62,7 @@
     <link href="http://yoursite.com/2015/10/20/Ixd3/"/>
     <id>http://yoursite.com/2015/10/20/Ixd3/</id>
     <published>2015-10-19T16:00:00.000Z</published>
-    <updated>2015-10-23T12:34:50.000Z</updated>
+    <updated>2015-10-24T15:36:20.000Z</updated>
     <content type="html"><![CDATA[<p>wecoo是由我负责管理的一个团队共同完成的一个课程设计，这是一款针对小团体的以信息交流为主的轻量级团队协作移动端应用，wecoo取自we cooperate，中文名是微酷，其针对的目标用户也是兴趣团体、学生组织和社团等小团队。摈弃了文件传输、文件共享等等复杂功能之后，轻量化的wecoo更能给小团体增添活力。<a id="more"></a>在整个产品设计过程中，我是负责产品和团队的管理，参与其中每个流程，负责每个环节的落实，而其中我最主要负责的还是线框图、交互设计、原型设计这几个方面。</p>
 <p>wecoo是一款轻量级的团队协作应用，因此在功能上我做了特别多的把控，把文件类的功能全部砍掉，因为这一不适合移动端，二不适用小团体。大的团队一般是以文件为主要协作方式，比如我画了原型给设计师，设计师按原型画设计稿，然后再交付给工程师，这一整个流程都是以文件为主，而学生团体、兴趣团体更多是开会、活动、聚餐等等，这是一种以信息为主的协作方式，因此wecoo针对这类目标用户提出了5种信息流：任务、会议、活动、公告、投票，用这5种信息流来作为团队的协作方式。考虑到wecoo的目标用户分为团队管理者和团队成员，因此wecoo增添了贡献度来辅助管理者进行考勤，并且，wecoo对管理者和成员的呈现方式也略为不同，发起信息流的管理者可以对信息内容进行再编辑，也可以更改成员权限或添加新成员，但成员手中的wecoo是看不到这些icon的，因此更不会对其进行操作，所以这样能做到针对不同用户做到不同层次的简化，使得管理者和成员看到的都是针对他们情况的最简产品。同时，wecoo的团队账单增加了团队账务的透明度，会议和活动的盖楼讨论增添了团队的活力，因此wecoo在很多层面考虑了小团队用户的用户体验。并且，我在wecoo的交互上做了很多提升，比如3D Touch的peek的应用，长按日期快速添加的交互应用，利用系统提醒减少深层级操作的交互应用，这使得用户点击即可查看新成员申请、请假信息、完成任务通知等等，这相当于把深层级的页面提前，从而减少用户的操作流程，即使用户不知道那些深层级的页面，也不需要用户学习，这极大的降低用户的认知负担。</p>
 <p>这些交互上的体验一张作品集的图片展现不出来，如果大家想看的话，可以点击<a href="http://ursocute.github.io/wecoo/wecoo2/iphone5s.html" target="_blank" rel="external">交互式原型</a>，来查看上述的交互细节和动效设计，如果还想了解具体的设计流程的话，还可以点击下载<a href="http://pan.baidu.com/s/1pJCHvsf" target="_blank" rel="external">源文件</a>。</p>
@@ -73,9 +73,9 @@
     
     </summary>
     
-      <category term="Ixd" scheme="http://yoursite.com/tags/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
     
-      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -84,7 +84,7 @@
     <link href="http://yoursite.com/2015/10/18/Ixd2/"/>
     <id>http://yoursite.com/2015/10/18/Ixd2/</id>
     <published>2015-10-17T16:00:00.000Z</published>
-    <updated>2015-10-22T08:37:31.000Z</updated>
+    <updated>2015-10-24T15:36:10.000Z</updated>
     <content type="html"><![CDATA[<p>一直很喜欢UI.cn这个网站，有次偶然的机会，我用iPhone的Safari打开UI.cn的时候，发现许多页面并未做成响应式，非常不方便阅读，我再一想，连站酷都有iOS版的，UI中国应该也有iOS版的吧，所以我就跑去App Store里搜，结果什么也没有，这个时候我就萌生了设计UI.cn iOS版的交互原型的想法，做好之后还能放进自己的作品集里。<a id="more"></a></p>
 <p>我在深入了解了UI中国之后，发现UI中国是以内容为主、浏览学习为主的一个网站，它同时也提供招聘、 找工作、图书推荐、话题社区等服务，但这类服务多为辅，比如话题社区，整页整页都是0回复，因此考虑了这些因素后，我在做UI.cn iOS版的交互时就着重注意了移动端内容阅读的用户体验，把用户偶尔使用的招聘、私信等等功能都放进了层级稍深的抽屉式导航里。而上传作品、上传经验等功能则全部去掉，因为这些功能一不适合移动端，二对用户来说使用频率也不大，因此去掉反而能使应用更加轻便更加易用。总体来说，我个人还蛮喜欢这样的设计的，大家如果感兴趣的话还可以点击下载<a href="http://pan.baidu.com/s/1jGfH46y" target="_blank" rel="external">源文件</a>看一看。</p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/n5DUYq6FFaLmhB9tk1iKT0Eps.YBqi4AXQPyd4ezpS8!/r/dJMAAAAAAAAA" alt="UI.cn iOS" title="title"></p>
@@ -94,9 +94,9 @@
     
     </summary>
     
-      <category term="Ixd" scheme="http://yoursite.com/tags/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
     
-      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -105,7 +105,7 @@
     <link href="http://yoursite.com/2015/10/16/Ixd1/"/>
     <id>http://yoursite.com/2015/10/16/Ixd1/</id>
     <published>2015-10-15T16:00:00.000Z</published>
-    <updated>2015-10-20T12:58:56.000Z</updated>
+    <updated>2015-10-24T15:36:01.000Z</updated>
     <content type="html"><![CDATA[<p>想当交互设计师，最近就准备了一下自己的交互设计作品集，也不是很确定作品集具体是要做成什么样子，参考了知乎里<a href="http://www.zhihu.com/question/19977449/answer/48279051" target="_blank" rel="external">交互设计师的简历和作品集应该怎么做才好</a>这篇的格式，然后按照一般的设计流程完成了角色创建、功能架构、交互设计这几个方面。<a id="more"></a></p>
 <p>这个产品是我自己构想的，是一个以短篇漫画创作为核心的社区型兼工具型的移动应用，App名叫漫生活，用户只需简单几步就可以创作属于自己的短篇漫画，而用户创作出来的作品叫漫书，相同类型相同话题的漫书放在一起形成漫圈。为了降低用户的学习成本，减少用户的创作流程，创作漫书的过程以模板创作为主，自由创作为辅，创作过程还可以随时保存随时预览，非常方便，完成之后会提供多种分享方式，系统还会根据用户选择的模板提供符合的标签，用户勾选后则发布到相应的漫圈中，与漫友形成互动，构成内容-创作的良性循环。因为这款App是社区型兼工具型的应用，而工具型应用变现能力非常有限，因此我着重突显了应用的社区性，在首页的发现、关注里大面积的推广热门的漫圈和漫书，比如及时推出“叶良辰”的模板和“叶良辰”的漫圈，以高质量的漫书内容和新近的热点话题来激发用户的参与欲与创作欲，从而不断的延长产品的生命，增加App的活跃度。我自己认为这是一款挺有意思的构想，大家有兴趣的话可以看一看，如果还想了解具体的角色创建、功能架构和交互设计，可以点击下载<a href="http://pan.baidu.com/s/1dDjVyY9" target="_blank" rel="external">源文件</a>。</p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/c*F7tO**tB3Ju8KO223C8Mb1U3w1DX35bmoEcj6BSjU!/r/dIoBAAAAAAAA" alt="漫生活" title="title"></p>
@@ -115,9 +115,9 @@
     
     </summary>
     
-      <category term="Ixd" scheme="http://yoursite.com/tags/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
     
-      <category term="Ixd" scheme="http://yoursite.com/categories/Ixd/"/>
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -154,7 +154,7 @@
     <link href="http://yoursite.com/2015/10/10/java2/"/>
     <id>http://yoursite.com/2015/10/10/java2/</id>
     <published>2015-10-09T16:00:00.000Z</published>
-    <updated>2015-10-23T13:47:05.000Z</updated>
+    <updated>2015-10-24T15:39:25.000Z</updated>
     <content type="html"><![CDATA[<p>这学期有门软件工程的双学位的课，老师说结课的大作业要3000行代码，同班的同学有在网上下源码，还有找计算机学院的同学代写的，我不太喜欢让别人代写，自己花6个小时写了800行，大概实现了一个考试系统，虽说中间还靠写题目凑了100多行，但好歹是自己写的，感觉比他们找代写的强得多。<br><a id="more"></a></p>
 <pre><code>import java.awt.*;
 import java.util.Date;
@@ -986,7 +986,7 @@ import javax.swing.*;
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
-      <category term="Code" scheme="http://yoursite.com/categories/Code/"/>
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
@@ -1184,7 +1184,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/06/02/java1/"/>
     <id>http://yoursite.com/2015/06/02/java1/</id>
     <published>2015-06-01T16:00:00.000Z</published>
-    <updated>2015-10-23T14:14:54.000Z</updated>
+    <updated>2015-10-24T15:39:20.000Z</updated>
     <content type="html"><![CDATA[<p>这学期选了Java的公选课，结课作业是要求我们用Java做图形用户界面的ATM柜员机系统，实现能登陆、取款、存款、查询、修改密码的功能，虽然比较简单，但想到是自己的第一个Java程序，所以还是在博客里稍微记录一下。<br><a id="more"></a></p>
 <pre><code><span class="keyword">import</span> java.awt.*;
 <span class="keyword">import</span> java.awt.event.*;
@@ -1331,7 +1331,7 @@ class Window1 extends JFrame implements ActionListener{
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
-      <category term="Code" scheme="http://yoursite.com/categories/Code/"/>
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
@@ -1366,7 +1366,7 @@ class Window1 extends JFrame implements ActionListener{
     <link href="http://yoursite.com/2015/05/06/c++/"/>
     <id>http://yoursite.com/2015/05/06/c++/</id>
     <published>2015-05-05T16:00:00.000Z</published>
-    <updated>2015-10-23T13:31:19.000Z</updated>
+    <updated>2015-10-24T15:39:13.000Z</updated>
     <content type="html"><![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br><a id="more"></a></p>
 <pre><code>#include &lt;stdio.h&gt;
 #include &lt;alloc.h&gt;
@@ -1525,7 +1525,7 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
-      <category term="Code" scheme="http://yoursite.com/categories/Code/"/>
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
