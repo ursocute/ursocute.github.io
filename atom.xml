@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-25T13:20:40.000Z</updated>
+  <updated>2015-10-26T04:10:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[格志动效设计 by Hype]]></title>
+    <link href="http://yoursite.com/2015/10/26/Ixd6/"/>
+    <id>http://yoursite.com/2015/10/26/Ixd6/</id>
+    <published>2015-10-25T16:00:00.000Z</published>
+    <updated>2015-10-26T04:10:24.000Z</updated>
+    <content type="html"><![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。<a id="more"></a></p>
+<h5 id="格志_向下滑动切换动效">格志 向下滑动切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/g10iq0MOdhoNAS*rkj3QbIEvDj5FfcodG1trMNEJHNw!/r/dHMBAAAAAAAA" alt="格志 向下滑动切换动效" title="title"></p>
+<h5 id="格志_向上滑动切换动效">格志 向上滑动切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/FDEPP6GzVFMAUIwucf5DTmpE64YtSenlaXw9Dc2e81Y!/r/dHUBAAAAAAAA" alt="格志 向上滑动切换动效" title="title"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。]]>
+    
+    </summary>
+    
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
+    
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[iOS动效设计 by Hype]]></title>
     <link href="http://yoursite.com/2015/10/24/Ixd5/"/>
     <id>http://yoursite.com/2015/10/24/Ixd5/</id>
     <published>2015-10-23T16:00:00.000Z</published>
-    <updated>2015-10-25T13:20:40.000Z</updated>
+    <updated>2015-10-25T13:20:41.000Z</updated>
     <content type="html"><![CDATA[<p>用Hype临摹了iOS9的几个简单动效。基本上用的都是大小、位置、透明度的改变，曲线用的是渐进渐出和弹性，还有时间的调整。就我感觉而言，Hype做动效是很方便快捷的，但是对于一些复杂的动效，比如形变等，还是需要AE来完成比较好，不过这并不妨碍Hype成为一款H5的动效神器。<a id="more"></a></p>
 <h5 id="iOS9_多窗口弹出动效">iOS9 多窗口弹出动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/uqm0v8mCLbxCb9O*Kwqtgkigh80ML7ZXUhc*E6J4F6o!/r/dHMBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
 <h5 id="iOS9_多窗口切换动效">iOS9 多窗口切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/X6wBVGuoXqvEFQJOWi2l*B1O04E2u.31OvaECFM9Ogc!/r/dHQBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
@@ -43,7 +66,7 @@
     <link href="http://yoursite.com/2015/10/22/Ixd4/"/>
     <id>http://yoursite.com/2015/10/22/Ixd4/</id>
     <published>2015-10-21T16:00:00.000Z</published>
-    <updated>2015-10-25T13:20:03.000Z</updated>
+    <updated>2015-10-25T13:20:30.000Z</updated>
     <content type="html"><![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。<a id="more"></a></p>
 <h5 id="UI-cn_iOS_抽屉式动效">UI.cn iOS 抽屉式动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/fd1FQcYvrjYoxGWq4Qra5.roNlv1AsjtRLvodR0fIzU!/r/dGsAAAAAAAAA" alt="UI.cn iOS 抽屉式导航" title="title"></p>
 <h5 id="豆瓣阅读_点击书本动效">豆瓣阅读 点击书本动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/NJgVeYHjjRQ82qRFBPmmL3Rr*O6N1KNJLzIXCZLg0TQ!/r/dG8AAAAAAAAA" alt="豆瓣阅读 点击书本动效" title="title"></p>
@@ -130,7 +153,7 @@
     <link href="http://yoursite.com/2015/10/12/passage2/"/>
     <id>http://yoursite.com/2015/10/12/passage2/</id>
     <published>2015-10-11T16:00:00.000Z</published>
-    <updated>2015-10-25T12:05:09.000Z</updated>
+    <updated>2015-10-25T12:06:06.000Z</updated>
     <content type="html"><![CDATA[<p>我的学生生涯就要结束了。一转眼就大三了，因为专业的原因，大三下整个新闻学院都要出去实习，再加上家里条件又算不上优越，所以我不会选择去读研或者出国，大四就会提前开始奔波找工作，这样算下来，这学期应该是我学生生涯里最后一个学期了。<br><a id="more"></a></p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/5gimuCUskEjZG5Es2mkmlRC0tWOZ3n3hxyF2dDy5zHE!/r/dHUBAAAAAAAA" alt="Campus" title="title"></p>
 <p>细细想来，大学我虽没宅着打游戏，但也没做什么事。也许参加过几个学生组织，也许和同学旅游过那么几次，也许忙过几个比赛，练过几首曲子，也许因一时兴起尝试过一些领域的知识，也许为了拿奖学金也好好学习过一段时间，但是呢，大学却没有给我留下什么想念，没有遇见喜欢的女孩，没有做出值得怀念的事情。每周我会都回家，不是我念家，而是即使我周末留在学校，仍无事可做。</p>
