@@ -42,7 +42,7 @@
 <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="万世奇的博客">
-<meta property="og:url" content="http://yoursite.com/tags/文集/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2015/09/index.html">
 <meta property="og:site_name" content="万世奇的博客">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   };
 </script>
 
-  <title> 标签: 文集 | 万世奇的博客 </title>
+  <title> 归档 | 万世奇的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -85,7 +85,7 @@
 
 
 
-  <div class="container one-column ">
+  <div class="container one-column  page-archive ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -170,37 +170,32 @@
       <div class="main-inner">
         <div id="content" class="content"> 
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        文集
-        <small>标签</small>
-      </h2>
-    </div>
+  <section id="posts" class="posts-collapse">
+    <span class="archive-move-on"></span>
+
+    <span class="archive-page-counter">
+      
+      
+      
+        
+      
+      嗯..! 目前共计 21 篇日志。 继续努力。
+    </span>
 
     
+
+      
+      
       
 
-  <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
+      
         
-            <a class="post-title-link" href="/2015/10/12/passage2/" itemprop="url">
-              <span itemprop="name">我的学生生涯就要结束了</span>
-            </a>
-        
-      </h1>
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
+        </div>
+      
+      
 
-      <div class="post-meta">
-        <time class="post-time" datetime="2015-10-11T16:00:00.000Z" itemprop="dateCreated" content="2015-10-11"> 10-12 </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
       
 
   <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
@@ -222,7 +217,16 @@
   </article>
 
 
+
     
+
+      
+      
+      
+
+      
+      
+
       
 
   <article class="post post-type-normal"itemscope itemtype="http://schema.org/Article">
@@ -244,10 +248,13 @@
   </article>
 
 
+
     
-  </div>
+
+  </section>
 
   
+
  </div>
 
         
@@ -415,6 +422,12 @@
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
+  
+    <script type="text/javascript" id="motion.page.archive">
+      $('.archive-year').velocity('transition.slideLeftIn');
+    </script>
+  
+
 
   <script type="text/javascript">
     $(document).ready(function () {
