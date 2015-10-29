@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-28T02:44:09.000Z</updated>
+  <updated>2015-10-29T04:49:05.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,11 +15,213 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[知乎的用户体验研究分析报告]]></title>
+    <link href="http://yoursite.com/2015/10/29/product2/"/>
+    <id>http://yoursite.com/2015/10/29/product2/</id>
+    <published>2015-10-28T16:00:00.000Z</published>
+    <updated>2015-10-29T04:49:05.000Z</updated>
+    <content type="html"><![CDATA[<p>这份知乎的用户体验研究分析报告是新媒体用户分析专业课的一个课程设计，是由团队共同完成的一份研究报告，可用性测试、用户访谈的用研部分是由团队里其他人完成，而我主要负责其中产品分析，数据分析，寻找解决方法这些分析部分。当时我们做调研部分的时候，知乎长答案还没有加随时收起的功能，撰写报告时才发现知乎已提升了长答案收起功能的体验，改进方案也与我们提出的类似，这也是对我们用研研究的一次验证，所以也在博客里分享一下我们的<a href="http://pan.baidu.com/s/1kTGTNp1" target="_blank" rel="external">研究报告</a>。<br><a id="more"></a></p>
+<h4 id="产品分析（用户体验五要素）">产品分析（用户体验五要素）</h4><h5 id="战略层">战略层</h5><h6 id="产品目标">产品目标</h6><ol>
+<li><p>产品定位：知乎是一个真实的网络问答社区，社区氛围友好、理性、认真，这里连接了各行各业的精英，分享彼此的专业知识、经验、见解，为中文互联网源源不断地提供高质量的信息，在这里，发现更大的世界。</p>
+</li>
+<li><p>产品战略：知乎的主要战略目标是打造一个真实、具备行业精英、高质量的问答社区。互联网以内容为王，而高质量的内容本身就在一定程度决定了产品的价值，所以知乎的出现弥补了在互联网中对相关领域缺乏深入探讨的空白，解决了高质量用户之间平等对话的障碍问题。知乎的目标就是做深度的、高质量的、以行业精英为中心的问答社区。</p>
+</li>
+</ol>
+<h6 id="用户需求">用户需求</h6><ol>
+<li><p>满足求知欲，通过知乎来探讨并获取更具深度的、更多角度的话题。</p>
+</li>
+<li><p>满足认同感，通过知乎来提升自己，发现更大的世界，发现另一个自己。</p>
+</li>
+<li><p>满足成就感，通过创造高质量的回答获得认可与赞同，获得自我成就。</p>
+</li>
+</ol>
+<h5 id="范围层">范围层</h5><h6 id="提供功能">提供功能</h6><ol>
+<li><p>基本功能：提问、回答、消息和个人设置</p>
+<p> 提问和回答是知乎的核心用户路径，知乎是以话题为基本单元，每个话题包含若干问题，而每个问题隶属于若干话题，用户通过提问和回答来满足需求，并生产内容。消息包括赞、评论、收藏、感谢、私信等，用于促进并活跃高质量答案的产生，个人设置包括个人资料的设置、知乎的设置。</p>
+</li>
+<li><p>特色功能：发现、收藏、推荐</p>
+<p> 根据用户关注的话题和相关回答来推荐问题推送，热门问题推送，热门收藏推送等，通过这种推送，使得知乎用户不局限在自己关注的几个话题里，而能发现更多的优质答案，高质量内容，从而提高社区活跃度，增加用户粘性。</p>
+</li>
+</ol>
+<h6 id="内容需求">内容需求</h6><ol>
+<li><p>品牌需求：用户对于知乎有一定品牌认知度，而知乎同时也是高质量内容、精英人群的象征，这满足了用户的社会认同心理。</p>
+</li>
+<li><p>用户需求：显性需求：提问来探讨和解决问题，回答问题创造高质量价值；隐性需求：更深度、更多角度的了解一个问题，更深入的了解知识，满足求知欲，回答问题获得认可，获得成就感和认同感。</p>
+</li>
+<li><p>性能需求：通过算法进行准确的问题推送，高质量回答的信息抓取与匹配，简化用户的操作，简化用户获取信息的路径。</p>
+</li>
+</ol>
+<h5 id="结构层">结构层</h5><ol>
+<li><p>导航栏：首页、话题、发现、消息、个人</p>
+</li>
+<li><p>首页：上部为知乎搜索栏，搜索栏右侧是提问按钮，其他为关注的人、话题新产生的问答动态，动态为首页的主体内容，而右侧是我的草稿、我的收藏、所有问题、话题广场、知乎圆桌等快捷入口，同时还有可能感兴趣的人、知乎周刊等推送内容，总体而言，首页以动态为主体，以推送、入口为辅。</p>
+</li>
+<li><p>话题：话题以已关注的话题动态为主体，同时侧边提供常去话题、话题广场等入口与推送。</p>
+</li>
+<li><p>发现：发现内部分为编辑推荐、今日最热、本月最热、知乎圆桌、热门话题、热门收藏等。</p>
+</li>
+<li><p>消息：消息以弹出层的形式出现，分为评论与回答、赞与感谢、关注这三大块。</p>
+</li>
+<li><p>个人：个人包括对个人资料的设置以及对知乎的设置，个人资料的设置包括头像、性别、介绍、简介等等，而对知乎的设置包括账号密码、消息邮件、屏蔽等设置。</p>
+</li>
+</ol>
+<h5 id="框架层">框架层</h5><ol>
+<li><p>界面：界面以左右分栏为主，每个页面将主体内容放在左侧，而辅助内容如入口、推送等则在右侧显示，不阻碍用户的阅读体验。</p>
+</li>
+<li><p>信息：信息以话题为主，每个话题包含若干问题，而每个问题隶属于若干话题，同时以创造高质量内容的知乎用户为中心进行向外扩散。</p>
+</li>
+<li><p>导航：导航栏固定在顶部，以首页、话题、发现、消息、个人为导航路径，同时提供提问和搜索的按钮。</p>
+</li>
+</ol>
+<h5 id="表现层">表现层</h5><ol>
+<li><p>LOGO：“知乎”是以文言文的方式传达问答的意蕴，蓝色的主色调象征着理性和智慧，这显示着知乎理性、智慧、高质量的象征意义。</p>
+</li>
+<li><p>颜色：基本色是蓝色，导航条和icon都采用了这种蓝色，在视觉上保持了内部的一致性，蓝色使人感觉沉稳安静，体现着智慧与理性，而大面积的白色则简单纯净，减少了用户的认知负担。</p>
+</li>
+<li><p>排版布局：阅读区域以白色为主不增添用户的认知负担，导航部分为蓝色进行突出，使得用户能明确的知道自己所在的位置，其他的分块内容以左右的形式排版，左边为主体，右边为辅助，突出主体，又留有快捷入口和推送内容。</p>
+</li>
+<li><p>风格：简约清新的风格，突出有状态的icon和导航，其他的阅读区尽量留白和简化，减少用户的认知负担，尽量达到沉浸式体验。</p>
+</li>
+</ol>
+<h4 id="产品不足">产品不足</h4><p>我们从三个不同的方向：用户需求、功能交互、界面设计来提出知乎的不足之处，其分别对应了用户体验的战略层、结构层、框架层。</p>
+<h5 id="战略层-1">战略层</h5><p>知乎是否变水了？由于知乎平台近几年发展趋势猛烈，用户量急剧上升。但是与此同时，有一些用户开始抱怨知乎问题质量也开始下降，也就是所谓的知乎“变水”了。他们的观点主要是来自于知乎用户量增长带来的平均素质水平下降而导致知乎回答变得随意而质量下降。</p>
+<h5 id="结构层-1">结构层</h5><p>知乎安卓版的客户端“发现”模块的“随机看”按钮没有明显的功能提示，且无法连续的进行点击操作，随机功能无法达到。</p>
+<h5 id="框架层-1">框架层</h5><ol>
+<li><p>在知乎的iOS客户端查看回复时，进入评论区时不显示前一条回复，当我们看到一条回复时，本该出现在附近的被回复信息却不知道在哪里，影响了用户的使用体验。</p>
+</li>
+<li><p>知乎长答案无法随时收起，长答案通常以缩略的形式显示，会有一个“显示全部”功能用以查看所有内容，而点击后阅读到一半无法随时进行收起。</p>
+</li>
+</ol>
+<h4 id="用户研究与分析">用户研究与分析</h4><h5 id="战略层-2">战略层</h5><h6 id="问题描述：知乎是否变水了？">问题描述：知乎是否变水了？</h6><p>知乎平台近几年发展趋势猛烈，用户量急剧上升。但是与此同时，有一些用户开始抱怨知乎问题质量也开始下降，也就是所谓的知乎“变水”了。他们的观点主要是来自于知乎用户量增长带来的平均素质水平下降而导致知乎回答变得随意，质量下降。那么，知乎问题质量是否真的下降了呢？</p>
+<h6 id="用研方法：数据调研分析">用研方法：数据调研分析</h6><ol>
+<li><p><strong>数据分析</strong></p>
+<p> 由于短时间内自行调查获取数据较难，所以我们采用了研究第三方数据的方法。数据的来源是<a href="http://zhuanlan.zhihu.com/sulian/19907234" target="_blank" rel="external">民间版知乎分析报告第二期—赞同背后的秘密</a>。（注：采集如此庞大的数据，需通过编写数据抓取程序对一段时间内（8到10天）的知乎动态数据进行采集，并进行分类汇总分析。）</p>
+<p> 我们主要通过对数据总体量、需要分析的数据趋势、图表数据分类来进行深度分析，我们认为具有一定的参考价值。首先是赞同数的分布情况，如下图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/T96yWO2qofW2g9oasEahXcizRh9Nyc4JnWP5AM41DTI!/r/dJIAAAAAAAAA" alt="" title="title"></p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/juSGbcMsa0uiuhXktSpUWx66lQQELPDTbG84AnNGDb4!/r/dGMBAAAAAAAA" alt="" title="title"></p>
+<p> 上图表可以看出，获知赞同数在1000以上的答案数只占到了总体的0.14%。甚至赞同数在100以上的答案也只有1.3%左右。这说明在知乎上想要获得他人的赞同是比较困难的，知乎的用户相对较为理智，能获得1000以上的赞同数可以说是获得了相当高的支持度，因而我们可以初步将赞同数在1000以上的回答作为高质量回答。这是我们作为评判高质量回答的依据，也为之后的数据分析做铺垫。</p>
+<p> 接下来我们分析赞同数和字数的关系，如下图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/mhZrXKpqVLSzA0QiWLVvjqI8JuR.OFllUoUz2bUdw1I!/r/dHEAAAAAAAAA" alt="" title="title"></p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/u6QKHi7mcIHHv2Nzhf55z6MxrCz5EqU373qGfTpYZZY!/r/dJMAAAAAAAAA" alt="" title="title"></p>
+<p> 在上两图中，横坐标为赞同数，纵坐标为字数，将每个回答作为一个点做成了2个点阵图。可以看出随着赞同数的增加，字数也是不断增加，最后的字数稳定在千字这个数量级，而且可以看出1000赞同数以上的回答字数大致都分布在中心线上下，即文字数量都较大，这也符合人们对于高质量回答的认知：字数较多，有干货，能获得较多人的认可与赞同。</p>
+<p> 最后从时间维度上看观察一下千字答案的占比，如下图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/c241LeObn7oLPAwEjTitlm8NW96QBZekv2vgxAx5Bc0!/r/dJIAAAAAAAAA" alt="" title="title"></p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/Ct7cunC7ZS2sK2pmAAt5q*AIjlOeWnpRUxwuB3acMuM!/r/dGUAAAAAAAAA" alt="" title="title"></p>
+<p> 上图1是超过100字的答案占比和超过1000字的答案占比随着时间的变化表，上图2则是超过100字的答案赞同占比和超过1000字的答案赞同占比随着时间的变化表。</p>
+<p> 上图1中，超过100字的答案趋势不明显，有上升和下落。而超过1000字的答案占比则是不断上升，从一开始的1%逐渐上升到了后来的3.5%，上升趋势十分明显。而图二，趋势变得更明显了：两条曲线的大方向始终是一路走高，2013年6月之后尤其如此。到了今天，100字以上的答案掠走了赞同总数的80%；而1000字以上答案虽然总数不到4%，所有人点下的赞同却有40%落在它们头上，也就是说，千赞数的回答在持续不断的走高。</p>
+</li>
+<li><p><strong>结论与分析</strong></p>
+<p> 概括而言，知乎的高质量回答不论是从比例还是数量上其实都是增长的，即知乎并没有变水。但为什么会有很多人觉得知乎总体变水了呢，我们讨论后认为，其关键原因在于，问题数和回答数的增加，导致用户获取高质量回答的途径变得困难了，也就是说，用户获取高质量回答的成本变高了。比如相似问题过多，而所有的相似问题中可能只有一个获得了较多关注，获得了高质量的回答，而其他的相似问题则得不到关注，却占用了资源和空间，而用户在搜索的过程中，发现了过多的得不到关注的低质量相似问题，因而用户会觉得，知乎变水了。所以我们认为，减少用户获得高质量回答信息的困难度，降低用户获取高质量信息的成本是解决这个问题的关键。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p> 为了解决这个问题，知乎官方应该对高质量回答做出向导作用，而知乎其实已经有所作为，其旗下应用如《知乎日报》、《读读日报》其实就是知乎编辑的定向引导。但我们认为知乎也应该从根源上处理这个问题，可以处理掉一些僵尸号或者删除低质量或不符合要求的问答，提升门槛，就是一种对内容高质量化的手段，而这种门槛一方面可以使得知乎纯净化，一方面更使得知乎品牌化，我觉得这是使得知乎纯净化的必要手段之一。</p>
+<p> 知乎的高质量内容来自于用户，但用户的信息同样需要官方来规范和引导，为了知乎的更好发展，我们觉得需要用户和官方的共同努力，而官方的规范和引导就显得尤为关键。</p>
+</li>
+</ol>
+<h5 id="结构层-2">结构层</h5><h6 id="问题描述1：用户对知乎移动端App使用体验如何">问题描述1：用户对知乎移动端App使用体验如何</h6><h6 id="用研方法1：用户反馈、卡片分类">用研方法1：用户反馈、卡片分类</h6><ol>
+<li><p><strong>从AppStore中采集代表性的用户反馈进行分析</strong></p>
+<p> 调研结果：如下图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/tE4e7RLMgl.8uZmMk445gJemS4CPC03tq6fzQ4zbNZM!/r/dHQBAAAAAAAA" alt="" title="title"></p>
+</li>
+<li><p><strong>卡片分类法（开放式）</strong>    </p>
+<p> 测试人数：12</p>
+<p> 调研步骤：将知乎App所提供的功能单独写在卡片上提供给测试者，卡片未经分类及排序，让他们根据个人需求和使用习惯进行自由组合分类，并依照优先级将分类的卡片排序。  </p>
+<p> 卡片内容：搜索；功能（随便看看，摇一摇，推送消息）；版块（发现、专栏、话题、主题）；问答（提问、感谢、赞同、关注）；设置（个人主页，主题，草稿）</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/ypyJZte3evVfNtfwUFMdpKuq3qhEcFSe6Oq0BL3E73M!/r/dGUBAAAAAAAA" alt="" title="title"></p>
+<p> 调研结果：</p>
+<p> 对被试分类结果的总结，大致可分为：</p>
+<p> （1）版块——问答——功能——搜索——设置</p>
+<p> （2）问答——版块——搜索——功能——设置</p>
+</li>
+<li><p><strong>结论与分析</strong></p>
+<p> 从大量用户反馈可以看出，知乎最新版本的移动客户端存在一些细节的问题，主要集中在用户安装、更新Bug，缺少实用的横屏功能，从其他App跳转无法查看相关评论等。</p>
+<p> 从分类上看，用户对卡片的分类呈现比较高的一致性，说明目前知乎客户端对功能分类较为合理。分歧主要体现在“赞同”和“感谢”两个使用场景模糊不明确。多数用户认为，使用“赞同”时，依据现有的知识来肯定回答者的答案，直接影响到了答案的排名当中，间接推选提供最好的。使用“感谢作者”时，往往是看到了让人赞叹的精彩答案，但自身对其并无大多了解，所以无法去肯定或担保，所以表示感谢作者而不影响答案的排名。</p>
+<p> 从排序上看，大部分用户的优先级体现在版块和问答两个方面，肯定了知乎作为高质量问答社区的价值。而测试中所有用户都将设置放在最后，说明对个人主页的管理、消息的推送等需求较少。</p>
+</li>
+</ol>
+<h6 id="问题描述2：知乎安卓版的客户端“随机看”按钮无法连续操作">问题描述2：知乎安卓版的客户端“随机看”按钮无法连续操作</h6><p>点击该按钮后将会转到随机一篇文章，该文章右上角仍会有该按钮，再次点击该按钮，仍显示原文章。当退出这篇文章，重新点击按钮，进入的还是该文章。在多次的测试后，我们发现该按钮为知乎的安卓客户端新加的一个“随机看”功能。当点击按钮时有一定几率会在文章标题处飘过“随机看”的提示。另外，也不是每一次进入都是同一篇文章，当关闭知乎后台再次进入后有一定几率刷新文章。我们认为知乎安卓版的客户端“随机看”功能不完善。</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/g3K8KJHqH9VZgxQJXhXCchLIewmOWiqCVUFZzzzHf3g!/r/dG4AAAAAAAAA" alt="" title="title"></p>
+<h6 id="用研方法：可用性测试">用研方法：可用性测试</h6><ol>
+<li><p><strong>可用性测试</strong>  </p>
+<p> 我们对该功能采用了可用性测试的调研方法。调研视频如下：<a href="http://www.17sysj.com/video/lpds_a3f85f848704a" target="_blank" rel="external">知乎随机看看的可用性测试</a>。在测试过程中，我们对被测试者进行引导，引导其使用“随机看”的功能，观察被测试者对这个功能的理解，观察被测试者是否在这个过程中是否目的无法达成，是否有对此功能的困惑与不解，我们让其多次点击该按钮并让其推测该按钮的功能作用，意在测试被测试者对按钮的理解。</p>
+</li>
+<li><p><strong>结论与分析</strong></p>
+<p> 我们发现，被测试者对该按钮存在很大的疑问，因为该按钮使用前后都没有提示，但每次进入却是同一篇文章，不管是继续按还是退出程序，再次点击后仍然显示是同一篇文章，这让被测试者十分困惑，不清楚这个功能的含义，特别是在点击完成后，这个按钮还会出现在此随即问题的顶部，出现就意味着该按钮是可再点击的，而用户再点击后却没有发生任何变化，也就是说知乎客户端没有给用户任何的反馈，用户就不知道自己的操作产生了什么变化，从而疑惑该按钮功能的意义，这确实是知乎安卓客户端的一个问题。而当我们解释该按钮功能后，被测试者仍旧表示了一定程度的不满，这证明“随机看”功能缺失的确存在不足。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p> 首先是增加按钮的注释，在点击该按钮出现文章后应该在文章左上角增加“随机”字样说明。其次是对“随机看”应有功能的补充。“随机看”的功能应该如其名，当点击该按钮时会随机出现一篇文章而不是每次都是同一篇。我们组认为这种情况是由于数据库问题和随机看的算法造成的，导致在一个时间段内知乎随机看跳转的问题均为同一个。所以应该重新优化随机看获取问题的算法，解决该问题，使得每次点击都可以从后台获取一篇不同且回答较多，赞数较多的高质量问题呈现给用户。</p>
+</li>
+</ol>
+<h5 id="框架层-2">框架层</h5><h6 id="问题描述1：知乎iOS客户端从消息栏进入评论区时不显示前一条回复">问题描述1：知乎iOS客户端从消息栏进入评论区时不显示前一条回复</h6><p>在知乎的iOS客户端查看回复时，进入评论区时不显示前一条回复，当我们看到一条回复时，本该出现在附近的被回复信息却不知道在哪里，影响了用户的使用体验。</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/QZGPtGerpuHqon8Opwzbowur47jTjzvPEsS0FkVnRcM!/r/dIoBAAAAAAAA" alt="" title="title"></p>
+<h6 id="用研办法：可用性测试">用研办法：可用性测试</h6><ol>
+<li><p><strong>可用性测试</strong></p>
+<p> 我们采用了可用性测试的方式来研究这个问题。可用性测试视频链接如下<a href="http://www.17sysj.com/video/lpds_58c63fef0631a" target="_blank" rel="external">知乎客户端评论可用性测试</a>。测试过程中，我们让被测试者打开一个回答查看其评论区并追踪其中的回复。在评论区中，被测试者找到了一条回复信息，但他并没有在附近看到被回复者，于是他浏览评论区并在相当长的时候过后才在下面找到了被回复的那条信息，被测试者表示这个回复设置的很不合理，对于自己点击2次滑动一分钟才找到自己评论的过程表示非常不满。</p>
+</li>
+<li><p><strong>结论与分析</strong></p>
+<p> 知乎iOS客户端从消息栏进入评论区时，无法显示自己前一条回复，用户需要2次点击以及长时间的滑动才能定位到自己之前的回复，用户体验差。</p>
+</li>
+<li><p><strong>解决方案</strong></p>
+<p> 解决方案就是直接跟踪数据源头，将回复信息与原信息放在一起，如下图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/r*I6Li.QQqekxHpEsQn7xXMbMFK4dz51BXWHMkIJIo4!/r/dHQBAAAAAAAA" alt="" title="title"></p>
+<p> 在我们发现这个问题并提出解决方案后，我们陆续在其他一些移动客户端上也发现了这种类似这种不显示之前回复的问题（如微博，网易云音乐），而这个问题其实在一定程度上很影响用户体验，所以希望各大互联网公司可以及时发现问题解决问题，提升产品的用户体验。</p>
+</li>
+</ol>
+<h6 id="问题描述2：知乎长答案无法随时收起">问题描述2：知乎长答案无法随时收起</h6><p>在使用知乎web端时，长答案通常以缩略的形式显示，会有一个“显示全部”功能用以查看所有内容，而点击后阅读到一半无法随时进行收起，如图所示：</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/n.weD1GxLjupNWuOqz9bwFhQsaztspTitUuRmYnq.9c!/r/dHMBAAAAAAAA" alt="" title="title"></p>
+<p>当点击后我们可以看到所有内容，原先的“显示全部”按钮转变为“收起”按钮。如图所示：</p>
+<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/xIwgM8lYbXNyWzX1Q543CEQ2U6Kdzj4k1Mo4.s5I7vs!/r/dHYBAAAAAAAA" alt="" title="title"></p>
+<p>该按钮只存在于回答顶部和底部。但对于一些特别长的文章或者是你觉得无聊的文章，你阅读到一半时，若想关闭，不得不到回答顶部与底部去寻找“收起”按钮。我们小组认为这之中存在不友好的交互。</p>
+<h6 id="用研方法：用户深度访谈">用研方法：用户深度访谈</h6><ol>
+<li><p><strong>用户深度探访</strong></p>
+<p> 对于这个问题，我们采取了用户访谈的调研方式来探知用户对这个收起功能的了解情况和满意度。在访谈中我们发现用户的确存在这种问题，并且用户一般是通过寻找给出的顶部的与底部的“收起”按钮解决问题，在一定程度上并不利于用户便捷地操作。<strong>用户访谈的部分记录如下：</strong></p>
+<blockquote>
+<p>访谈者A：用过啊。<br>用研人员：出现过蛮长的答案吧。然后看一半不想看了？<br>访谈者A：嗯。<br>用研人员：那这个时候，你一般是怎么办的呢？<br>访谈者A：就不看了啊，能怎么办。<br>用研人员：我们的意思是不想看这个答案，想看下一个答案，这个时候你会怎么办呢？<br>访谈者A：就往下翻啊。<br>用研人员：直接快速拉滚动条吗？<br>访谈者A：拉右边那个块块。<br>用研人员：为啥不直接点收起的按钮呢？这样比拉着更快啊，还不容易错过消息。<br>访谈者A：哪有收起的按钮？（访谈者找了一下）哦，那个收起只在一开始有啊，然后最后也有，中间没看到有收起。<br>用研人员：那那个回顶部的按钮，刚刚你有注意到吗？<br>访谈者A：我看到了。<br>用研人员：和那个收起相比，哪个好找呢？<br>访谈者A：那个回顶部好找啊，但是回到的不是这个问题的顶部，是页面的顶部。</p>
+</blockquote>
+<p> <strong>访谈者B的部分访谈记录如下：</strong></p>
+<blockquote>
+<p>用研人员：对，然后会出现一个答案看了一半，不想看的情况吧，这个时候你是直接用鼠标拉到下个答案，还是去找收起按钮快速折叠呢？<br>访谈者B：sroll down，鼠标拉。<br>用研人员：为什么不用那个按钮呢？<br>访谈者B：因为并不知道有多长啊。sroll down一下，一看哦原来这么长。<br>用研人员：原来这样，可是点按钮会很快啊。<br>访谈者B：还有就是我不用鼠标，这点你可以mark一下，Mac的触控板两个手指往上是sroll down，点的话还得找，慢得多。<br>用研人员：好的谢谢。</p>
+</blockquote>
+<p> <strong>访谈者C的部分访谈记录如下：</strong></p>
+<blockquote>
+<p>用研人员：有没有出现过看一半，发现不想看这个答案的情况呢？<br>访谈者C：有。<br>用研人员：然后这个时候你怎么办，耐着性子直接鼠标拖到下一个答案吗？<br>访谈者C：不是有一个小标志，可以收上去吗，我记得有的。<br>用研人员：那这个按钮，你觉得好找吗？<br>访谈者C：应该好吧，不知不觉中就解决了。<br>用研人员：好的谢谢。</p>
+</blockquote>
+</li>
+</ol>
+<ol>
+<li><p><strong>结论与分析</strong></p>
+<p> 知乎长答案无法随时收起的问题确实存在，部分用户表示这个问题虽然存在，但可忍受，并未表现出强烈的不满，因此解决这个问题可以带来体验上的提升，但是仅是满足了少部分知乎用户的需求，并不能带来本质上的体验改变。</p>
+</li>
+<li><p><strong>解决方法</strong></p>
+<p> 对于这个问题，我们决定采用将“收起”按钮固定于页面上的一定位置来解决。将原位于右上角的收起按钮，采用与左边部分浮动的点赞按钮一样的浮动效果，在页面右上角浮动显示收起按钮，这样即使浏览答案一半途中也能快速收起长答案。效果如图：</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/ih26urPyIoyH58ZETvGkQ8UjdPWTNL*Gwqv*tQOjOSw!/r/dHYBAAAAAAAA" alt="" title="title"></p>
+</li>
+<li><p><strong>后期发现</strong></p>
+<p> 在我们做了解决方案的一周后，我们小组的成员在逛知乎时惊奇地发现这个问题已经被解决了。知乎的解决方案与我们小组思路类似，采用了将收起按钮固定于页面的方式，但将位置放在了回答右下角并将按钮颜色进行了一定的美化，并在滑动到问题底部时与问题底部的收起重合而消失。如下图:</p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/EGF5uONBX75E1VQ*e.lOwhTnyaFpCvH58YZT3HdX5OI!/r/dHUBAAAAAAAA" alt="" title="title"></p>
+<p> 知乎官方的改动也从侧面表现了我们小组研究方向的正确性。</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这份知乎的用户体验研究分析报告是新媒体用户分析专业课的一个课程设计，是由团队共同完成的一份研究报告，可用性测试、用户访谈的用研部分是由团队里其他人完成，而我主要负责其中产品分析，数据分析，寻找解决方法这些分析部分。当时我们做调研部分的时候，知乎长答案还没有加随时收起的功能，撰写报告时才发现知乎已提升了长答案收起功能的体验，改进方案也与我们提出的类似，这也是对我们用研研究的一次验证，所以也在博客里分享一下我们的<a href="http://pan.baidu.com/s/1kTGTNp1">研究报告</a>。<br>]]>
+    
+    </summary>
+    
+      <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+      <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
+    
+      <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[wecoo 交互设计作品集]]></title>
-    <link href="http://yoursite.com/2015/10/30/Ixd3/"/>
-    <id>http://yoursite.com/2015/10/30/Ixd3/</id>
-    <published>2015-10-29T16:00:00.000Z</published>
-    <updated>2015-10-28T02:44:09.000Z</updated>
+    <link href="http://yoursite.com/2015/10/28/Ixd6/"/>
+    <id>http://yoursite.com/2015/10/28/Ixd6/</id>
+    <published>2015-10-27T16:00:00.000Z</published>
+    <updated>2015-10-29T04:48:57.000Z</updated>
     <content type="html"><![CDATA[<p>wecoo是由我负责管理的一个团队共同完成的一个课程设计，这是一款针对小团体的以信息交流为主的轻量级团队协作移动端应用，wecoo取自we cooperate，中文名是微酷，其针对的目标用户也是兴趣团体、学生组织和社团等小团队。摈弃了文件传输、文件共享等等复杂功能之后，轻量化的wecoo更能给小团体增添活力。<a id="more"></a>在整个产品设计过程中，我是负责产品和团队的管理，参与其中每个流程，负责每个环节的落实，而其中我最主要负责的还是线框图、交互设计、原型设计这几个方面。</p>
 <p>wecoo是一款轻量级的团队协作应用，因此在功能上我做了特别多的把控，把文件类的功能全部砍掉，因为这一不适合移动端，二不适用小团体。大的团队一般是以文件为主要协作方式，比如我画了原型给设计师，设计师按原型画设计稿，然后再交付给工程师，这一整个流程都是以文件为主，而学生团体、兴趣团体更多是开会、活动、聚餐等等，这是一种以信息为主的协作方式，因此wecoo针对这类目标用户提出了5种信息流：任务、会议、活动、公告、投票，用这5种信息流来作为团队的协作方式。考虑到wecoo的目标用户分为团队管理者和团队成员，因此wecoo增添了贡献度来辅助管理者进行考勤，并且，wecoo对管理者和成员的呈现方式也略为不同，发起信息流的管理者可以对信息内容进行再编辑，也可以更改成员权限或添加新成员，但成员手中的wecoo是看不到这些icon的，因此更不会对其进行操作，所以这样能做到针对不同用户做到不同层次的简化，使得管理者和成员看到的都是针对他们情况的最简产品。同时，wecoo的团队账单增加了团队账务的透明度，会议和活动的盖楼讨论增添了团队的活力，因此wecoo在很多层面考虑了小团队用户的用户体验。并且，我在wecoo的交互上做了很多提升，比如3D Touch的peek的应用，长按日期快速添加的交互应用，利用系统提醒减少深层级操作的交互应用，这使得用户点击即可查看新成员申请、请假信息、完成任务通知等等，这相当于把深层级的页面提前，从而减少用户的操作流程，即使用户不知道那些深层级的页面，也不需要用户学习，这极大的降低用户的认知负担。</p>
 <p>这些交互上的体验一张作品集的图片展现不出来，如果大家想看的话，可以点击<a href="http://ursocute.github.io/wecoo/wecoo2/iphone5s.html" target="_blank" rel="external">交互式原型</a>，来查看上述的交互细节和动效设计，如果还想了解具体的设计流程的话，还可以点击下载<a href="http://pan.baidu.com/s/1pJCHvsf" target="_blank" rel="external">源文件</a>。</p>
@@ -38,8 +240,8 @@
   
   <entry>
     <title><![CDATA[UI.cn iOS 交互设计作品集]]></title>
-    <link href="http://yoursite.com/2015/10/18/Ixd2/"/>
-    <id>http://yoursite.com/2015/10/18/Ixd2/</id>
+    <link href="http://yoursite.com/2015/10/18/Ixd5/"/>
+    <id>http://yoursite.com/2015/10/18/Ixd5/</id>
     <published>2015-10-17T16:00:00.000Z</published>
     <updated>2015-10-27T06:29:53.000Z</updated>
     <content type="html"><![CDATA[<p>一直很喜欢UI.cn这个网站，有次偶然的机会，我用iPhone的Safari打开UI.cn的时候，发现许多页面并未做成响应式，非常不方便阅读，我再一想，连站酷都有iOS版的，UI中国应该也有iOS版的吧，所以我就跑去App Store里搜，结果什么也没有，这个时候我就萌生了设计UI.cn iOS版的交互原型的想法，做好之后还能放进自己的作品集里。<a id="more"></a></p>
@@ -59,8 +261,8 @@
   
   <entry>
     <title><![CDATA[漫生活 交互设计作品集]]></title>
-    <link href="http://yoursite.com/2015/10/06/Ixd1/"/>
-    <id>http://yoursite.com/2015/10/06/Ixd1/</id>
+    <link href="http://yoursite.com/2015/10/06/Ixd4/"/>
+    <id>http://yoursite.com/2015/10/06/Ixd4/</id>
     <published>2015-10-05T16:00:00.000Z</published>
     <updated>2015-10-28T02:40:34.000Z</updated>
     <content type="html"><![CDATA[<p>想当交互设计师，最近就准备了一下自己的交互设计作品集，也不是很确定作品集具体是要做成什么样子，参考了知乎里<a href="http://www.zhihu.com/question/19977449/answer/48279051" target="_blank" rel="external">「交互设计师的简历和作品集应该怎么做才好」</a>这篇的格式，然后按照一般的设计流程完成了角色创建、功能架构、交互设计这几个方面。<a id="more"></a></p>
@@ -1028,10 +1230,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[格志动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/08/06/Ixd6/"/>
-    <id>http://yoursite.com/2015/08/06/Ixd6/</id>
-    <published>2015-08-05T16:00:00.000Z</published>
-    <updated>2015-10-28T02:36:20.000Z</updated>
+    <link href="http://yoursite.com/2015/09/20/Ixd3/"/>
+    <id>http://yoursite.com/2015/09/20/Ixd3/</id>
+    <published>2015-09-19T16:00:00.000Z</published>
+    <updated>2015-10-28T13:02:45.000Z</updated>
     <content type="html"><![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。<a id="more"></a></p>
 <h5 id="格志_向下滑动切换动效">格志 向下滑动切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/g10iq0MOdhoNAS*rkj3QbIEvDj5FfcodG1trMNEJHNw!/r/dHMBAAAAAAAA" alt="格志 向下滑动切换动效" title="title"></p>
 <h5 id="格志_向上滑动切换动效">格志 向上滑动切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/FDEPP6GzVFMAUIwucf5DTmpE64YtSenlaXw9Dc2e81Y!/r/dHUBAAAAAAAA" alt="格志 向上滑动切换动效" title="title"></p>
@@ -1051,10 +1253,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[iOS动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/07/07/Ixd5/"/>
-    <id>http://yoursite.com/2015/07/07/Ixd5/</id>
-    <published>2015-07-06T16:00:00.000Z</published>
-    <updated>2015-10-28T02:17:23.000Z</updated>
+    <link href="http://yoursite.com/2015/09/18/Ixd2/"/>
+    <id>http://yoursite.com/2015/09/18/Ixd2/</id>
+    <published>2015-09-17T16:00:00.000Z</published>
+    <updated>2015-10-28T13:02:53.000Z</updated>
     <content type="html"><![CDATA[<p>用Hype临摹了iOS9的几个简单动效。基本上用的都是大小、位置、透明度的改变，曲线用的是渐进渐出和弹性，还有时间的调整。就我感觉而言，Hype做动效是很方便快捷的，但是对于一些复杂的动效，比如形变等，还是需要AE来完成比较好，不过这并不妨碍Hype成为一款H5的动效神器。<a id="more"></a></p>
 <h5 id="iOS9_多窗口弹出动效">iOS9 多窗口弹出动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/uqm0v8mCLbxCb9O*Kwqtgkigh80ML7ZXUhc*E6J4F6o!/r/dHMBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
 <h5 id="iOS9_多窗口切换动效">iOS9 多窗口切换动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/X6wBVGuoXqvEFQJOWi2l*B1O04E2u.31OvaECFM9Ogc!/r/dHQBAAAAAAAA" alt="iOS9 多窗口动效" title="title"></p>
@@ -1075,10 +1277,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[两个动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/06/22/Ixd4/"/>
-    <id>http://yoursite.com/2015/06/22/Ixd4/</id>
-    <published>2015-06-21T16:00:00.000Z</published>
-    <updated>2015-10-28T02:17:10.000Z</updated>
+    <link href="http://yoursite.com/2015/08/27/Ixd1/"/>
+    <id>http://yoursite.com/2015/08/27/Ixd1/</id>
+    <published>2015-08-26T16:00:00.000Z</published>
+    <updated>2015-10-28T13:14:20.000Z</updated>
     <content type="html"><![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。<a id="more"></a></p>
 <h5 id="UI-cn_iOS_抽屉式动效">UI.cn iOS 抽屉式动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/fd1FQcYvrjYoxGWq4Qra5.roNlv1AsjtRLvodR0fIzU!/r/dGsAAAAAAAAA" alt="UI.cn iOS 抽屉式导航" title="title"></p>
 <h5 id="豆瓣阅读_点击书本动效">豆瓣阅读 点击书本动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/NJgVeYHjjRQ82qRFBPmmL3Rr*O6N1KNJLzIXCZLg0TQ!/r/dG8AAAAAAAAA" alt="豆瓣阅读 点击书本动效" title="title"></p>
@@ -1101,12 +1303,12 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/06/18/UI7/"/>
     <id>http://yoursite.com/2015/06/18/UI7/</id>
     <published>2015-06-17T16:00:00.000Z</published>
-    <updated>2015-10-23T13:24:16.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了较长时间，感觉其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br><a id="more"></a></p>
+    <updated>2015-10-28T13:11:57.000Z</updated>
+    <content type="html"><![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了好几个小时，觉得其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br><a id="more"></a></p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/1d3z3MY3HoEl6Um5ONp2MoivuaEVUj7RJuYXrEsECbk!/r/dHMBAAAAAAAA" alt="Mactonish" title="title"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了较长时间，感觉其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br>]]>
+    <![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了好几个小时，觉得其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br>]]>
     
     </summary>
     
@@ -1121,7 +1323,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/06/16/UI6/"/>
     <id>http://yoursite.com/2015/06/16/UI6/</id>
     <published>2015-06-15T16:00:00.000Z</published>
-    <updated>2015-10-23T13:24:40.000Z</updated>
+    <updated>2015-10-28T13:12:06.000Z</updated>
     <content type="html"><![CDATA[<p>临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。<br><a id="more"></a></p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/LKZhUKDE*oPqMh2neKO1zAQdXS.yFqdT0M7h.n2gm2Q!/r/dHQBAAAAAAAA" alt="Santa Postage" title="title"></p>
 ]]></content>
@@ -1141,7 +1343,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/06/12/UI5/"/>
     <id>http://yoursite.com/2015/06/12/UI5/</id>
     <published>2015-06-11T16:00:00.000Z</published>
-    <updated>2015-10-23T13:25:24.000Z</updated>
+    <updated>2015-10-28T13:12:13.000Z</updated>
     <content type="html"><![CDATA[<p>临摹两个中国节日的UI，这两张UI都是ZAKER设计团队的封面设计，挺喜欢这种风格的，青年节这张UI的构图我比较喜欢，整个画面都是由基本形状组成，配色也是用深浅不同的绿色进行组合，简约而不简单的感觉。<br><a id="more"></a></p>
 <h5 id="中秋节">中秋节</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/oMB1lD0jIxPCtKbvd1lorw3RIfMC1iHhbGAQ8asrsdQ!/r/dHQBAAAAAAAA" alt="中秋节" title="title"></p>
 <h5 id="青年节">青年节</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/g.KxfM*EMwkPnfjeFexRq1vXfXyRJD.vwFdFgbtuF0k!/r/dHMBAAAAAAAA" alt="青年节" title="title"></p>
@@ -1159,10 +1361,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[Bureau by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/11/UI3/"/>
-    <id>http://yoursite.com/2015/06/11/UI3/</id>
+    <link href="http://yoursite.com/2015/06/11/UI4/"/>
+    <id>http://yoursite.com/2015/06/11/UI4/</id>
     <published>2015-06-10T16:00:00.000Z</published>
-    <updated>2015-10-23T13:27:29.000Z</updated>
+    <updated>2015-10-28T13:12:19.000Z</updated>
     <content type="html"><![CDATA[<p>临摹一张办公桌的UI，扁平化的风格我很喜欢，还把前几天画的Baymax的UI换了个颜色放在了桌上的相框里，Baymax一开始的黄色背景和整体UI的颜色不搭，所以换了个和界面元素相衬的红色，比较好看。<br><a id="more"></a></p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/*.0BHaB6338NrHdoHIZ8ICX8KgK.F8O4DJJzWlXRsYE!/r/dGsAAAAAAAAA" alt="Bureau" title="title"></p>
 ]]></content>
@@ -1179,8 +1381,8 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[Decoration by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/10/UI2/"/>
-    <id>http://yoursite.com/2015/06/10/UI2/</id>
+    <link href="http://yoursite.com/2015/06/10/UI3/"/>
+    <id>http://yoursite.com/2015/06/10/UI3/</id>
     <published>2015-06-09T16:00:00.000Z</published>
     <updated>2015-10-23T13:29:09.000Z</updated>
     <content type="html"><![CDATA[<p>最近学Sketch中，临摹一张Decoration的UI。画面比较简单，都是用基本形状构成，没怎么使用钢笔工具，以后还是要学会多用钢笔工具进行锚点，Sketch虽然操作简单，但是复杂的形状还是得靠钢笔工具来完成。<br><a id="more"></a></p>
@@ -1199,8 +1401,8 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[Drink by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/09/UI4/"/>
-    <id>http://yoursite.com/2015/06/09/UI4/</id>
+    <link href="http://yoursite.com/2015/06/09/UI2/"/>
+    <id>http://yoursite.com/2015/06/09/UI2/</id>
     <published>2015-06-08T16:00:00.000Z</published>
     <updated>2015-10-23T13:26:57.000Z</updated>
     <content type="html"><![CDATA[<p>临摹一张Drink的UI，这种配色挺值得学习的，整个画面多采用点和线条进行构图，杯子左下用到了重复这个元素，组合而成的这种线条风挺简约的，我很喜欢。<br><a id="more"></a></p>
@@ -1417,174 +1619,6 @@ class Window1 extends JFrame implements ActionListener{
       <category term="手绘" scheme="http://yoursite.com/tags/%E6%89%8B%E7%BB%98/"/>
     
       <category term="手绘" scheme="http://yoursite.com/categories/%E6%89%8B%E7%BB%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[C++实现两个栈模拟一个队列]]></title>
-    <link href="http://yoursite.com/2015/05/06/c++/"/>
-    <id>http://yoursite.com/2015/05/06/c++/</id>
-    <published>2015-05-05T16:00:00.000Z</published>
-    <updated>2015-10-27T02:16:12.000Z</updated>
-    <content type="html"><![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br><a id="more"></a></p>
-<pre><code>#include &lt;stdio.h&gt;
-#include &lt;alloc.h&gt;
-#include &lt;stdlib.h&gt;
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>;
-<span class="title">class</span> <span class="title">STACK</span></span>{
-    <span class="built_in">int</span>  *<span class="keyword">const</span>  elems;    <span class="comment">//申请内存用于存放栈的元素</span>
-    <span class="keyword">const</span>  <span class="built_in">int</span>   max;    <span class="comment">//栈能存放的最大元素个数</span>
-    <span class="built_in">int</span>   pos;            <span class="comment">//栈实际已有元素个数，栈空时    pos=0;</span>
-public:
-STACK(<span class="built_in">int</span> m);        <span class="comment">//初始化栈：最多m个元素</span>
-STACK(<span class="keyword">const</span> STACK&amp;s);             <span class="comment">//用栈s拷贝初始化栈</span>
-virtual <span class="built_in">int</span>  size ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的最大元素    个数max</span>
-virtual <span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的实际元素个数pos</span>
-virtual <span class="built_in">int</span> <span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>;<span class="comment">//取下标x处的栈元素</span>
-virtual STACK&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);     <span class="comment">//将e入栈,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出栈到e,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s); <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-virtual <span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印栈</span>
-virtual ~STACK( );                <span class="comment">//销毁栈</span>
-
-};
-
-STACK::STACK(<span class="built_in">int</span> m):elems(<span class="keyword">new</span> <span class="built_in">int</span>[m]),max(m){}
-
-STACK::STACK(<span class="keyword">const</span> STACK&amp;s):elems(<span class="keyword">new</span>     <span class="built_in">int</span>[s.max]),max(s.max){}       <span class="comment">//用栈s拷贝初始化栈</span>
-
-<span class="built_in">int</span>  STACK::size ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;max;
-}    <span class="comment">//返回栈的最大元素个数max</span>
-
-STACK::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;pos;
-}    <span class="comment">//返回栈的实际元素个数pos</span>
-
-<span class="built_in">int</span> STACK::<span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>{
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">return</span> a[x];
-
-}    <span class="comment">//取下标x处的栈元素</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-        a++;
-    }
-    *a=e;
-    <span class="keyword">this</span>-&gt;pos++;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}    <span class="comment">//将e入栈,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-    a++;
-}
-a--;
-e=*a;
-*a=<span class="number">0</span>;
-<span class="keyword">this</span>-&gt;pos--;
-<span class="keyword">return</span> *<span class="keyword">this</span>;
-}     <span class="comment">//出栈到e,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s){
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;s.max;i++){
-        <span class="keyword">this</span>-&gt;elems[i]=s.elems[i];
-    }
-    *(<span class="built_in">int</span>*)&amp;<span class="keyword">this</span>-&gt;max=s.max;
-    <span class="keyword">this</span>-&gt;pos=s.pos;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}       <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-
-<span class="keyword">void</span> STACK::<span class="built_in">print</span>( ) <span class="keyword">const</span>{
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">this</span>-&gt;max;i++){
-        printf(<span class="string">"%d"</span>,<span class="keyword">this</span>-&gt;elems[i]);
-}
-}    <span class="comment">//打印栈</span>
-
-STACK::~STACK( ){
-    free(<span class="keyword">this</span>-&gt;elems);
-}
-
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>:<span class="title">public</span> <span class="title">STACK</span></span>{
-    STACK  s2;
-public:
-QUEUE(<span class="built_in">int</span> m);        <span class="comment">//初始化队列：每个栈最多m个元素</span>
-QUEUE(<span class="keyword">const</span> QUEUE&amp;s);         <span class="comment">//用队列s拷贝初始化队列</span>
-<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回队列的实际元素个数</span>
-QUEUE&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);         <span class="comment">//将e入队列,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出队列到e,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s); <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-<span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印队列</span>
-~QUEUE( );                    <span class="comment">//销毁队列</span>
-};
-
-
-QUEUE::QUEUE(<span class="built_in">int</span> m):s2(m),STACK(m){}             <span class="comment">//初始化队列：每个栈最多m个元素</span>
-
-QUEUE::QUEUE(<span class="keyword">const</span> QUEUE&amp;s):STACK(s.s2),s2(s.s2){}     <span class="comment">//用队列s拷贝初始化队列</span>
-
-QUEUE::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{                       <span class="comment">//返回队列的实际元素个数</span>
-       <span class="built_in">int</span> x=s2;
-       <span class="keyword">return</span> x;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){                     <span class="comment">//将e入队列,并返回队列</span>
-       s2&lt;&lt;e;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){                     <span class="comment">//出队列到e,并返回队列</span>
-       <span class="built_in">int</span> k=s2;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        s2&gt;&gt;e;
-        STACK::<span class="literal">operator</span>&lt;&lt;(e);
-       }
-       (*<span class="keyword">this</span>)&gt;&gt;e;
-       k--;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        STACK::<span class="literal">operator</span>&gt;&gt;(e);
-        (*<span class="keyword">this</span>)&lt;&lt;(e);
-       }
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s){               <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-       s2=s.s2;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-<span class="keyword">void</span> QUEUE::<span class="built_in">print</span>( ) <span class="keyword">const</span>{                           <span class="comment">//打印队列</span>
-      s2.<span class="built_in">print</span>();
-}
-
-QUEUE::~QUEUE( ){                                   <span class="comment">//销毁队列</span>
-
-}
-
-<span class="built_in">int</span> main (<span class="built_in">int</span> argc,char* argv[])
-{     QUEUE s(<span class="number">10</span>),r(<span class="number">10</span>);
-      QUEUE *t=&amp;s,*u=&amp;r;
-      <span class="built_in">int</span>  x;
-      x=s;
-      s&lt;&lt;<span class="number">1</span>;
-      s&gt;&gt;<span class="number">2</span>;
-      t-&gt;<span class="built_in">print</span>();
-      r=s;
-      <span class="keyword">return</span> <span class="number">0</span>;
-}
-</code></pre><p>这种两个栈模拟的队列的方式是用一个栈存储元素，另一个栈来辅助进出队列的方式来达到队列的模拟，是种比较有意思的代码思想。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br>]]>
-    
-    </summary>
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
