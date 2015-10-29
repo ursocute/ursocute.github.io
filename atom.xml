@@ -1277,10 +1277,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[两个动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/08/27/Ixd1/"/>
-    <id>http://yoursite.com/2015/08/27/Ixd1/</id>
-    <published>2015-08-26T16:00:00.000Z</published>
-    <updated>2015-10-28T13:14:20.000Z</updated>
+    <link href="http://yoursite.com/2015/08/30/Ixd1/"/>
+    <id>http://yoursite.com/2015/08/30/Ixd1/</id>
+    <published>2015-08-29T16:00:00.000Z</published>
+    <updated>2015-10-29T08:53:33.000Z</updated>
     <content type="html"><![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。<a id="more"></a></p>
 <h5 id="UI-cn_iOS_抽屉式动效">UI.cn iOS 抽屉式动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/fd1FQcYvrjYoxGWq4Qra5.roNlv1AsjtRLvodR0fIzU!/r/dGsAAAAAAAAA" alt="UI.cn iOS 抽屉式导航" title="title"></p>
 <h5 id="豆瓣阅读_点击书本动效">豆瓣阅读 点击书本动效</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/NJgVeYHjjRQ82qRFBPmmL3Rr*O6N1KNJLzIXCZLg0TQ!/r/dG8AAAAAAAAA" alt="豆瓣阅读 点击书本动效" title="title"></p>
@@ -1299,138 +1299,24 @@ import javax.swing.*;
   </entry>
   
   <entry>
-    <title><![CDATA[Mactonish by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/18/UI7/"/>
-    <id>http://yoursite.com/2015/06/18/UI7/</id>
-    <published>2015-06-17T16:00:00.000Z</published>
-    <updated>2015-10-28T13:11:57.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了好几个小时，觉得其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br><a id="more"></a></p>
-<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/1d3z3MY3HoEl6Um5ONp2MoivuaEVUj7RJuYXrEsECbk!/r/dHMBAAAAAAAA" alt="Mactonish" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>临摹一张Mactonish的UI，很卡通的感觉，这张UI稍微复杂一些，临摹了好几个小时，觉得其中的配色和阴影的使用很值得学习，还有就是Sketch中蒙版的使用可以大大提高效率，Sketch的蒙版比Photoshop要简单很多，画UI感觉还是Sketch更快捷有效率一些。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Santa Postage by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/16/UI6/"/>
-    <id>http://yoursite.com/2015/06/16/UI6/</id>
-    <published>2015-06-15T16:00:00.000Z</published>
-    <updated>2015-10-28T13:12:06.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。<br><a id="more"></a></p>
-<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/LKZhUKDE*oPqMh2neKO1zAQdXS.yFqdT0M7h.n2gm2Q!/r/dHQBAAAAAAAA" alt="Santa Postage" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>临摹一张Santa Postage的UI，这种像素点的风格比较有意思，现在UI的风格大多是扁平化，但是扁平化也需要有扁平化式的阴影，连这种像素风的UI都体现了像素风的阴影，可见UI中的层级也是很重要的。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Festival by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/12/UI5/"/>
-    <id>http://yoursite.com/2015/06/12/UI5/</id>
-    <published>2015-06-11T16:00:00.000Z</published>
-    <updated>2015-10-28T13:12:13.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹两个中国节日的UI，这两张UI都是ZAKER设计团队的封面设计，挺喜欢这种风格的，青年节这张UI的构图我比较喜欢，整个画面都是由基本形状组成，配色也是用深浅不同的绿色进行组合，简约而不简单的感觉。<br><a id="more"></a></p>
+    <title><![CDATA[UI临摹汇总 by Sketch]]></title>
+    <link href="http://yoursite.com/2015/07/27/UI1/"/>
+    <id>http://yoursite.com/2015/07/27/UI1/</id>
+    <published>2015-07-26T16:00:00.000Z</published>
+    <updated>2015-10-29T08:52:33.000Z</updated>
+    <content type="html"><![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，能让设计师更专注于设计本身，而不是软件的使用。这几天我就用Sketch临摹了自己喜欢的几幅UI，大多是扁平化的风格，也有像素风，其中配色、阴影、点和线条的运用都很值得学习，就放在博客里记录一下自己这几天的临摹作品。<br><a id="more"></a></p>
+<h5 id="Mactonish">Mactonish</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/1d3z3MY3HoEl6Um5ONp2MoivuaEVUj7RJuYXrEsECbk!/r/dHMBAAAAAAAA" alt="Mactonish" title="title"></p>
+<h5 id="Santa_Postage">Santa Postage</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/LKZhUKDE*oPqMh2neKO1zAQdXS.yFqdT0M7h.n2gm2Q!/r/dHQBAAAAAAAA" alt="Santa Postage" title="title"></p>
 <h5 id="中秋节">中秋节</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/oMB1lD0jIxPCtKbvd1lorw3RIfMC1iHhbGAQ8asrsdQ!/r/dHQBAAAAAAAA" alt="中秋节" title="title"></p>
 <h5 id="青年节">青年节</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/g.KxfM*EMwkPnfjeFexRq1vXfXyRJD.vwFdFgbtuF0k!/r/dHMBAAAAAAAA" alt="青年节" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>临摹两个中国节日的UI，这两张UI都是ZAKER设计团队的封面设计，挺喜欢这种风格的，青年节这张UI的构图我比较喜欢，整个画面都是由基本形状组成，配色也是用深浅不同的绿色进行组合，简约而不简单的感觉。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Bureau by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/11/UI4/"/>
-    <id>http://yoursite.com/2015/06/11/UI4/</id>
-    <published>2015-06-10T16:00:00.000Z</published>
-    <updated>2015-10-28T13:12:19.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹一张办公桌的UI，扁平化的风格我很喜欢，还把前几天画的Baymax的UI换了个颜色放在了桌上的相框里，Baymax一开始的黄色背景和整体UI的颜色不搭，所以换了个和界面元素相衬的红色，比较好看。<br><a id="more"></a></p>
-<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/*.0BHaB6338NrHdoHIZ8ICX8KgK.F8O4DJJzWlXRsYE!/r/dGsAAAAAAAAA" alt="Bureau" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>临摹一张办公桌的UI，扁平化的风格我很喜欢，还把前几天画的Baymax的UI换了个颜色放在了桌上的相框里，Baymax一开始的黄色背景和整体UI的颜色不搭，所以换了个和界面元素相衬的红色，比较好看。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Decoration by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/10/UI3/"/>
-    <id>http://yoursite.com/2015/06/10/UI3/</id>
-    <published>2015-06-09T16:00:00.000Z</published>
-    <updated>2015-10-23T13:29:09.000Z</updated>
-    <content type="html"><![CDATA[<p>最近学Sketch中，临摹一张Decoration的UI。画面比较简单，都是用基本形状构成，没怎么使用钢笔工具，以后还是要学会多用钢笔工具进行锚点，Sketch虽然操作简单，但是复杂的形状还是得靠钢笔工具来完成。<br><a id="more"></a></p>
-<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/yCpTs5c7jy.NdFq0IKQpkQfXTGEKlUoBcbKo1d5xEF4!/r/dHMBAAAAAAAA" alt="Sketch" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>最近学Sketch中，临摹一张Decoration的UI。画面比较简单，都是用基本形状构成，没怎么使用钢笔工具，以后还是要学会多用钢笔工具进行锚点，Sketch虽然操作简单，但是复杂的形状还是得靠钢笔工具来完成。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Drink by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/09/UI2/"/>
-    <id>http://yoursite.com/2015/06/09/UI2/</id>
-    <published>2015-06-08T16:00:00.000Z</published>
-    <updated>2015-10-23T13:26:57.000Z</updated>
-    <content type="html"><![CDATA[<p>临摹一张Drink的UI，这种配色挺值得学习的，整个画面多采用点和线条进行构图，杯子左下用到了重复这个元素，组合而成的这种线条风挺简约的，我很喜欢。<br><a id="more"></a></p>
-<p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/2SNDJlHpNRQqYSyWlvLxMtJ90EzmouMhUE3J07xpfVY!/r/dHMBAAAAAAAA" alt="Drink" title="title"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>临摹一张Drink的UI，这种配色挺值得学习的，整个画面多采用点和线条进行构图，杯子左下用到了重复这个元素，组合而成的这种线条风挺简约的，我很喜欢。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Baymax by Sketch UI临摹]]></title>
-    <link href="http://yoursite.com/2015/06/08/UI1/"/>
-    <id>http://yoursite.com/2015/06/08/UI1/</id>
-    <published>2015-06-07T16:00:00.000Z</published>
-    <updated>2015-10-23T13:29:54.000Z</updated>
-    <content type="html"><![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，在网上找了教程临摹了Baymax say hi这幅UI，然后凭着兴趣又自己改了改弄了幅Baymax poke belly的UI。<br><a id="more"></a></p>
+<h5 id="Bureau">Bureau</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/*.0BHaB6338NrHdoHIZ8ICX8KgK.F8O4DJJzWlXRsYE!/r/dGsAAAAAAAAA" alt="Bureau" title="title"></p>
+<h5 id="Decoration">Decoration</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/yCpTs5c7jy.NdFq0IKQpkQfXTGEKlUoBcbKo1d5xEF4!/r/dHMBAAAAAAAA" alt="Decoration" title="title"></p>
+<h5 id="Drink">Drink</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/2SNDJlHpNRQqYSyWlvLxMtJ90EzmouMhUE3J07xpfVY!/r/dHMBAAAAAAAA" alt="Drink" title="title"></p>
 <h5 id="Baymax_say_hi">Baymax say hi</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/FanNsv4XWBhbJekWjl5FFjRyCZY0OOj6E*fHkBKtAW4!/r/dHUBAAAAAAAA" alt="Baymax say hi" title="title"></p>
-<h5 id="Baymax_poke_belly">Baymax poke belly</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/Q9RXTDBL8psLLOhceO3AQkDzzjoLO5f5FtG3aN9YW1A!/r/dHQBAAAAAAAA" alt="Baymax poke belly" title="title"></p>
+<h5 id="Baymax_pokes_belly">Baymax pokes belly</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/Q9RXTDBL8psLLOhceO3AQkDzzjoLO5f5FtG3aN9YW1A!/r/dHQBAAAAAAAA" alt="Baymax pokes belly" title="title"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，在网上找了教程临摹了Baymax say hi这幅UI，然后凭着兴趣又自己改了改弄了幅Baymax poke belly的UI。<br>]]>
+    <![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，能让设计师更专注于设计本身，而不是软件的使用。这几天我就用Sketch临摹了自己喜欢的几幅UI，大多是扁平化的风格，也有像素风，其中配色、阴影、点和线条的运用都很值得学习，就放在博客里记录一下自己这几天的临摹作品。<br>]]>
     
     </summary>
     
@@ -1619,6 +1505,202 @@ class Window1 extends JFrame implements ActionListener{
       <category term="手绘" scheme="http://yoursite.com/tags/%E6%89%8B%E7%BB%98/"/>
     
       <category term="手绘" scheme="http://yoursite.com/categories/%E6%89%8B%E7%BB%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[C++实现两个栈模拟一个队列]]></title>
+    <link href="http://yoursite.com/2015/05/06/c++/"/>
+    <id>http://yoursite.com/2015/05/06/c++/</id>
+    <published>2015-05-05T16:00:00.000Z</published>
+    <updated>2015-10-27T02:16:12.000Z</updated>
+    <content type="html"><![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br><a id="more"></a></p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;alloc.h&gt;
+#include &lt;stdlib.h&gt;
+<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>;
+<span class="title">class</span> <span class="title">STACK</span></span>{
+    <span class="built_in">int</span>  *<span class="keyword">const</span>  elems;    <span class="comment">//申请内存用于存放栈的元素</span>
+    <span class="keyword">const</span>  <span class="built_in">int</span>   max;    <span class="comment">//栈能存放的最大元素个数</span>
+    <span class="built_in">int</span>   pos;            <span class="comment">//栈实际已有元素个数，栈空时    pos=0;</span>
+public:
+STACK(<span class="built_in">int</span> m);        <span class="comment">//初始化栈：最多m个元素</span>
+STACK(<span class="keyword">const</span> STACK&amp;s);             <span class="comment">//用栈s拷贝初始化栈</span>
+virtual <span class="built_in">int</span>  size ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的最大元素    个数max</span>
+virtual <span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的实际元素个数pos</span>
+virtual <span class="built_in">int</span> <span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>;<span class="comment">//取下标x处的栈元素</span>
+virtual STACK&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);     <span class="comment">//将e入栈,并返回栈</span>
+virtual STACK&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出栈到e,并返回栈</span>
+virtual STACK&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s); <span class="comment">//赋s给栈,并返回被赋值的栈</span>
+virtual <span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印栈</span>
+virtual ~STACK( );                <span class="comment">//销毁栈</span>
+
+};
+
+STACK::STACK(<span class="built_in">int</span> m):elems(<span class="keyword">new</span> <span class="built_in">int</span>[m]),max(m){}
+
+STACK::STACK(<span class="keyword">const</span> STACK&amp;s):elems(<span class="keyword">new</span>     <span class="built_in">int</span>[s.max]),max(s.max){}       <span class="comment">//用栈s拷贝初始化栈</span>
+
+<span class="built_in">int</span>  STACK::size ( ) <span class="keyword">const</span>{
+    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;max;
+}    <span class="comment">//返回栈的最大元素个数max</span>
+
+STACK::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{
+    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;pos;
+}    <span class="comment">//返回栈的实际元素个数pos</span>
+
+<span class="built_in">int</span> STACK::<span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>{
+    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
+    <span class="keyword">return</span> a[x];
+
+}    <span class="comment">//取下标x处的栈元素</span>
+
+STACK&amp; STACK::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){
+    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
+    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
+        a++;
+    }
+    *a=e;
+    <span class="keyword">this</span>-&gt;pos++;
+    <span class="keyword">return</span> *<span class="keyword">this</span>;
+}    <span class="comment">//将e入栈,并返回栈</span>
+
+STACK&amp; STACK::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){
+    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
+    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
+    a++;
+}
+a--;
+e=*a;
+*a=<span class="number">0</span>;
+<span class="keyword">this</span>-&gt;pos--;
+<span class="keyword">return</span> *<span class="keyword">this</span>;
+}     <span class="comment">//出栈到e,并返回栈</span>
+
+STACK&amp; STACK::<span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s){
+    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;s.max;i++){
+        <span class="keyword">this</span>-&gt;elems[i]=s.elems[i];
+    }
+    *(<span class="built_in">int</span>*)&amp;<span class="keyword">this</span>-&gt;max=s.max;
+    <span class="keyword">this</span>-&gt;pos=s.pos;
+    <span class="keyword">return</span> *<span class="keyword">this</span>;
+}       <span class="comment">//赋s给栈,并返回被赋值的栈</span>
+
+<span class="keyword">void</span> STACK::<span class="built_in">print</span>( ) <span class="keyword">const</span>{
+    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">this</span>-&gt;max;i++){
+        printf(<span class="string">"%d"</span>,<span class="keyword">this</span>-&gt;elems[i]);
+}
+}    <span class="comment">//打印栈</span>
+
+STACK::~STACK( ){
+    free(<span class="keyword">this</span>-&gt;elems);
+}
+
+<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>:<span class="title">public</span> <span class="title">STACK</span></span>{
+    STACK  s2;
+public:
+QUEUE(<span class="built_in">int</span> m);        <span class="comment">//初始化队列：每个栈最多m个元素</span>
+QUEUE(<span class="keyword">const</span> QUEUE&amp;s);         <span class="comment">//用队列s拷贝初始化队列</span>
+<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回队列的实际元素个数</span>
+QUEUE&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);         <span class="comment">//将e入队列,并返回队列</span>
+QUEUE&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出队列到e,并返回队列</span>
+QUEUE&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s); <span class="comment">//赋s给队列,并返回被赋值的队列</span>
+<span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印队列</span>
+~QUEUE( );                    <span class="comment">//销毁队列</span>
+};
+
+
+QUEUE::QUEUE(<span class="built_in">int</span> m):s2(m),STACK(m){}             <span class="comment">//初始化队列：每个栈最多m个元素</span>
+
+QUEUE::QUEUE(<span class="keyword">const</span> QUEUE&amp;s):STACK(s.s2),s2(s.s2){}     <span class="comment">//用队列s拷贝初始化队列</span>
+
+QUEUE::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{                       <span class="comment">//返回队列的实际元素个数</span>
+       <span class="built_in">int</span> x=s2;
+       <span class="keyword">return</span> x;
+}
+
+QUEUE&amp; QUEUE::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){                     <span class="comment">//将e入队列,并返回队列</span>
+       s2&lt;&lt;e;
+       <span class="keyword">return</span> *<span class="keyword">this</span>;
+}
+
+QUEUE&amp; QUEUE::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){                     <span class="comment">//出队列到e,并返回队列</span>
+       <span class="built_in">int</span> k=s2;
+       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
+        s2&gt;&gt;e;
+        STACK::<span class="literal">operator</span>&lt;&lt;(e);
+       }
+       (*<span class="keyword">this</span>)&gt;&gt;e;
+       k--;
+       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
+        STACK::<span class="literal">operator</span>&gt;&gt;(e);
+        (*<span class="keyword">this</span>)&lt;&lt;(e);
+       }
+       <span class="keyword">return</span> *<span class="keyword">this</span>;
+}
+
+QUEUE&amp; QUEUE::<span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s){               <span class="comment">//赋s给队列,并返回被赋值的队列</span>
+       s2=s.s2;
+       <span class="keyword">return</span> *<span class="keyword">this</span>;
+}
+
+<span class="keyword">void</span> QUEUE::<span class="built_in">print</span>( ) <span class="keyword">const</span>{                           <span class="comment">//打印队列</span>
+      s2.<span class="built_in">print</span>();
+}
+
+QUEUE::~QUEUE( ){                                   <span class="comment">//销毁队列</span>
+
+}
+
+<span class="built_in">int</span> main (<span class="built_in">int</span> argc,char* argv[])
+{     QUEUE s(<span class="number">10</span>),r(<span class="number">10</span>);
+      QUEUE *t=&amp;s,*u=&amp;r;
+      <span class="built_in">int</span>  x;
+      x=s;
+      s&lt;&lt;<span class="number">1</span>;
+      s&gt;&gt;<span class="number">2</span>;
+      t-&gt;<span class="built_in">print</span>();
+      r=s;
+      <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><p>这种两个栈模拟的队列的方式是用一个栈存储元素，另一个栈来辅助进出队列的方式来达到队列的模拟，是种比较有意思的代码思想。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br>]]>
+    
+    </summary>
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[钢琴曲作品集]]></title>
+    <link href="http://yoursite.com/2014/12/25/piano/"/>
+    <id>http://yoursite.com/2014/12/25/piano/</id>
+    <published>2014-12-24T16:00:00.000Z</published>
+    <updated>2015-10-23T14:04:11.000Z</updated>
+    <content type="html"><![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击作品封面跳转到相应的钢琴演奏页进行观赏。<br><a id="more"></a></p>
+<h5 id="Nocturnes:_No-_2_In_E_Flat_Op-_9_No-_2">Nocturnes: No. 2 In E Flat Op. 9 No. 2</h5><p><a href="http://www.bilibili.com/video/av2158355/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/G2**1SU69rG.jR8f9R.z*bR3WnAoWPmEJPT0w61aCfc!/r/dHMBAAAAAAAA" alt="Nocturnes: No. 2 In E Flat Op. 9 No. 2" title="title"></a></p>
+<h5 id="Variations_on_the_Canon">Variations on the Canon</h5><p><a href="http://www.bilibili.com/video/av2021356/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/OZvPTjE9h5dYziEM9D9.AWpgomLuOihdtnMLAsPcxkA!/r/dHYBAAAAAAAA" alt="Variations on the Canon" title="title"></a></p>
+<h5 id="Summer">Summer</h5><p><a href="http://www.bilibili.com/video/av2021429/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/GDdMYmccahsSGzL4GLsvIA2dBxnIRrlspMQoMMKCDC4!/r/dHMBAAAAAAAA" alt="Summer" title="title"></a></p>
+<h5 id="River_flows_in_you">River flows in you</h5><p><a href="http://www.bilibili.com/video/av2021432/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/akng.9yjvqNZyhcQZ.RislOCCzhdE4EfZv4zb8Aal4Q!/r/dHQBAAAAAAAA" alt="River flows in you" title="title"></a></p>
+<h5 id="An_Improvisation_On_The_Canon">An Improvisation On The Canon</h5><p><a href="http://www.bilibili.com/video/av2021210/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/CuGUQO9ciQdZcZpgDUw6qEo.AhRHSVEy3dtVjPMl8F0!/r/dG8AAAAAAAAA" alt="An Improvisation On The Canon" title="title"></a></p>
+<h5 id="冰菓">冰菓</h5><p><a href="http://www.bilibili.com/video/av2020970/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/WWnwShgIxvTDAR74vWKT06lBJhlw38VfIRv6EArCjy8!/r/dG8AAAAAAAAA" alt="冰菓" title="title"></a></p>
+<h5 id="Canon">Canon</h5><p><a href="http://www.bilibili.com/video/av2021357/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/XqdR5gNCuOv2ffC9vh0yED4Od11oBxx4MXtlHzlwHUA!/r/dHMBAAAAAAAA" alt="Canon" title="title"></a></p>
+<h5 id="Episode_from_Secret">Episode from Secret</h5><p><a href="http://www.bilibili.com/video/av2021479/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/R2qqV.rNaYTebD3ArMTxjIWIA4KCsaUu.TrNvrfG84s!/r/dHMBAAAAAAAA" alt="Episode from Secret" title="title"></a></p>
+<p>以上作品均本人演奏，喜欢的话，可以点击图片到演奏页面里给万世奇点个赞。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击作品封面跳转到相应的钢琴演奏页进行观赏。<br>]]>
+    
+    </summary>
+    
+      <category term="钢琴" scheme="http://yoursite.com/tags/%E9%92%A2%E7%90%B4/"/>
+    
+      <category term="钢琴" scheme="http://yoursite.com/categories/%E9%92%A2%E7%90%B4/"/>
     
   </entry>
   
