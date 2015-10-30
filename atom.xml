@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-10-29T09:07:00.000Z</updated>
+  <updated>2015-10-29T15:08:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,10 +16,10 @@
   
   <entry>
     <title><![CDATA[知乎的用户体验研究分析报告]]></title>
-    <link href="http://yoursite.com/2015/10/29/product2/"/>
-    <id>http://yoursite.com/2015/10/29/product2/</id>
-    <published>2015-10-28T16:00:00.000Z</published>
-    <updated>2015-10-29T09:07:00.000Z</updated>
+    <link href="http://yoursite.com/2015/11/02/product2/"/>
+    <id>http://yoursite.com/2015/11/02/product2/</id>
+    <published>2015-11-01T16:00:00.000Z</published>
+    <updated>2015-10-29T15:08:42.000Z</updated>
     <content type="html"><![CDATA[<p>这份知乎的用户体验研究分析报告是新媒体用户分析专业课的一个课程设计，是由团队共同完成的一份用研报告，可用性测试、用户访谈的用研部分是由团队里其他人完成，而我主要负责其中产品分析，数据分析，寻找解决方法这些分析部分。当时我们做调研部分的时候，知乎长答案还没有加随时收起的功能，撰写报告时才发现知乎已提升了长答案收起功能的体验，改进方案也与我们提出的类似，这也是对我们用研的一次验证，所以也在博客里分享一下我们的<a href="http://pan.baidu.com/s/1kTGTNp1" target="_blank" rel="external">用研报告</a>。<br><a id="more"></a></p>
 <h4 id="产品分析（用户体验五要素）">产品分析（用户体验五要素）</h4><h5 id="战略层">战略层</h5><h6 id="产品目标">产品目标</h6><ol>
 <li><p>产品定位：知乎是一个真实的网络问答社区，社区氛围友好、理性、认真，这里连接了各行各业的精英，分享彼此的专业知识、经验、见解，为中文互联网源源不断地提供高质量的信息，在这里，发现更大的世界。</p>
@@ -163,7 +163,7 @@
 </li>
 <li><p><strong>解决方案</strong></p>
 <p> 解决方案就是直接跟踪数据源头，将回复信息与原信息放在一起，如下图：</p>
-<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/r*I6Li.QQqekxHpEsQn7xXMbMFK4dz51BXWHMkIJIo4!/r/dHQBAAAAAAAA" alt="" title="title"></p>
+<p> <img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/fJCMRWk9aBDQ8diLFFrKq2.PpVWmEER.Zl1Txi0mCnA!/r/dHMBAAAAAAAA" alt="" title="title"></p>
 <p> 在我们发现这个问题并提出解决方案后，我们陆续在其他一些移动客户端上也发现了这种类似这种不显示之前回复的问题（如微博，网易云音乐），而这个问题其实在一定程度上很影响用户体验，所以希望各大互联网公司可以及时发现问题解决问题，提升产品的用户体验。</p>
 </li>
 </ol>
@@ -174,7 +174,7 @@
 <p>该按钮只存在于回答顶部和底部。但对于一些特别长的文章或者是你觉得无聊的文章，你阅读到一半时，若想关闭，不得不到回答顶部与底部去寻找“收起”按钮。我们小组认为这之中存在不友好的交互。</p>
 <h6 id="用研方法：用户深度访谈">用研方法：用户深度访谈</h6><ol>
 <li><p><strong>用户深度探访</strong></p>
-<p> 对于这个问题，我们采取了用户访谈的调研方式来探知用户对这个收起功能的了解情况和满意度。在访谈中我们发现用户的确存在这种问题，并且用户一般是通过寻找给出的顶部的与底部的“收起”按钮解决问题，在一定程度上并不利于用户便捷地操作。<strong>用户访谈的部分记录如下：</strong></p>
+<p> 对于这个问题，我们采取了用户访谈的调研方式来探知用户对这个收起功能的了解情况和满意度。在访谈中我们发现这种问题确实存在，并且用户一般是通过寻找问题顶部与底部的“收起”按钮来解决问题，在一定程度上并不利于用户便捷地操作。<strong>用户访谈的部分记录如下：</strong></p>
 <blockquote>
 <p>访谈者A：用过啊。<br>用研人员：出现过蛮长的答案吧。然后看一半不想看了？<br>访谈者A：嗯。<br>用研人员：那这个时候，你一般是怎么办的呢？<br>访谈者A：就不看了啊，能怎么办。<br>用研人员：我们的意思是不想看这个答案，想看下一个答案，这个时候你会怎么办呢？<br>访谈者A：就往下翻啊。<br>用研人员：直接快速拉滚动条吗？<br>访谈者A：拉右边那个块块。<br>用研人员：为啥不直接点收起的按钮呢？这样比拉着更快啊，还不容易错过消息。<br>访谈者A：哪有收起的按钮？（访谈者找了一下）哦，那个收起只在一开始有啊，然后最后也有，中间没看到有收起。<br>用研人员：那那个回顶部的按钮，刚刚你有注意到吗？<br>访谈者A：我看到了。<br>用研人员：和那个收起相比，哪个好找呢？<br>访谈者A：那个回顶部好找啊，但是回到的不是这个问题的顶部，是页面的顶部。</p>
 </blockquote>
@@ -218,10 +218,10 @@
   
   <entry>
     <title><![CDATA[wecoo 交互设计作品集]]></title>
-    <link href="http://yoursite.com/2015/10/28/Ixd6/"/>
-    <id>http://yoursite.com/2015/10/28/Ixd6/</id>
-    <published>2015-10-27T16:00:00.000Z</published>
-    <updated>2015-10-29T04:48:57.000Z</updated>
+    <link href="http://yoursite.com/2015/10/30/Ixd6/"/>
+    <id>http://yoursite.com/2015/10/30/Ixd6/</id>
+    <published>2015-10-29T16:00:00.000Z</published>
+    <updated>2015-10-29T09:09:45.000Z</updated>
     <content type="html"><![CDATA[<p>wecoo是由我负责管理的一个团队共同完成的一个课程设计，这是一款针对小团体的以信息交流为主的轻量级团队协作移动端应用，wecoo取自we cooperate，中文名是微酷，其针对的目标用户也是兴趣团体、学生组织和社团等小团队。摈弃了文件传输、文件共享等等复杂功能之后，轻量化的wecoo更能给小团体增添活力。<a id="more"></a>在整个产品设计过程中，我是负责产品和团队的管理，参与其中每个流程，负责每个环节的落实，而其中我最主要负责的还是线框图、交互设计、原型设计这几个方面。</p>
 <p>wecoo是一款轻量级的团队协作应用，因此在功能上我做了特别多的把控，把文件类的功能全部砍掉，因为这一不适合移动端，二不适用小团体。大的团队一般是以文件为主要协作方式，比如我画了原型给设计师，设计师按原型画设计稿，然后再交付给工程师，这一整个流程都是以文件为主，而学生团体、兴趣团体更多是开会、活动、聚餐等等，这是一种以信息为主的协作方式，因此wecoo针对这类目标用户提出了5种信息流：任务、会议、活动、公告、投票，用这5种信息流来作为团队的协作方式。考虑到wecoo的目标用户分为团队管理者和团队成员，因此wecoo增添了贡献度来辅助管理者进行考勤，并且，wecoo对管理者和成员的呈现方式也略为不同，发起信息流的管理者可以对信息内容进行再编辑，也可以更改成员权限或添加新成员，但成员手中的wecoo是看不到这些icon的，因此更不会对其进行操作，所以这样能做到针对不同用户做到不同层次的简化，使得管理者和成员看到的都是针对他们情况的最简产品。同时，wecoo的团队账单增加了团队账务的透明度，会议和活动的盖楼讨论增添了团队的活力，因此wecoo在很多层面考虑了小团队用户的用户体验。并且，我在wecoo的交互上做了很多提升，比如3D Touch的peek的应用，长按日期快速添加的交互应用，利用系统提醒减少深层级操作的交互应用，这使得用户点击即可查看新成员申请、请假信息、完成任务通知等等，这相当于把深层级的页面提前，从而减少用户的操作流程，即使用户不知道那些深层级的页面，也不需要用户学习，这极大的降低用户的认知负担。</p>
 <p>这些交互上的体验一张作品集的图片展现不出来，如果大家想看的话，可以点击<a href="http://ursocute.github.io/wecoo/wecoo2/iphone5s.html" target="_blank" rel="external">交互式原型</a>，来查看上述的交互细节和动效设计，如果还想了解具体的设计流程的话，还可以点击下载<a href="http://pan.baidu.com/s/1pJCHvsf" target="_blank" rel="external">源文件</a>。</p>
@@ -1328,10 +1328,10 @@ import javax.swing.*;
   
   <entry>
     <title><![CDATA[Java实现一个ATM柜台机系统]]></title>
-    <link href="http://yoursite.com/2015/06/01/java1/"/>
-    <id>http://yoursite.com/2015/06/01/java1/</id>
-    <published>2015-05-31T16:00:00.000Z</published>
-    <updated>2015-10-29T08:59:49.000Z</updated>
+    <link href="http://yoursite.com/2015/06/02/java1/"/>
+    <id>http://yoursite.com/2015/06/02/java1/</id>
+    <published>2015-06-01T16:00:00.000Z</published>
+    <updated>2015-10-29T09:09:18.000Z</updated>
     <content type="html"><![CDATA[<p>这学期选了Java的公选课，结课作业是要求我们用Java做图形用户界面的ATM柜员机系统，实现能登陆、取款、存款、查询、修改密码的功能，虽然比较简单，但想到是自己的第一个Java程序，所以还是在博客里稍微记录一下。<br><a id="more"></a></p>
 <pre><code><span class="keyword">import</span> java.awt.*;
 <span class="keyword">import</span> java.awt.event.*;
