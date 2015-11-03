@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-03T05:41:48.000Z</updated>
+  <updated>2015-11-03T11:24:07.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/11/02/product2/"/>
     <id>http://yoursite.com/2015/11/02/product2/</id>
     <published>2015-11-01T16:00:00.000Z</published>
-    <updated>2015-11-03T05:41:48.000Z</updated>
+    <updated>2015-11-03T11:24:07.000Z</updated>
     <content type="html"><![CDATA[<p>这份知乎的用户体验研究分析报告是新媒体用户分析专业课的一个课程设计，是由团队共同完成的一份用研报告，可用性测试、用户访谈的用研部分是由团队里其他人完成，而我主要负责其中产品分析，数据分析，寻找解决方法这些分析部分。当时我们做调研部分的时候，知乎长答案还没有加随时收起的功能，撰写报告时才发现知乎已提升了长答案收起功能的体验，改进方案也与我们提出的类似，这也是对我们用研的一次验证，所以也在博客里分享一下我们的<a href="http://pan.baidu.com/s/1kTGTNp1" target="_blank" rel="external">用研报告</a>。<br><a id="more"></a></p>
 <h4 id="产品分析（用户体验五要素）">产品分析（用户体验五要素）</h4><h5 id="战略层">战略层</h5><h6 id="产品目标">产品目标</h6><ol>
 <li><p>产品定位：知乎是一个真实的网络问答社区，社区氛围友好、理性、认真，这里连接了各行各业的精英，分享彼此的专业知识、经验、见解，为中文互联网源源不断地提供高质量的信息，在这里，发现更大的世界。</p>
@@ -210,9 +210,7 @@
     
       <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
     
-      <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
-    
-      <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
+      <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
@@ -1203,7 +1201,7 @@ import javax.swing.*;
     <link href="http://yoursite.com/2015/09/24/product1/"/>
     <id>http://yoursite.com/2015/09/24/product1/</id>
     <published>2015-09-23T16:00:00.000Z</published>
-    <updated>2015-11-03T05:39:38.000Z</updated>
+    <updated>2015-11-03T11:24:12.000Z</updated>
     <content type="html"><![CDATA[<p>真正开始关注唯品会得从我妈说起，我妈算是互联网的轻度用户，之前虽说也给我妈下载了淘宝和京东，但网购对我妈来说一直没有太大吸引力，可突然有一天起，我发现我家快递就没停过，每周最少收3次，每次她不在家都是让我去代签，而包裹上全是这大大的三个字-唯品会。所以这个时候我才开始关注，唯品会是怎么把我妈变成一名剁手党的。<br><a id="more"></a></p>
 <p>首先我就观察我妈是怎么使用唯品会这款App的，我妈开始刷唯品会的时候，我就在一旁看，时不时问几句引导一下，我问我妈：“平时你都看些什么呀？”我妈就一边用手左右滑动切换标签一边说：“就看看上面（标签导航）这些啊。”我看我妈逛完了专场，退回主页面之后，我又问：“你平时点不点左上角的这个按钮呢？”我妈瞄了一眼，说：“很少点。”“那点过没有呢？”“没有吧，我平时都不点那里。”</p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/eCH1BaIgzzekuwoUK3bTGXRsUPkRGE5RBcdINlvhS5o!/r/dGUBAAAAAAAA" alt="唯品会主页面" title="唯品会主页面"></p>
@@ -1222,9 +1220,7 @@ import javax.swing.*;
     
       <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
     
-      <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
-    
-      <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
+      <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
@@ -1487,7 +1483,7 @@ class Window1 extends JFrame implements ActionListener{
     <link href="http://yoursite.com/2015/05/25/handpainting/"/>
     <id>http://yoursite.com/2015/05/25/handpainting/</id>
     <published>2015-05-24T16:00:00.000Z</published>
-    <updated>2015-11-03T05:36:30.000Z</updated>
+    <updated>2015-11-03T05:36:35.000Z</updated>
     <content type="html"><![CDATA[<p>这是万世奇的手绘画稿集，一共7张画，除了其中一幅是美术基础考试结业作品外，其他都是闲来无事的即兴作品或临摹画作，这几张手绘纯粹为个人爱好所绘，并未达到专业水平，喜欢的话可以稍作停留随意翻翻浏览一会。<br><a id="more"></a></p>
 <h5 id="桐谷和人-《刀剑神域》">桐谷和人-《刀剑神域》</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/bb*xYBycpjJfJ93wMjT1tOUQsnTVUfY2j8vO4DAhNHs!/r/dHQBAAAAAAAA" alt="桐谷和人" title="桐谷和人"></p>
 <h5 id="水谷雫-《邻座的怪同学》">水谷雫-《邻座的怪同学》</h5><p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/3b0ffePKwmvajl*o0CcUCP9XLDBJsltkEeOCMwSoF08!/r/dHQBAAAAAAAA" alt="水谷雫" title="水谷雫"></p>
