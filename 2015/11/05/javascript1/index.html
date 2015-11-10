@@ -45,7 +45,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/11/05/javascript1/index.html">
 <meta property="og:site_name" content="万世奇的博客">
 <meta property="og:description" content="用reveal.js做了一个在线CV，如果你细心的话应该能注意到，博客的侧边栏里多了一个cv的链接，关于页面的名字部分也变成了cv的链接，这主要是最近受知乎这个问题「一份优秀的前端开发工程师简历是怎么样的」的启发，就自己用reveal.js做了一个在线CV并关联到了博客里，所以就想在博客里简单介绍一下reveal.js，让不会代码的人也能轻松创建自己的在线CV。">
-<meta property="og:updated_time" content="2015-11-05T07:32:05.000Z">
+<meta property="og:updated_time" content="2015-11-06T14:12:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用reveal.js做一个在线CV">
 <meta name="twitter:description" content="用reveal.js做了一个在线CV，如果你细心的话应该能注意到，博客的侧边栏里多了一个cv的链接，关于页面的名字部分也变成了cv的链接，这主要是最近受知乎这个问题「一份优秀的前端开发工程师简历是怎么样的」的启发，就自己用reveal.js做了一个在线CV并关联到了博客里，所以就想在博客里简单介绍一下reveal.js，让不会代码的人也能轻松创建自己的在线CV。">
@@ -230,7 +230,7 @@
 <h5 id="下载reveal-js">下载reveal.js</h5><p>第一步肯定是下载reveal.js了，首先前往<a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">reveal.js</a>的github项目页面，点击download zip下载代码压缩包。</p>
 <h5 id="修改主题">修改主题</h5><p>解压后，<code>reveal.js-master/css/theme</code>里就是自带的主题样式，可以在index.html里修改下面href里的内容，把想要的主题样式名字替换掉。但由于reveal.js更多是做幻灯片展示的，如果是做个人CV的话，用主题的样式字体就会比较大，建议自己写份css，比如我用的就是<a href="https://github.com/ursocute/wanshiqi-s-cv/blob/master/wsqcv/css/index.css" target="_blank" rel="external">这份</a>。</p>
 <pre><code>&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"css/theme/black.css"</span> <span class="property">id</span>=<span class="string">"theme"</span>&gt;
-</code></pre><h5 id="修改转场">修改转场</h5><p>reveal.js提供了None、Fade、Slide、Convex、Concave、Zoom6种转场效果，想要更改的话就在index.html找到下面这段代码，把其中的<code>transition: &#39;slide&#39;</code>换成你想要的转场效果就可以了。</p>
+</code></pre><h5 id="修改转场">修改转场</h5><p>reveal.js提供了None、Fade、Slide、Convex、Concave、Zoom这6种转场效果，想要更改的话就在index.html找到下面这段代码，把其中的<code>transition: &#39;slide&#39;</code>换成你想要的转场效果就可以了。</p>
 <pre><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript">
 
         <span class="comment">// Full list of configuration options available at:</span>
