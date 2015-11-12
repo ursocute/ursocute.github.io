@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-12T10:37:49.000Z</updated>
+  <updated>2015-11-12T10:45:35.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2015/11/12/passage3/"/>
     <id>http://yoursite.com/2015/11/12/passage3/</id>
     <published>2015-11-11T16:00:00.000Z</published>
-    <updated>2015-11-12T10:37:49.000Z</updated>
+    <updated>2015-11-12T10:45:35.000Z</updated>
     <content type="html"><![CDATA[<p>《后物欲时代的来临》是郑也夫著作的一本关于人类社会的书，虽说只有短短十二章，但却解释了人类需求、消费实质、广告原罪、物质崇拜、工作与娱乐等多种社会现象，特别是其中探讨的人类需求实质对于产品设计也有很大的指导性，其中对于消费门槛的叙述在某种程度上也反映了用户体验的实质，因此，我就把对于这本书的思考转移到产品设计上，写成了这篇文章。<br><a id="more"></a></p>
 <p>首先我想探讨需求的实质，马斯洛需求层次理论将人类需求按阶梯一样从低到高分为了5种，分别是：生理需求、安全需求、社交需求、尊重需求和自我实现需求。而其理论核心的在于需求层次的上移，当低层次的需求满足之后，人们会开始追寻更高层次的需求，这种需求层次的上移也意味着产品的可持续性，当产品能不断满足用户的需求转移时产品才能可发展。</p>
 <p><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/wejF8QEgf49lguZ7BEw1JUIVUA7Y5frhV1pFNKGdI8E!/r/dHIBAAAAAAAA" alt="马斯洛需求层次理论" title="马斯洛需求层次理论"></p>
@@ -53,7 +53,7 @@
     
       <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
     
-      <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
+      <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
     
   </entry>
   
