@@ -811,6 +811,7 @@ body {
   background: #222;
   border-bottom: none;
   font-family: Lato, "Microsoft Jhenghei", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  border-radius: 0px 20px 0px 20px;
 }
 .logo {
   display: inline-block;
@@ -1058,7 +1059,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #99ff21;
+  background: #b68239;
 }
 .sidebar-nav {
   margin: 0;
