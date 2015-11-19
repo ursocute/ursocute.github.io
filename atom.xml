@@ -62,7 +62,7 @@
     <link href="http://yoursite.com/2015/11/05/javascript1/"/>
     <id>http://yoursite.com/2015/11/05/javascript1/</id>
     <published>2015-11-04T16:00:00.000Z</published>
-    <updated>2015-11-14T04:28:21.000Z</updated>
+    <updated>2015-11-18T02:54:42.000Z</updated>
     <content type="html"><![CDATA[<p>用reveal.js做了一个在线CV，如果你细心的话应该能注意到，博客的侧边栏里多了一个cv的链接，关于页面的名字部分也变成了cv的链接，这主要是最近受知乎这个问题<a href="http://www.zhihu.com/question/23150301/answer/53954506" target="_blank" rel="external">「一份优秀的前端开发工程师简历是怎么样的」</a>的启发，就自己用reveal.js做了一个在线CV并关联到了博客里，所以就想在博客里简单介绍一下reveal.js，让不会代码的人也能轻松创建自己的在线CV。<a id="more"></a>整个的实现过程非常简单，只要下载reveal.js，然后自己改动html和css就可以了，源码里还提供了多个css主题，只要在link里自己改动theme里的css名称就可以查看不同主题的效果了，非常方便，博客里主要介绍一下几个改动要点。有兴趣的可以直接点击<a href="http://ursocute.github.io/wanshiqi-s-cv/index.html#/" target="_blank" rel="external">在线预览</a>来查看我的CV，还可以点击查看<a href="https://github.com/ursocute/wanshiqi-s-cv" target="_blank" rel="external">源代码</a>。</p>
 <h5 id="下载reveal-js">下载reveal.js</h5><p>第一步肯定是下载reveal.js了，首先前往<a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">reveal.js</a>的github项目页面，点击download zip下载代码压缩包。</p>
 <h5 id="修改主题">修改主题</h5><p>解压后，<code>reveal.js-master/css/theme</code>里就是自带的主题样式，可以在index.html里修改下面href里的内容，把想要的主题样式名字替换掉。但由于reveal.js更多是做幻灯片展示的，如果是做个人CV的话，用主题的样式字体就会比较大，建议自己写份css，比如我用的就是<a href="https://github.com/ursocute/wanshiqi-s-cv/blob/master/css/index.css" target="_blank" rel="external">这份</a>。</p>
@@ -107,7 +107,7 @@
 &lt;p <span class="keyword">class</span>=<span class="string">"fragment current-visible"</span>&gt;current-visible&lt;/p&gt;
 &lt;p <span class="keyword">class</span>=<span class="string">"fragment highlight-red"</span>&gt;highlight-red&lt;/p&gt;
 &lt;p <span class="keyword">class</span>=<span class="string">"fragment highlight-blue"</span>&gt;highlight-blue&lt;/p&gt;
-</code></pre><h5 id="结语">结语</h5><p>博客只是简单的介绍了一下reveal.js，如果你懂前端，相比reveal.js更推荐使用pagepillings.js和fullpage.js，或直接点击<a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">reveal.js</a>查看文档及源码就好。</p>
+</code></pre><h5 id="结语">结语</h5><p>博客只是简单的介绍了一下reveal.js，如果你懂前端，相比reveal.js更推荐使用<a href="https://github.com/alvarotrigo/pagePiling.js" target="_blank" rel="external">pagepillings.js</a>和<a href="https://github.com/alvarotrigo/fullPage.js" target="_blank" rel="external">fullpage.js</a>，或直接点击<a href="https://github.com/hakimel/reveal.js" target="_blank" rel="external">reveal.js</a>查看文档及源码就好。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>用reveal.js做了一个在线CV，如果你细心的话应该能注意到，博客的侧边栏里多了一个cv的链接，关于页面的名字部分也变成了cv的链接，这主要是最近受知乎这个问题<a href="http://www.zhihu.com/question/23150301/answer/53954506">「一份优秀的前端开发工程师简历是怎么样的」</a>的启发，就自己用reveal.js做了一个在线CV并关联到了博客里，所以就想在博客里简单介绍一下reveal.js，让不会代码的人也能轻松创建自己的在线CV。]]>
