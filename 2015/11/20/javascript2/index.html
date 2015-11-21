@@ -45,7 +45,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/11/20/javascript2/index.html">
 <meta property="og:site_name" content="万世奇的博客">
 <meta property="og:description" content="最近发现了一个前端素材库CodyHouce，里面有大量HTML,CSS,JS的素材，每个效果都有Demo供预览和下载，于是我就利用了里面的两个素材，在其基础上做了个人的相册集和个人的视频集，并把其中一个的链接放在了博客的侧边栏里，也正好在博客里分享一下，有兴趣的话可以点击万世奇的相册和万世奇的钢琴曲作品集进行观看。">
-<meta property="og:updated_time" content="2015-11-21T15:05:50.000Z">
+<meta property="og:updated_time" content="2015-11-21T15:33:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用CodyHouce做个人相册集和视频集">
 <meta name="twitter:description" content="最近发现了一个前端素材库CodyHouce，里面有大量HTML,CSS,JS的素材，每个效果都有Demo供预览和下载，于是我就利用了里面的两个素材，在其基础上做了个人的相册集和个人的视频集，并把其中一个的链接放在了博客的侧边栏里，也正好在博客里分享一下，有兴趣的话可以点击万世奇的相册和万世奇的钢琴曲作品集进行观看。">
@@ -239,7 +239,7 @@
         singleProjectContent.addClass(<span class="string">'is-visible'</span>);
     }
 });
-</code></pre><p>然后找到这段代码里的<code>singleProjectContent.addClass(&#39;is-visible&#39;)</code>，并把这行代码改成<code>singleProjectContent.eq(i).addClass(&#39;is-visible&#39;)</code>，并在这行代码的前面补上这样两句就OK了：</p>
+</code></pre><p>然后找到这段代码里的<code>singleProjectContent.addClass(&#39;is-visible&#39;)</code>，把它改成<code>singleProjectContent.eq(i).addClass(&#39;is-visible&#39;)</code>，并在这行代码的前面补上这样两句就OK了：</p>
 <pre><code><span class="keyword">var</span> i = $(<span class="keyword">this</span>).parent(<span class="string">'li'</span>).index();
 <span class="built_in">console</span>.log(i);
 </code></pre><p>我还用到的一个素材是<a href="https://codyhouse.co/gem/animated-svg-image-slider/" target="_blank" rel="external">Animated SVG Image Slider</a>，这个素材修改起来没有太多要注意的地方，只是如果添加超过4张的图片时，需要将下述HTML代码中<code>id=&quot;cd-image-1&quot;</code>、<code>id=&quot;cd-changing-path-1&quot;</code>和<code>clip-path=&quot;url(#cd-image-1)&quot;</code>中的数字改为你的图片的序数，图片是第几张就改成几就好，一定要一并修改，否则切换效果就没有了。</p>
