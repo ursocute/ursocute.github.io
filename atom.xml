@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-11-12T13:02:54.000Z</updated>
+  <updated>2015-11-21T12:45:02.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[用CodyHouce做个人相册集和视频集]]></title>
+    <link href="http://yoursite.com/2015/11/20/javascript2/"/>
+    <id>http://yoursite.com/2015/11/20/javascript2/</id>
+    <published>2015-11-19T16:00:00.000Z</published>
+    <updated>2015-11-21T12:45:02.000Z</updated>
+    <content type="html"><![CDATA[<p>最近发现了一个前端素材库<a href="https://codyhouse.co" target="_blank" rel="external">CodyHouce</a>，里面有大量HTML,CSS,JS的素材，每个效果都有Demo供预览和下载，于是我就利用了里面的两个素材，在其基础上做了个人的相册集和个人的视频集，并把其中一个的链接放在了博客的侧边栏里，也正好在博客里分享一下，有兴趣的话可以点击<a href="http://ursocute.github.io/wanshiqi-s-photo/wsqphoto/index.html#0" target="_blank" rel="external">万世奇的相册</a>和<a href="http://ursocute.github.io/wanshiqi-s-piano/index.html#0" target="_blank" rel="external">万世奇的钢琴曲作品集</a>进行观看。<br><a id="more"></a></p>
+<p>虽说CodyHouce提供了大量HTML,CSS,JS的素材，但如果想要在其基础上进行修改的话，还是需要有一定的前端知识的，这里对于一些修改点也不多赘述，就说一下JS里一个比较重要的改动，因为我主要使用了<a href="https://codyhouse.co/gem/squeezebox-portfolio-template/" target="_blank" rel="external">Squeezebox Portfolio Template</a>这个素材，而这个素材里每个相册点击后都是弹出同一个div，如果不对JS进行修改的话，而无法做出不同相册对应不同图片的效果，改动也很简单，在<code>squeezebox-portfolio-template/js/main.js</code>中找到下述这段代码：</p>
+<pre><code>projectsContainer.on(<span class="string">'click'</span>, <span class="string">'.cd-slider a'</span>, <span class="function"><span class="keyword">function</span><span class="params">(event)</span> </span>{
+    <span class="keyword">var</span> mq = checkMQ();
+    event.preventDefault();
+    <span class="keyword">if</span>( $(<span class="keyword">this</span>).parent(<span class="string">'li'</span>).next(<span class="string">'li'</span>).<span class="keyword">is</span>(<span class="string">'.current'</span>) &amp;&amp; (mq == <span class="string">'desktop'</span>) ) {
+        prevSides(projectsSlider);
+    } <span class="keyword">else</span> <span class="keyword">if</span> ( $(<span class="keyword">this</span>).parent(<span class="string">'li'</span>).prev(<span class="string">'li'</span>).prev(<span class="string">'li'</span>).prev(<span class="string">'li'</span>).<span class="keyword">is</span>(<span class="string">'.current'</span>)  &amp;&amp; (mq == <span class="string">'desktop'</span>) ) {
+        nextSides(projectsSlider);
+    } <span class="keyword">else</span> {
+        singleProjectContent.addClass(<span class="string">'is-visible'</span>);
+    }
+});
+</code></pre><p>在这段代码的<code>singleProjectContent.addClass(&#39;is-visible&#39;)</code>的前面补上这样两句就OK了：</p>
+<pre><code><span class="keyword">var</span> i = $(<span class="keyword">this</span>).parent(<span class="string">'li'</span>).index();
+<span class="built_in">console</span>.log(i);
+</code></pre><p>我还用到的一个素材是<a href="https://codyhouse.co/gem/animated-svg-image-slider/" target="_blank" rel="external">Animated SVG Image Slider</a>，这个素材修改起来没有太多要注意的地方，只是如果添加超过4张的图片时，需要将下述HTML代码中<code>id=&quot;cd-image-1&quot;</code>、<code>id=&quot;cd-changing-path-1&quot;</code>和<code>clip-path=&quot;url(#cd-image-1)&quot;</code>中的数字改为你的图片的序数，图片是第几张就改成几就好，一定要一并修改，否则切换效果就没有了。</p>
+<pre><code><span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"visible"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"cd-svg-wrapper"</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">svg</span> <span class="attribute">viewBox</span>=<span class="value">"0 0 1400 800"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">title</span>&gt;</span>Aimated SVG<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">defs</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">clipPath</span> <span class="attribute">id</span>=<span class="value">"cd-image-1"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">path</span> <span class="attribute">id</span>=<span class="value">"cd-changing-path-1"</span> <span class="attribute">d</span>=<span class="value">"M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"</span>/&gt;</span>
+                <span class="tag">&lt;/<span class="title">clipPath</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">defs</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="title">image</span> <span class="attribute">height</span>=<span class="value">'800px'</span> <span class="attribute">width</span>=<span class="value">"1400px"</span> <span class="attribute">clip-path</span>=<span class="value">"url(#cd-image-1)"</span> <span class="attribute">xlink:href</span>=<span class="value">"img/img-1.jpg"</span>&gt;</span><span class="tag">&lt;/<span class="title">image</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">svg</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">div</span>&gt;</span> <span class="comment">&lt;!-- .cd-svg-wrapper --&gt;</span>
+<span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+</code></pre><p>对源代码感兴趣的也可以点击查看我修改后的源码：<a href="https://github.com/ursocute/wanshiqi-s-photo" target="_blank" rel="external">相册集源码</a>、<a href="https://github.com/ursocute/wanshiqi-s-piano" target="_blank" rel="external">视频集源码</a>，由于我的方向并不是前端工程师，所以代码写的不规范的地方还请多指教。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近发现了一个前端素材库<a href="https://codyhouse.co">CodyHouce</a>，里面有大量HTML,CSS,JS的素材，每个效果都有Demo供预览和下载，于是我就利用了里面的两个素材，在其基础上做了个人的相册集和个人的视频集，并把其中一个的链接放在了博客的侧边栏里，也正好在博客里分享一下，有兴趣的话可以点击<a href="http://ursocute.github.io/wanshiqi-s-photo/wsqphoto/index.html#0">万世奇的相册</a>和<a href="http://ursocute.github.io/wanshiqi-s-piano/index.html#0">万世奇的钢琴曲作品集</a>进行观看。<br>]]>
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[后物欲时代的产品设计]]></title>
@@ -1783,8 +1833,9 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
     <link href="http://yoursite.com/2014/12/25/piano/"/>
     <id>http://yoursite.com/2014/12/25/piano/</id>
     <published>2014-12-24T16:00:00.000Z</published>
-    <updated>2015-11-03T05:39:12.000Z</updated>
-    <content type="html"><![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击作品封面跳转到相应的钢琴演奏页进行观赏。<br><a id="more"></a></p>
+    <updated>2015-11-21T12:45:22.000Z</updated>
+    <content type="html"><![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击下述作品封面跳转到相应的钢琴演奏页进行观赏，或直接点击<a href="http://ursocute.github.io/wanshiqi-s-piano/index.html#0" target="_blank" rel="external">万世奇的钢琴曲作品集</a>进行观看。</p>
+<a id="more"></a>
 <h5 id="Nocturnes:_No-_2_In_E_Flat_Op-_9_No-_2">Nocturnes: No. 2 In E Flat Op. 9 No. 2</h5><p><a href="http://www.bilibili.com/video/av2158355/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi1vFuZf/G2**1SU69rG.jR8f9R.z*bR3WnAoWPmEJPT0w61aCfc!/r/dHMBAAAAAAAA" alt="Nocturnes: No. 2 In E Flat Op. 9 No. 2" title="Nocturnes: No. 2 In E Flat Op. 9 No. 2"></a></p>
 <h5 id="Variations_on_the_Canon">Variations on the Canon</h5><p><a href="http://www.bilibili.com/video/av2021356/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/OZvPTjE9h5dYziEM9D9.AWpgomLuOihdtnMLAsPcxkA!/r/dHYBAAAAAAAA" alt="Variations on the Canon" title="Variations on the Canon"></a></p>
 <h5 id="Summer">Summer</h5><p><a href="http://www.bilibili.com/video/av2021429/" target="_blank" rel="external"><img src="http://r.photo.store.qq.com/psb?/V11Xp1Xi2SdfBD/GDdMYmccahsSGzL4GLsvIA2dBxnIRrlspMQoMMKCDC4!/r/dHMBAAAAAAAA" alt="Summer" title="Summer"></a></p>
@@ -1796,7 +1847,7 @@ QUEUE::~QUEUE( ){                                   <span class="comment">//销�
 <p>以上作品均本人演奏，喜欢的话，可以点击图片到演奏页面里给万世奇点个赞。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击作品封面跳转到相应的钢琴演奏页进行观赏。<br>]]>
+    <![CDATA[<p>这是万世奇的钢琴作品集，一共8首钢琴曲，其中演绎了Chopin、George Winston、李闰珉、久石让等多个作曲家的作品，喜欢的话可以点击下述作品封面跳转到相应的钢琴演奏页进行观赏，或直接点击<a href="http://ursocute.github.io/wanshiqi-s-piano/index.html#0">万世奇的钢琴曲作品集</a>进行观看。</p>]]>
     
     </summary>
     
