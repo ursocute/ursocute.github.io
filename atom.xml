@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-12-13T14:58:33.000Z</updated>
+  <updated>2015-12-16T15:25:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[前端实现登录注册与文集展示]]></title>
+    <link href="http://yoursite.com/2015/12/24/javascript3/"/>
+    <id>http://yoursite.com/2015/12/24/javascript3/</id>
+    <published>2015-12-23T16:00:00.000Z</published>
+    <updated>2015-12-16T15:25:42.000Z</updated>
+    <content type="html"><![CDATA[<p>最近在忙网页设计的结课作业，是要求实现一个登录注册和查看文章的功能，我就还是利用了CodyHouce的素材，具体的修改部分就不加赘述了，这里主要在博客里推荐几个在做的过程中发现的好素材，一个是素材库<a href="https://codyhouse.co" target="_blank" rel="external">CodyHouce</a>，还有一个是美化alert弹窗的<a href="http://www.dglives.com/demo/sweetalert-master/example/" target="_blank" rel="external">SweetAlert</a>，可以在GitHub下载它的<a href="https://github.com/t4t5/sweetalert" target="_blank" rel="external">源码</a>，而我实现后的代码也上传到自己的<a href="https://github.com/ursocute/husters" target="_blank" rel="external">GitHub</a>里了，当然大家也可以直接点击<a href="https://ursocute.github.io/husters/login/index.html#0" target="_blank" rel="external">登陆注册页</a>和<a href="https://ursocute.github.io/husters/forum/index.html#0" target="_blank" rel="external">文集展示页</a>来查看这两个页面。<a id="more"></a>不过要提一下的是，文集展示里的文章并不是我写的，我只是为了凑字就在百度贴吧的华科吧里复制了几个热门帖子里的文字，所以我对文字部分并不负责哦，要是想吐槽文字部分的话，请移步百度贴吧华科吧。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近在忙网页设计的结课作业，是要求实现一个登录注册和查看文章的功能，我就还是利用了CodyHouce的素材，具体的修改部分就不加赘述了，这里主要在博客里推荐几个在做的过程中发现的好素材，一个是素材库<a href="https://codyhouse.co">CodyHouce</a>，还有一个是美化alert弹窗的<a href="http://www.dglives.com/demo/sweetalert-master/example/">SweetAlert</a>，可以在GitHub下载它的<a href="https://github.com/t4t5/sweetalert">源码</a>，而我实现后的代码也上传到自己的<a href="https://github.com/ursocute/husters">GitHub</a>里了，当然大家也可以直接点击<a href="https://ursocute.github.io/husters/login/index.html#0">登陆注册页</a>和<a href="https://ursocute.github.io/husters/forum/index.html#0">文集展示页</a>来查看这两个页面。]]>
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[我想要真物]]></title>
@@ -1729,174 +1748,6 @@ class Window1 extends JFrame implements ActionListener{
       <category term="手绘" scheme="http://yoursite.com/tags/%E6%89%8B%E7%BB%98/"/>
     
       <category term="手绘" scheme="http://yoursite.com/categories/%E6%89%8B%E7%BB%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[C++实现两个栈模拟一个队列]]></title>
-    <link href="http://yoursite.com/2015/05/06/c++/"/>
-    <id>http://yoursite.com/2015/05/06/c++/</id>
-    <published>2015-05-05T16:00:00.000Z</published>
-    <updated>2015-10-27T02:16:12.000Z</updated>
-    <content type="html"><![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br><a id="more"></a></p>
-<pre><code>#include &lt;stdio.h&gt;
-#include &lt;alloc.h&gt;
-#include &lt;stdlib.h&gt;
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>;
-<span class="title">class</span> <span class="title">STACK</span></span>{
-    <span class="built_in">int</span>  *<span class="keyword">const</span>  elems;    <span class="comment">//申请内存用于存放栈的元素</span>
-    <span class="keyword">const</span>  <span class="built_in">int</span>   max;    <span class="comment">//栈能存放的最大元素个数</span>
-    <span class="built_in">int</span>   pos;            <span class="comment">//栈实际已有元素个数，栈空时    pos=0;</span>
-public:
-STACK(<span class="built_in">int</span> m);        <span class="comment">//初始化栈：最多m个元素</span>
-STACK(<span class="keyword">const</span> STACK&amp;s);             <span class="comment">//用栈s拷贝初始化栈</span>
-virtual <span class="built_in">int</span>  size ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的最大元素    个数max</span>
-virtual <span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回栈的实际元素个数pos</span>
-virtual <span class="built_in">int</span> <span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>;<span class="comment">//取下标x处的栈元素</span>
-virtual STACK&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);     <span class="comment">//将e入栈,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出栈到e,并返回栈</span>
-virtual STACK&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s); <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-virtual <span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印栈</span>
-virtual ~STACK( );                <span class="comment">//销毁栈</span>
-
-};
-
-STACK::STACK(<span class="built_in">int</span> m):elems(<span class="keyword">new</span> <span class="built_in">int</span>[m]),max(m){}
-
-STACK::STACK(<span class="keyword">const</span> STACK&amp;s):elems(<span class="keyword">new</span>     <span class="built_in">int</span>[s.max]),max(s.max){}       <span class="comment">//用栈s拷贝初始化栈</span>
-
-<span class="built_in">int</span>  STACK::size ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;max;
-}    <span class="comment">//返回栈的最大元素个数max</span>
-
-STACK::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{
-    <span class="keyword">return</span> <span class="keyword">this</span>-&gt;pos;
-}    <span class="comment">//返回栈的实际元素个数pos</span>
-
-<span class="built_in">int</span> STACK::<span class="literal">operator</span>[ ] (<span class="built_in">int</span> x) <span class="keyword">const</span>{
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">return</span> a[x];
-
-}    <span class="comment">//取下标x处的栈元素</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-        a++;
-    }
-    *a=e;
-    <span class="keyword">this</span>-&gt;pos++;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}    <span class="comment">//将e入栈,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){
-    <span class="built_in">int</span> *a=<span class="keyword">this</span>-&gt;elems;
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;*a;i++){
-    a++;
-}
-a--;
-e=*a;
-*a=<span class="number">0</span>;
-<span class="keyword">this</span>-&gt;pos--;
-<span class="keyword">return</span> *<span class="keyword">this</span>;
-}     <span class="comment">//出栈到e,并返回栈</span>
-
-STACK&amp; STACK::<span class="literal">operator</span>=(<span class="keyword">const</span> STACK&amp;s){
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;s.max;i++){
-        <span class="keyword">this</span>-&gt;elems[i]=s.elems[i];
-    }
-    *(<span class="built_in">int</span>*)&amp;<span class="keyword">this</span>-&gt;max=s.max;
-    <span class="keyword">this</span>-&gt;pos=s.pos;
-    <span class="keyword">return</span> *<span class="keyword">this</span>;
-}       <span class="comment">//赋s给栈,并返回被赋值的栈</span>
-
-<span class="keyword">void</span> STACK::<span class="built_in">print</span>( ) <span class="keyword">const</span>{
-    <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;<span class="keyword">this</span>-&gt;max;i++){
-        printf(<span class="string">"%d"</span>,<span class="keyword">this</span>-&gt;elems[i]);
-}
-}    <span class="comment">//打印栈</span>
-
-STACK::~STACK( ){
-    free(<span class="keyword">this</span>-&gt;elems);
-}
-
-<span class="class"><span class="keyword">class</span> <span class="title">QUEUE</span>:<span class="title">public</span> <span class="title">STACK</span></span>{
-    STACK  s2;
-public:
-QUEUE(<span class="built_in">int</span> m);        <span class="comment">//初始化队列：每个栈最多m个元素</span>
-QUEUE(<span class="keyword">const</span> QUEUE&amp;s);         <span class="comment">//用队列s拷贝初始化队列</span>
-<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>;            <span class="comment">//返回队列的实际元素个数</span>
-QUEUE&amp; <span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e);         <span class="comment">//将e入队列,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e);    <span class="comment">//出队列到e,并返回队列</span>
-QUEUE&amp; <span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s); <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-<span class="keyword">void</span> <span class="built_in">print</span>( ) <span class="keyword">const</span>;            <span class="comment">//打印队列</span>
-~QUEUE( );                    <span class="comment">//销毁队列</span>
-};
-
-
-QUEUE::QUEUE(<span class="built_in">int</span> m):s2(m),STACK(m){}             <span class="comment">//初始化队列：每个栈最多m个元素</span>
-
-QUEUE::QUEUE(<span class="keyword">const</span> QUEUE&amp;s):STACK(s.s2),s2(s.s2){}     <span class="comment">//用队列s拷贝初始化队列</span>
-
-QUEUE::<span class="literal">operator</span> <span class="built_in">int</span> ( ) <span class="keyword">const</span>{                       <span class="comment">//返回队列的实际元素个数</span>
-       <span class="built_in">int</span> x=s2;
-       <span class="keyword">return</span> x;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&lt;&lt;(<span class="built_in">int</span> e){                     <span class="comment">//将e入队列,并返回队列</span>
-       s2&lt;&lt;e;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>&gt;&gt;(<span class="built_in">int</span> &amp;e){                     <span class="comment">//出队列到e,并返回队列</span>
-       <span class="built_in">int</span> k=s2;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        s2&gt;&gt;e;
-        STACK::<span class="literal">operator</span>&lt;&lt;(e);
-       }
-       (*<span class="keyword">this</span>)&gt;&gt;e;
-       k--;
-       <span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;k;i++){
-        STACK::<span class="literal">operator</span>&gt;&gt;(e);
-        (*<span class="keyword">this</span>)&lt;&lt;(e);
-       }
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-QUEUE&amp; QUEUE::<span class="literal">operator</span>=(<span class="keyword">const</span> QUEUE&amp;s){               <span class="comment">//赋s给队列,并返回被赋值的队列</span>
-       s2=s.s2;
-       <span class="keyword">return</span> *<span class="keyword">this</span>;
-}
-
-<span class="keyword">void</span> QUEUE::<span class="built_in">print</span>( ) <span class="keyword">const</span>{                           <span class="comment">//打印队列</span>
-      s2.<span class="built_in">print</span>();
-}
-
-QUEUE::~QUEUE( ){                                   <span class="comment">//销毁队列</span>
-
-}
-
-<span class="built_in">int</span> main (<span class="built_in">int</span> argc,char* argv[])
-{     QUEUE s(<span class="number">10</span>),r(<span class="number">10</span>);
-      QUEUE *t=&amp;s,*u=&amp;r;
-      <span class="built_in">int</span>  x;
-      x=s;
-      s&lt;&lt;<span class="number">1</span>;
-      s&gt;&gt;<span class="number">2</span>;
-      t-&gt;<span class="built_in">print</span>();
-      r=s;
-      <span class="keyword">return</span> <span class="number">0</span>;
-}
-</code></pre><p>这种两个栈模拟的队列的方式是用一个栈存储元素，另一个栈来辅助进出队列的方式来达到队列的模拟，是种比较有意思的代码思想。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>C++上机一共做了6个实验，前几个大多是对栈和队列进行的基础操作，第6个实验则是采用面向对象的思想把之前写的SATCK类继承形成新的类QUEQUE，从而实现两个栈模拟一个队列，觉得有意思，就写在博客里记录下来。<br>]]>
-    
-    </summary>
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="代码" scheme="http://yoursite.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
