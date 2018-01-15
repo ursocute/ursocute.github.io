@@ -1,11 +1,23 @@
-<!doctype html>
-<html class="theme-next use-motion theme-next-mist">
-<head>
+<!DOCTYPE html>
+
+
+
   
 
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
@@ -18,19 +30,47 @@
 
 
 
-  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
-
-
-
-  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-
-<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
 
 
 
 
-  <meta name="keywords" content="Hexo,next" />
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
 
 
 
@@ -38,7 +78,7 @@
 
 
 
-  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
 
 
 <meta name="description">
@@ -52,34 +92,51 @@
 <meta name="twitter:description">
 
 
-<script type="text/javascript" id="hexo.configuration">
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post'
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
 
-  <title> SHIQI's Blog </title>
-</head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>SHIQI's Blog</title>
   
+
+
+
+
 
   <script type="text/javascript">
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?f75c9fc55ce711d994ad937b3930c70a";
+      hm.src = "https://hm.baidu.com/hm.js?f75c9fc55ce711d994ad937b3930c70a";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -87,79 +144,103 @@
 
 
 
-  <div class="container one-column 
-   page-home 
-">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><h1 class="site-meta">
-  <span class="logo-line-before"><i></i></span>
-  <a href="/" class="brand" rel="start">
-      <span class="logo">
-        <i class="icon-next-logo"></i>
-      </span>
-      <span class="site-title">SHIQI's Blog</span>
-  </a>
-  <span class="logo-line-after"><i></i></span>
-</h1>
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">SHIQI's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon icon-next-home"></i> <br />
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
             Home
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            <i class="menu-item-icon icon-next-categories"></i> <br />
-            Categories
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            <i class="menu-item-icon icon-next-about"></i> <br />
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
             About
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            <i class="menu-item-icon icon-next-archives"></i> <br />
-            Archives
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            <i class="menu-item-icon icon-next-tags"></i> <br />
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
             Tags
           </a>
         </li>
       
-
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
       
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
       
     </ul>
   
@@ -167,24 +248,42 @@
   
 </nav>
 
+
+
  </div>
     </header>
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content"> 
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
     
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/16/Ixd8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -192,31 +291,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2018/01/16/Ixd8/" itemprop="url">
-                  PlantPeace - A Peaceful Living Space
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/01/16/Ixd8/" itemprop="url">PlantPeace - A Peaceful Living Space</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2018-01-16T00:00:00+00:00" content="2018-01-16">
-              2018-01-16
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-16T00:00:00+00:00">
+                2018-01-16
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/交互/" itemprop="url" rel="index">
                     <span itemprop="name">交互</span>
                   </a>
@@ -224,33 +334,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/01/16/Ixd8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/16/Ixd8/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2018/01/16/Ixd8/"class="leancloud_visitors"  data-flag-title="PlantPeace - A Peaceful Living Space">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -258,16 +366,29 @@
       
         
           <p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues. Welcome to any comments : )
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2018/01/16/Ixd8/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/16/Ixd8/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -277,6 +398,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -284,13 +409,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/15/Ixd7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -298,31 +437,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2018/01/15/Ixd7/" itemprop="url">
-                  DeeperTrip - A Deeper Insight into Scenic Spot
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/01/15/Ixd7/" itemprop="url">DeeperTrip - A Deeper Insight into Scenic Spot</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2018-01-15T00:00:00+00:00" content="2018-01-15">
-              2018-01-15
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-15T00:00:00+00:00">
+                2018-01-15
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/交互/" itemprop="url" rel="index">
                     <span itemprop="name">交互</span>
                   </a>
@@ -330,33 +480,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2018/01/15/Ixd7/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/15/Ixd7/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2018/01/15/Ixd7/"class="leancloud_visitors"  data-flag-title="DeeperTrip - A Deeper Insight into Scenic Spot">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -364,16 +512,29 @@
       
         
           <p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots. Welcome to any comments : )
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2018/01/15/Ixd7/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/15/Ixd7/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -383,6 +544,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -390,13 +555,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/25/passage5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -404,31 +583,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/09/25/passage5/" itemprop="url">
-                  Digital Story - What is HCI?
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2017/09/25/passage5/" itemprop="url">Digital Story - What is HCI?</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2017-09-25T00:00:00+01:00" content="2017-09-25">
-              2017-09-25
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-25T00:00:00+01:00">
+                2017-09-25
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/文集/" itemprop="url" rel="index">
                     <span itemprop="name">文集</span>
                   </a>
@@ -436,33 +626,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/09/25/passage5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/25/passage5/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2017/09/25/passage5/"class="leancloud_visitors"  data-flag-title="Digital Story - What is HCI?">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -470,16 +658,29 @@
       
         
           <p>This is a funny digital story telling what is HCI, have fun guys!
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/09/25/passage5/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/09/25/passage5/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -489,6 +690,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -496,13 +701,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/22/passage4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -510,31 +729,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/10/22/passage4/" itemprop="url">
-                  讲个故事
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/10/22/passage4/" itemprop="url">讲个故事</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2016-10-22T00:00:00+01:00" content="2016-10-22">
-              2016-10-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-22T00:00:00+01:00">
+                2016-10-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/文集/" itemprop="url" rel="index">
                     <span itemprop="name">文集</span>
                   </a>
@@ -542,33 +772,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/22/passage4/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/22/passage4/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2016/10/22/passage4/"class="leancloud_visitors"  data-flag-title="讲个故事">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -576,16 +804,29 @@
       
         
           <p>突然觉得，努力程度的重要性相比起决策来说显得微不足道的多了。好久没更博客，这次我就来讲个小故事吧。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/22/passage4/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/10/22/passage4/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -595,6 +836,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -602,13 +847,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/01/01/product5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -616,31 +875,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2016/01/01/product5/" itemprop="url">
-                  为什么青少年爱用QQ，中老年人爱用微信
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2016/01/01/product5/" itemprop="url">为什么青少年爱用QQ，中老年人爱用微信</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2016-01-01T00:00:00+00:00" content="2016-01-01">
-              2016-01-01
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-01-01T00:00:00+00:00">
+                2016-01-01
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/产品/" itemprop="url" rel="index">
                     <span itemprop="name">产品</span>
                   </a>
@@ -648,33 +918,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/01/product5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/product5/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2016/01/01/product5/"class="leancloud_visitors"  data-flag-title="为什么青少年爱用QQ，中老年人爱用微信">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -682,16 +950,29 @@
       
         
           <p>青少年更爱用QQ，而中老年人更爱用微信，这是一个普遍趋势了，当我们看自己的父母把微信玩的爱不释手的时候，却发现我们的表弟表妹侄儿侄女们更倾向于用QQ，知乎里有许多人都对这个问题谈了自己的看法，而我想从产品层面来分析一下这个问题，总的来说，我觉得主要是使用门槛、关系链、用户心理、使用场景这四大原因。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/01/product5/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/01/01/product5/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -701,6 +982,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -708,13 +993,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/24/javascript3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -722,31 +1021,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/12/24/javascript3/" itemprop="url">
-                  前端实现登录注册与文集展示
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2015/12/24/javascript3/" itemprop="url">前端实现登录注册与文集展示</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-24T00:00:00+00:00" content="2015-12-24">
-              2015-12-24
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-24T00:00:00+00:00">
+                2015-12-24
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/代码/" itemprop="url" rel="index">
                     <span itemprop="name">代码</span>
                   </a>
@@ -754,33 +1064,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/24/javascript3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/24/javascript3/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2015/12/24/javascript3/"class="leancloud_visitors"  data-flag-title="前端实现登录注册与文集展示">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -788,16 +1096,29 @@
       
         
           <p>最近在忙网页设计的结课作业，是要求实现一个登录注册和查看文章的功能，我就还是利用了CodyHouce的素材，具体的修改部分就不加赘述了，这里主要在博客里推荐几个在做的过程中发现的好素材，一个是素材库<a href="https://codyhouse.co">CodyHouce</a>，还有一个是美化alert弹窗的<a href="http://www.dglives.com/demo/sweetalert-master/example/">SweetAlert</a>，可以在GitHub下载它的<a href="https://github.com/t4t5/sweetalert">源码</a>，而我实现后的代码也上传到自己的<a href="https://github.com/ursocute/husters">GitHub</a>里了，当然大家也可以直接点击<a href="https://ursocute.github.io/husters/login/index.html#0">登陆注册页</a>和<a href="https://ursocute.github.io/husters/forum/index.html#0">文集展示页</a>来查看这两个页面。
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/24/javascript3/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/12/24/javascript3/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -807,6 +1128,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -814,13 +1139,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/22/passage3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -828,31 +1167,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/12/22/passage3/" itemprop="url">
-                  我想要真物
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2015/12/22/passage3/" itemprop="url">我想要真物</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-22T00:00:00+00:00" content="2015-12-22">
-              2015-12-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-22T00:00:00+00:00">
+                2015-12-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/文集/" itemprop="url" rel="index">
                     <span itemprop="name">文集</span>
                   </a>
@@ -860,33 +1210,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/22/passage3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/22/passage3/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2015/12/22/passage3/"class="leancloud_visitors"  data-flag-title="我想要真物">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -894,16 +1242,29 @@
       
         
           <p>最近重温了大老师系列的一二季，番剧里的各种人物的交织和现实生活中的人际关系是何等的相似，这个故事里并没有什么反派，每个人都是温柔而正确的孩子，而正是这群温柔而正确的孩子，在用温柔而正确的方式去维持着伪物的关系，故事里的每个人都渴望着真实，但每个人的真实是不同的，无法用来沟通，所以人们欺瞒着自己而选择了伪物，正如现实中我们一样。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/22/passage3/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/12/22/passage3/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -913,6 +1274,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -920,13 +1285,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/12/06/product4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -934,31 +1313,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/12/06/product4/" itemprop="url">
-                  交互设计有哪些原则
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2015/12/06/product4/" itemprop="url">交互设计有哪些原则</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-12-06T00:00:00+00:00" content="2015-12-06">
-              2015-12-06
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-12-06T00:00:00+00:00">
+                2015-12-06
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/交互/" itemprop="url" rel="index">
                     <span itemprop="name">交互</span>
                   </a>
@@ -966,33 +1356,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/06/product4/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/06/product4/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2015/12/06/product4/"class="leancloud_visitors"  data-flag-title="交互设计有哪些原则">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1000,16 +1388,29 @@
       
         
           <p>之前在知乎回答了这个问题<a href="http://www.zhihu.com/question/19812118/answer/74616357">「交互设计原则有哪些？」</a>，但因为时间缘故每一条都没细说，所以就想在博客里把每一条原则好好的解释一下，这些原则主要来自于唐纳德·诺曼的《设计心理学》以及<a href="http://zhuanlan.zhihu.com/uxcafe">xidea的咖啡馆</a>，大家有兴趣的话也可以看看这本书以及xidea的知乎专栏。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/06/product4/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/12/06/product4/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1019,6 +1420,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1026,13 +1431,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/11/20/javascript2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1040,31 +1459,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/11/20/javascript2/" itemprop="url">
-                  用CodyHouce做个人相册集和视频集
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2015/11/20/javascript2/" itemprop="url">用CodyHouce做个人相册集和视频集</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-11-20T00:00:00+00:00" content="2015-11-20">
-              2015-11-20
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-11-20T00:00:00+00:00">
+                2015-11-20
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/代码/" itemprop="url" rel="index">
                     <span itemprop="name">代码</span>
                   </a>
@@ -1072,33 +1502,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/11/20/javascript2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/20/javascript2/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2015/11/20/javascript2/"class="leancloud_visitors"  data-flag-title="用CodyHouce做个人相册集和视频集">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1106,16 +1534,29 @@
       
         
           <p>最近发现了一个前端素材库<a href="https://codyhouse.co">CodyHouce</a>，里面有大量HTML,CSS,JS的素材，每个效果都有Demo供预览和下载，于是我就利用了里面的两个素材，在其基础上做了个人的相册集和个人的视频集，并把其中一个的链接放在了博客的侧边栏里，也正好在博客里分享一下，有兴趣的话可以点击<a href="http://ursocute.github.io/wanshiqi-s-photo/wsqphoto/index.html#0">万世奇的相册</a>和<a href="http://ursocute.github.io/wanshiqi-s-piano/index.html#0">万世奇的钢琴曲作品集</a>进行观看。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/20/javascript2/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/11/20/javascript2/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1125,6 +1566,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1132,13 +1577,27 @@
       
 
   
-  
 
   
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/11/12/product3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="SHIQI">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://7xohes.com1.z0.glb.clouddn.com/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SHIQI's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1146,31 +1605,42 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2015/11/12/product3/" itemprop="url">
-                  后物欲时代的产品设计
-                </a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2015/11/12/product3/" itemprop="url">后物欲时代的产品设计</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            Posted on
-            <time itemprop="dateCreated" datetime="2015-11-12T00:00:00+00:00" content="2015-11-12">
-              2015-11-12
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-11-12T00:00:00+00:00">
+                2015-11-12
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; In
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/产品/" itemprop="url" rel="index">
                     <span itemprop="name">产品</span>
                   </a>
@@ -1178,33 +1648,31 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/11/12/product3/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/12/product3/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
+          
+          
 
+          
 
-   <span id="/2015/11/12/product3/"class="leancloud_visitors"  data-flag-title="后物欲时代的产品设计">
-        &nbsp; | &nbsp; 阅读次数
-        </span>
+          
 
-    </div>
-  </header>
+          
 
+        </div>
+      </header>
+    
 
-    <div class="post-body">
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1212,16 +1680,29 @@
       
         
           <p>最近读了郑也夫著作的《后物欲时代的来临》，这是一本关于人类社会的书，虽说只有短短十二章，但却解释了人类需求、消费实质、广告原罪、物质崇拜、工作与娱乐等多种社会现象，特别是其中探讨的人类需求实质对于产品设计也有很大的指导性，其中对于消费门槛的叙述在某种程度上也反映了用户体验的实质，因此，我就把对于这本书的思考转移到产品设计上，写成了这篇文章。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/11/12/product3/" rel="contents">
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/11/12/product3/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
 
     <footer class="post-footer">
+      
+
       
 
       
@@ -1231,6 +1712,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -1239,17 +1724,20 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">&raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
- </div>
 
+
+          </div>
+          
+
+
+          
+
+        </div>
         
-
-        
-      </div>
-
-      
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -1260,83 +1748,113 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
-      <section class="site-overview">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xohes.com1.z0.glb.clouddn.com/avatar.png" alt="万世奇" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">万世奇</p>
-        </div>
-        <p class="site-description motion-element" itemprop="description">不打扰是我的温柔，偏偏我这人，温柔极了。</p>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">27</span>
-              <span class="site-state-item-name">posts</span>
-            </a>
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://7xohes.com1.z0.glb.clouddn.com/avatar.png"
+                alt="SHIQI" />
+            
+              <p class="site-author-name" itemprop="name">SHIQI</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">7</span>
-              <span class="site-state-item-name">categories</span>
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
               </a>
-          </div>
-
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">10</span>
-              <span class="site-state-item-name">tags</span>
-              </a>
-          </div>
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="menu-item-icon icon-next-feed"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
+            </div>
           
-            
-              <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/gan-jing-86-70" target="_blank">zhihu</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://i.ui.cn/ucenter/140893.html" target="_blank">ui.cn</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/ursocute" target="_blank">github</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://medium.com/@ursocute" target="_blank">medium</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="mailto:ursocute@foxmail.com" target="_blank">e-mail</a>
-              </span>
-            
+
           
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/ursocute" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://medium.com/@ursocute" target="_blank" title="Medium">
+                      
+                        <i class="fa fa-fw fa-medium"></i>Medium</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://zhuanlan.zhihu.com/ursocute" target="_blank" title="Zhihu">
+                      
+                        <i class="fa fa-fw fa-zhihu"></i>Zhihu</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:ursocute@foxmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-enmail"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
         </div>
-
-        
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
       </section>
+
+      
 
       
 
@@ -1344,194 +1862,199 @@
   </aside>
 
 
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
-      <div class="footer-inner"> <div class="copyright" >
-  
-  &copy; &nbsp;  2014 - 
-  <span itemprop="copyrightYear">2018</span>
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="icon-next-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Shiqi</span>
-</div>
+  <span class="author" itemprop="copyrightHolder">SHIQI</span>
 
-<div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
+  
 </div>
 
 
- </div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  
-  
-    
-
-  
-    
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"ursocute"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-    
-  
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
-  
-
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
-
-
-
-
-  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-
-  <script type="text/javascript">
-    $(document).ready(function () {
-      if (CONFIG.sidebar === 'always') {
-        displaySidebar();
-      }
-      if (isMobile()) {
-        FastClick.attach(document.body);
-      }
-    });
-  </script>
-
-  
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/lazyload.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#posts").find('img').lazyload({
-        placeholder: "/images/loading.gif",
-        effect: "fadeIn"
-      });
-    });
-  </script>
-  
-     <!-- custom analytics part create by xiamo -->
-<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-<script>AV.initialize("hMpa9t1yzzATAuTHjfLEevXK", "JC4Pli8XAogqPAsDn4xpghlj");</script>
-<script>
-function showTime(Counter) {
-  var query = new AV.Query(Counter);
-  $(".leancloud_visitors").each(function() {
-    var url = $(this).attr("id").trim();
-    query.equalTo("url", url);
-    query.find({
-      success: function(results) {
-        if (results.length == 0) {
-          var content = $(document.getElementById(url)).text() + ': 0';
-          $(document.getElementById(url)).text(content);
-          return;
-        }
-        for (var i = 0; i < results.length; i++) {
-          var object = results[i];
-          var content = $(document.getElementById(url)).text() + ': ' + object.get('time');
-          $(document.getElementById(url)).text(content);
-        }
-      },
-      error: function(object, error) {
-        console.log("Error: " + error.code + " " + error.message);
-      }
-    });
-
-  });
-}
-
-function addCount(Counter) {
-  var Counter = AV.Object.extend("Counter");
-  url = $(".leancloud_visitors").attr('id').trim();
-  title = $(".leancloud_visitors").attr('data-flag-title').trim();
-  var query = new AV.Query(Counter);
-  query.equalTo("url", url);
-  query.find({
-    success: function(results) {
-      if (results.length > 0) {
-        var counter = results[0];
-        counter.fetchWhenSave(true);
-        counter.increment("time");
-        counter.save(null, {
-          success: function(counter) {
-            var content = $(document.getElementById(url)).text() + ': ' + counter.get('time');
-            $(document.getElementById(url)).text(content);
-          },
-          error: function(counter, error) {
-            console.log('Failed to save Visitor num, with error message: ' + error.message);
-          }
-        });
-      } else {
-        var newcounter = new Counter();
-        newcounter.set("title", title);
-        newcounter.set("url", url);
-        newcounter.set("time", 1);
-        newcounter.save(null, {
-          success: function(newcounter) {
-              console.log("newcounter.get('time')="+newcounter.get('time'));
-            var content = $(document.getElementById(url)).text() + ': ' + newcounter.get('time');
-            $(document.getElementById(url)).text(content);
-          },
-          error: function(newcounter, error) {
-            console.log('Failed to create');
-          }
-        });
-      }
-    },
-    error: function(error) {
-      console.log('Error:' + error.code + " " + error.message);
-    }
-  });
-}
-$(function() {
-  var Counter = AV.Object.extend("Counter");
-  if ($('.leancloud_visitors').length == 1) {
-    addCount(Counter);
-  } else if ($('.post-title-link').length > 1) {
-    showTime(Counter);
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
   }
-}); 
 </script>
+
+
+
+
+
+
+
+
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
