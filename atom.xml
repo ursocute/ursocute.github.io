@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-15T19:49:42.908Z</updated>
+  <updated>2018-01-15T20:17:39.573Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="http://yoursite.com/2018/01/16/Ixd8/"/>
     <id>http://yoursite.com/2018/01/16/Ixd8/</id>
     <published>2018-01-16T00:00:00.000Z</published>
-    <updated>2018-01-15T19:49:42.908Z</updated>
-    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues.<a id="more"></a> Welcome to any comments : )</p>
+    <updated>2018-01-15T20:17:39.573Z</updated>
+    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues. Welcome to any comments : )<a id="more"></a></p>
 <p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd14.png" alt="PlantPeace" title="PlantPeace"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues.]]>
+    <![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues. Welcome to any comments : )]]>
     
     </summary>
     
@@ -39,18 +39,38 @@
     <link href="http://yoursite.com/2018/01/15/Ixd7/"/>
     <id>http://yoursite.com/2018/01/15/Ixd7/</id>
     <published>2018-01-15T00:00:00.000Z</published>
-    <updated>2018-01-15T19:49:31.855Z</updated>
-    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots. <a id="more"></a>Welcome to any comments : )</p>
+    <updated>2018-01-15T20:17:30.260Z</updated>
+    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots. Welcome to any comments : )<a id="more"></a></p>
 <p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd13.png" alt="DeeperTrip" title="DeeperTrip"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots.]]>
+    <![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots. Welcome to any comments : )]]>
     
     </summary>
     
       <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
     
       <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Digital Story - What is HCI?]]></title>
+    <link href="http://yoursite.com/2017/09/25/passage5/"/>
+    <id>http://yoursite.com/2017/09/25/passage5/</id>
+    <published>2017-09-24T23:00:00.000Z</published>
+    <updated>2018-01-15T20:27:03.347Z</updated>
+    <content type="html"><![CDATA[<p>This is a funny digital story telling what is HCI, have fun guys! <a id="more"></a>Click the image to watch : )</p>
+<h5 id="What_is_HCI?">What is HCI?</h5><p><a href="https://www.youtube.com/watch?v=QYTTFu1hvVA" target="_blank" rel="external"><img src="http://7xohes.com1.z0.glb.clouddn.com/Passagex.png" alt="What is HCI" title="What is HCI"></a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is a funny digital story telling what is HCI, have fun guys!]]>
+    
+    </summary>
+    
+      <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
+    
+      <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
     
   </entry>
   
@@ -1579,30 +1599,6 @@ import javax.swing.*;
 ]]></content>
     <summary type="html">
     <![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。]]>
-    
-    </summary>
-    
-      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
-    
-      <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
-    
-      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[iOS动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/09/18/Ixd2/"/>
-    <id>http://yoursite.com/2015/09/18/Ixd2/</id>
-    <published>2015-09-17T23:00:00.000Z</published>
-    <updated>2015-12-02T14:59:01.000Z</updated>
-    <content type="html"><![CDATA[<p>用Hype临摹了iOS9的几个简单动效。基本上用的都是大小、位置、透明度的改变，曲线用的是渐进渐出和弹性，还有时间的调整。就我感觉而言，Hype做动效是很方便快捷的，但是对于一些复杂的动效，比如形变等，还是需要AE来完成比较好，不过这并不妨碍Hype成为一款H5的动效神器。<a id="more"></a></p>
-<h5 id="iOS9_多窗口弹出动效">iOS9 多窗口弹出动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd2-1.gif" alt="iOS9 多窗口动效" title="iOS9 多窗口弹出动效"></p>
-<h5 id="iOS9_多窗口切换动效">iOS9 多窗口切换动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd2-2.gif" alt="iOS9 多窗口动效" title="iOS9 多窗口切换动效"></p>
-<h5 id="iOS9_底部View进入App动效">iOS9 底部View进入App动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd2-3.gif" alt="iOS9 底部View进入App动效" title="iOS9 底部View进入App动效"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>用Hype临摹了iOS9的几个简单动效。基本上用的都是大小、位置、透明度的改变，曲线用的是渐进渐出和弹性，还有时间的调整。就我感觉而言，Hype做动效是很方便快捷的，但是对于一些复杂的动效，比如形变等，还是需要AE来完成比较好，不过这并不妨碍Hype成为一款H5的动效神器。]]>
     
     </summary>
     
