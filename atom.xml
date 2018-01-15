@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-10-22T14:47:17.000Z</updated>
+  <updated>2018-01-15T19:49:42.908Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[PlantPeace - A Peaceful Living Space]]></title>
+    <link href="http://yoursite.com/2018/01/16/Ixd8/"/>
+    <id>http://yoursite.com/2018/01/16/Ixd8/</id>
+    <published>2018-01-16T00:00:00.000Z</published>
+    <updated>2018-01-15T19:49:42.908Z</updated>
+    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues.<a id="more"></a> Welcome to any comments : )</p>
+<p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd14.png" alt="PlantPeace" title="PlantPeace"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues.]]>
+    
+    </summary>
+    
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[DeeperTrip - A Deeper Insight into Scenic Spot]]></title>
+    <link href="http://yoursite.com/2018/01/15/Ixd7/"/>
+    <id>http://yoursite.com/2018/01/15/Ixd7/</id>
+    <published>2018-01-15T00:00:00.000Z</published>
+    <updated>2018-01-15T19:49:31.855Z</updated>
+    <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots. <a id="more"></a>Welcome to any comments : )</p>
+<p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd13.png" alt="DeeperTrip" title="DeeperTrip"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This is the Ixd portfolio that describes an AR product that helps users get a deeper insight of the culture and history of scenic spots.]]>
+    
+    </summary>
+    
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[讲个故事]]></title>
@@ -1571,58 +1611,6 @@ import javax.swing.*;
       <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
     
       <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[两个动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/08/30/Ixd1/"/>
-    <id>http://yoursite.com/2015/08/30/Ixd1/</id>
-    <published>2015-08-29T23:00:00.000Z</published>
-    <updated>2015-12-02T14:56:05.000Z</updated>
-    <content type="html"><![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。<a id="more"></a></p>
-<h5 id="UI-cn_iOS_抽屉式动效">UI.cn iOS 抽屉式动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd11.gif" alt="UI.cn iOS 抽屉式导航" title="UI.cn iOS 抽屉式动效"></p>
-<h5 id="豆瓣阅读_点击书本动效">豆瓣阅读 点击书本动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd12.gif" alt="豆瓣阅读 点击书本动效" title="豆瓣阅读 点击书本动效"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Hype是Mac平台独占的一款动效神器，这款软件和Sketch一样深得我心，之前我也尝试过Framer Studio这款交互利器，但我认为Framer对设计师并不友好，过多的代码影响效率不说，也让设计师不能专注于设计本身，而相比之下Hype则简洁易用得多，所以在这里展示两个Hype做的简单动效，显示一下Hype的强大能力。动效和交互并不完全是一个东西，但动效和交互也有交集，因此这里还是归类到交互里。]]>
-    
-    </summary>
-    
-      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
-    
-      <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
-    
-      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[UI临摹汇总 by Sketch]]></title>
-    <link href="http://yoursite.com/2015/07/27/UI1/"/>
-    <id>http://yoursite.com/2015/07/27/UI1/</id>
-    <published>2015-07-26T23:00:00.000Z</published>
-    <updated>2015-12-11T09:22:41.000Z</updated>
-    <content type="html"><![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，能让设计师更专注于设计本身，而不是软件的使用。这几天我就用Sketch临摹了自己喜欢的几幅UI，大多是扁平化的风格，也有像素风，其中配色、阴影、点和线条的运用都很值得学习，就放在博客里记录一下自己这几天的临摹作品。<br><a id="more"></a></p>
-<h5 id="Cute_Gril">Cute Gril</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-10.png" alt="Cute Gril" title="Cute Gril"></p>
-<h5 id="Mactonish">Mactonish</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-1.png" alt="Mactonish" title="Mactonish"></p>
-<h5 id="Santa_Postage">Santa Postage</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-2.png" alt="Santa Postage" title="Santa Postage"></p>
-<h5 id="中秋节">中秋节</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-3.png" alt="中秋节" title="中秋节"></p>
-<h5 id="青年节">青年节</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-4.png" alt="青年节" title="青年节"></p>
-<h5 id="Bureau">Bureau</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-5.png" alt="Bureau" title="Bureau"></p>
-<h5 id="Decoration">Decoration</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-6.png" alt="Decoration" title="Decoration"></p>
-<h5 id="Drink">Drink</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-7.png" alt="Drink" title="Drink"></p>
-<h5 id="Baymax_say_hi">Baymax say hi</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-8.png" alt="Baymax say hi" title="Baymax say hi"></p>
-<h5 id="Baymax_pokes_belly">Baymax pokes belly</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/ui-9.png" alt="Baymax pokes belly" title="Baymax pokes belly"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>最近喜欢上了一款Mac平台的画UI的应用-Sketch，操作十分简单，但功能一点也不逊色，能让设计师更专注于设计本身，而不是软件的使用。这几天我就用Sketch临摹了自己喜欢的几幅UI，大多是扁平化的风格，也有像素风，其中配色、阴影、点和线条的运用都很值得学习，就放在博客里记录一下自己这几天的临摹作品。<br>]]>
-    
-    </summary>
-    
-      <category term="UI" scheme="http://yoursite.com/tags/UI/"/>
-    
-      <category term="UI" scheme="http://yoursite.com/categories/UI/"/>
     
   </entry>
   
