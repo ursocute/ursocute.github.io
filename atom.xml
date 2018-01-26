@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2018-01-18T22:20:38.243Z</updated>
+  <updated>2018-01-18T22:20:56.633Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2018/01/16/Ixd8/"/>
     <id>http://yoursite.com/2018/01/16/Ixd8/</id>
     <published>2018-01-16T00:00:00.000Z</published>
-    <updated>2018-01-18T22:20:38.243Z</updated>
+    <updated>2018-01-18T22:20:56.633Z</updated>
     <content type="html"><![CDATA[<p>This is the Ixd portfolio that describes a noise management system that helps students (noise suffers and noisemakers) who lives in student accommodation to deal with noise issues. Welcome to any comments : )<a id="more"></a></p>
 <p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd14.png" alt="PlantPeace" title="PlantPeace"></p>
 <p>There is also an introduction video about PlantPeace (P.S. If you live in China, you might need VPN to watch the following video)</p>
@@ -75,6 +75,26 @@
       <category term="文集" scheme="http://yoursite.com/tags/%E6%96%87%E9%9B%86/"/>
     
       <category term="文集" scheme="http://yoursite.com/categories/%E6%96%87%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[新华书店 & 公交车 - 碎片化阅读到一体化体验]]></title>
+    <link href="http://yoursite.com/2017/02/16/Ixd9/"/>
+    <id>http://yoursite.com/2017/02/16/Ixd9/</id>
+    <published>2017-02-16T00:00:00.000Z</published>
+    <updated>2018-01-26T23:22:07.438Z</updated>
+    <content type="html"><![CDATA[<p>新华书店是一家历史悠久的传统书店。随着互联网的发展，人们读书的渠道变得多样化，对于实体书店的认识也发生变化。而这份交互设计作品集，则专注于帮助实体书店在互联网时代重新定位自己的发展方向，以获得用户更多的关注，提高自己的市场份额，<a id="more"></a></p>
+<p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd9-1.jpg" alt="新华书店 &amp; 公交车" title="新华书店 &amp; 公交车"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>新华书店是一家历史悠久的传统书店。随着互联网的发展，人们读书的渠道变得多样化，对于实体书店的认识也发生变化。而这份交互设计作品集，则专注于帮助实体书店在互联网时代重新定位自己的发展方向，以获得用户更多的关注，提高自己的市场份额，]]>
+    
+    </summary>
+    
+      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
@@ -1588,29 +1608,6 @@ import javax.swing.*;
       <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
     
       <category term="产品" scheme="http://yoursite.com/categories/%E4%BA%A7%E5%93%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[格志动效设计 by Hype]]></title>
-    <link href="http://yoursite.com/2015/09/20/Ixd3/"/>
-    <id>http://yoursite.com/2015/09/20/Ixd3/</id>
-    <published>2015-09-19T23:00:00.000Z</published>
-    <updated>2015-12-02T15:00:47.000Z</updated>
-    <content type="html"><![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。<a id="more"></a></p>
-<h5 id="格志_向下滑动切换动效">格志 向下滑动切换动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd3-1.gif" alt="格志 向下滑动切换动效" title="格志 向下滑动切换动效"></p>
-<h5 id="格志_向上滑动切换动效">格志 向上滑动切换动效</h5><p><img src="http://7xohes.com1.z0.glb.clouddn.com/Ixd3-2.gif" alt="格志 向上滑动切换动效" title="格志 向上滑动切换动效"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>用Hype临摹了格志的两个切换动效。格志的交互可以算得上有趣，它是通过上下滑动来进行切换，虽说需要一定的学习成本，但对于学习后的用户来说可以大大增加其切换效率，也提升了用户体验，动效里也蕴含着隐喻在其中，一定程度的降低了用户的学习成本，对于爱用手机记录生活的人来说是个不错的选择。]]>
-    
-    </summary>
-    
-      <category term="交互" scheme="http://yoursite.com/tags/%E4%BA%A4%E4%BA%92/"/>
-    
-      <category term="动效" scheme="http://yoursite.com/tags/%E5%8A%A8%E6%95%88/"/>
-    
-      <category term="交互" scheme="http://yoursite.com/categories/%E4%BA%A4%E4%BA%92/"/>
     
   </entry>
   
