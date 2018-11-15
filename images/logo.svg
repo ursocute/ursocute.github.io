@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xml:space="preserve"
-   enable-background="new 0 0 512 512"
-   viewBox="0 0 512 512"
-   height="512px"
-   width="512px"
-   y="0px"
-   x="0px"
-   id="NexT"
-   version="1.1"><metadata
-     id="metadata3390"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs3388" /><path
-     style="fill:#222222;fill-opacity:1"
-     id="path3384"
-     d="M 256.4,25.8 56.4,141.3 56,371.5 255.6,486.2 455.6,370.7 456,140.5 Z m 92.6,328.8 -18.4,10.7 -18.6,-11 0,0 -112,-142.3 0,142.6 -18.4,10.7 -18.6,-11 0,-197 18.5,-10.6 18.5,10.8 0,0 112,144.5 0,-144.6 18.5,-10.6 18.5,10.8 z" /></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="462px" viewBox="0 0 400 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-4">
+            <path d="M68,462 L332,462 C369.555363,462 400,431.555363 400,394 L400,68 C400,30.444637 369.555363,-6.89880826e-15 332,0 L68,0 C30.444637,6.89880826e-15 2.38225039e-14,30.444637 2.84217094e-14,68 L0,394 C4.59920551e-15,431.555363 30.444637,462 68,462 Z" id="Fill-1-Copy" fill="#000000" style="mix-blend-mode: soft-light;"></path>
+            <path d="M249.783503,157.949735 C242.221091,144.88522 231.219854,136.633157 214.37712,136.633157 C198.219148,136.633157 180.688648,149.012753 177.937588,165.859339 C171.062942,209.525881 276.939708,191.303451 263.190415,278.291072 C254.940238,330.209677 216.782796,367 163.845914,367 C128.094148,367 105.064532,346.371344 92,316.457239 L129.815062,284.479368 C133.596268,304.423106 148.721091,322.303077 170.375177,322.303077 C191.00212,322.303077 206.814708,304.765565 209.908149,284.824831 C214.034739,258.004875 190.656736,250.440734 171.408326,242.534134 C140.470914,228.781696 118.471444,211.932107 125.000707,171.705176 C131.878357,128.726556 169.345031,94 213.00159,94 C236.034209,94 265.938472,105.346211 279,122.880719 L249.783503,157.949735" id="Fill-3-Copy" fill="#FFFFFE"></path>
+        </g>
+    </g>
+</svg>
